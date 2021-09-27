@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/source.xml" />
+		</update>
+	</info>
+
+	<element name="The Vandersnitch Guide to Races and Cultures" type="Source" source="Core" id="ID_author_source_SOURCE_The_Vandersnitch_Guide_to_Races_and_Cultures">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">VGRC</set>
+			<set name="url">https://github.com/Ouroboros-dnd/Codex</set>
+			<set name="image">https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Vandersnitch_Book_Cover.png</set>
+			<set name="author" abbreviation="VGRC" url="https://github.com/Ouroboros-dnd/Codex">AMPS</set>
+			<set name="homebrew">true</set>
+			<set name="release">20210926</set>
+			<set name="information">Ouroboros Codex Supplement</set>
+		</setters>
+	</element>	
+</elements>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Ouroboros Codex</name>
+		<update version="0.0.1">
+			<file name="Ouroboros-Codex.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex.index" />
+		</update>
+	</info>
+	<files>
+		<!--AMPS-->
+		<file name="vandersnitch-guide-to-races-and-cultures.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures.index" />
+	</files>
+</index>

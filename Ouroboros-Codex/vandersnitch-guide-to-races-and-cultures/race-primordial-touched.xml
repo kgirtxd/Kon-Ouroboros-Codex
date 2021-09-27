@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Primordial Touched</name>
+		<update version="0.0.1">
+			<file name="race-primordial-touched.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/race-primordial-touched.xml" />
+		</update>
+	</info>
+
+	<element name="Primordial Touched" type="Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACE_PRIMORDIAL_TOUCHED">
+		<description>
+			<p>Deep in the lost ruins of Arune there are a people who's blood has been permanently altered by the effects of magical wars long gone. While exceedingly rare, those that do happen across these people will find a fairly content lot, who's highest aspirations tend toward revealing secrets long past and have an uncanny knack for knowing exactly when someone of another plane is speaking to them.</p>
+			<h4>Heart of the Elements</h4>
+			<p>The planar touched are derived from unions between elemental-touched fey and other of a humanoid race. They tend to have the thin builds of their fey ancestors and eyes of the elemental plane their blood is touched by. Because of this connection, primordial touched can take on temporary effects when under high stress such as small flames flickering in their hair, water dripping from their clothes without them becoming wet, a small wind circling around them, or the sounds of a distant earthquake following their footfalls. Eyes tend toward blue/green, amber, brown, and grey/silver, depending on their bloodline. </p>
+			<h4>Born from War but Live for Change</h4>
+			<p>Long ago before the fey and the elves got along there was a war between the two races. Fey, with their deep rooted connection to the outer planes, took to making pacts with ancient primordials of the elemental planes for assistance. Now, many years later, the union of outer planar and material planar blood has caused the creation of the primordial touched.  Those of this bloodline are usually found in the deepest forests and untouched wanders of nature where only the fey and some elves dare to live. Their connection to the elemental planes tends to give the primordial touched, chaotic natures and a desire to stay in locations close to the homeland of the original Primordial that began their lineage. In cities the primordial touched have difficulty staying with one job for too long. They typically take up interests in artisan crafts where they are free to craft what their hearts' desire and make excellent adventurers where they make their homes on the road looking for lost ruins and dungeons to delve.</p>
+			<h4>Primordial Touched Traits</h4>
+			<p>Primordial touched share certain traits as a result of their outer planar blood.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution increases by 1 and your Dexterity increases by 2. Alternatively, if you are descendant of a Terran line, your Strength increases by 2 instead of your Dexterity.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Primordial Touched age at the same rate as elves but live a few decades longer. </p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The primordial touched tend toward a neutral standpoint in either morality or law. However many Primordial Touched are swayed to pick a side in one of the two sides by the societies they live in.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Primordial Touched are about the same size and build as elves. Your size is Medium. </p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+			<p class="indent"><strong><em>Primordial Resistances.</em></strong> You have resistance to poison damage. </p>
+			<p class="indent"><strong><em>Legacy of Nature.</em></strong> You know the <i>druidcraft</i> cantrip. Once you reach 3rd level, you can cast <i>fog cloud</i> spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the <i>flame blade</i> spell once per day. </p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Primordial.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Primordial Touched)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Primordial Touched)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_LEGACY_OF_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Legacy of Nature" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_LEGACY_OF_NATURE">
+		<description>
+			<p>You know the <i>druidcraft</i> cantrip. Once you reach 3rd level, you can cast <i>fog cloud</i> spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the <i>flame blade spell</i> once per day.</p>
+		</description>
+		<sheet>
+			<description>You know the druidcraft cantrip. Charisma is your spellcasting ability for this spell. </description>
+			<description level="3">You know the druidcraft cantrip. You can cast fog cloud spell once per day as a 2nd-level spell. Charisma is your spellcasting ability for these spells. </description>
+			<description level="5">You know the druidcraft cantrip. You can cast fog cloud and the flame blade spells each once per day as a 2nd-level spell. Charisma is your spellcasting ability for these spells. </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_BLADE" level="5"/>
+		</rules>
+	</element>
+</elements>
