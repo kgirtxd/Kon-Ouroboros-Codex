@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
+		</update>
+	</info>
+
+	<element name="Ouroboros: Crying Potatoes" type="Source" source="Core" id="ID_OBC_SOURCE_CRYING_POTATOES">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CP</set>
+			<set name="url">https://github.com/kgirtxd/5eHomeBrew/tree/master/Konard/Campaigns</set>
+			<set name="image">https://gchs.org/wp-content/uploads/Image-Coming-Soon-Placeholder.png</set>
+			<set name="author" abbreviation="OC">Ouroboros Crew</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+
+	<!-- Weapons -->
+	<element name="Gunblade (Pistol, Automatic)" type="Weapon" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_WEAPON_GUNBLADE_PISTOL_AUTOMATIC">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<description>
+			<p>This weapon can alternatively make a melee attack. 1d6 Slashing + Strength Modifier, reach 5ft.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">50/150</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_PISTOL_AUTOMATIC</set>
+			<set name="reload">10</set>
+		</setters>
+	</element>
+
+	<element name="Pistol, Automatic (CP)" type="Weapon" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_WEAPON_PISTOL_AUTOMATIC">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/300</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_PISTOL_AUTOMATIC</set>
+			<set name="reload">15</set>
+		</setters>
+	</element>
+
+	<!-- Magic Items -->
+	<element name="Oil of Stealth" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_OIL_OF_STEALTH">
+		<description>
+			<p>Applying this oil to a suit of metal armor or the joints of a metal construct removes that armor or constructs disadvantage to stealth for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Concentrated Oil of Stealth" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CONCENTRATED_OIL_OF_STEALTH">
+		<description>
+			<p>Applying this oil to a suit of metal armor or the joints of a metal construct removes any disadvantage that the armor or construct has to stealth and applies advantage on stealth checks for 8 hours while worn or while the construct is active</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Unstoppable Rod (CP)" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_UNSTOPPABLE_ROD">
+		<description>
+			<p>This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to continue to move magically. Until you or another creature uses an action to push the button again, the rod continues to move at a constant speed and direction, even if it is defying gravity. 
+			The rod can handle up to 8,000 pounds of opposing force. More force causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, to deactivate the rod on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Immovable Rod (CP)" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_IMMOVABLE_ROD">
+		<description>
+			<p>This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, deactivating the rod on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Cockatrice Venom" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_POISON_COCKATRICE_VENOM">
+		<description>
+			<p>A creature subjected to this poison must make a DC 11 Constitution saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.</p>
+			<div class="reference">
+				<div element="ID_INTERNAL_SUPPORT_POISON_INJURY" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">poison,injury</set>
+			<set name="category">Poison</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+		<sheet alt="Cockatrice Venom (Injury)" />
+	</element>
+
+	<element name="Wand of Darkness" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_WAND_OF_DARKNESS">
+		<description>
+			<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the <em>darkness</em> spell from it.</p>
+			<p class="indent">The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_DARKNESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Common</set>
+			<set name="charges">7</set>
+		</setters>
+	</element>
+
+	<element name="Eyes of Darkvision" type="Magic Item" source="source" id="ID_OBC_CP_MAGIC_ITEM_EYES_OF_DARKVISION">
+		<description>
+			<p>These crystal lenses fit into an enchanted copper eyeglass lens. While wearing them you have darkvision out to 50 ft. and your vision in daylight is reduced to 30 ft. In conditions of clear visibility, you can make out details of creatures and objects 45 ft. away in darkness. </p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="50" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Farmer's Pack" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_FARMERS_PACK">
+		<description>
+			<p>1 over the shoulder bag (sachel equivalent) with 5 lbs of seeds, 1 set of iron farming tools (rake, hoe, and trowel), 1 water canteen, 1 meal kit, one set of common clothes, 2 days of rations.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="10">10 lbs.</set>
+		</setters>
+		<!--<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_BALLBEARINGS</item>
+			<item>ID_WOTC_PHB_ITEM_STRING_10FEET</item>
+			<item>ID_WOTC_PHB_ITEM_BELL</item>
+			<item amount="5">ID_WOTC_PHB_ITEM_CANDLE</item>
+			<item>ID_WOTC_PHB_ITEM_CROWBAR</item>
+			<item>ID_WOTC_PHB_ITEM_HAMMER</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PITON</item>
+			<item>ID_WOTC_PHB_ITEM_LANTERN_HOODED</item>
+			<item amount="2">ID_WOTC_PHB_ITEM_OIL_FLASK</item>
+			<item amount="5">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_WOTC_PHB_ITEM_TINDERBOX</item>
+			<item>ID_WOTC_PHB_ITEM_WATERSKIN</item>
+			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
+		</extract>-->
+	</element>
+
+	<!--Spells-->
+	<element name="Barricade" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_BARRICADE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a semi-transparent vertical wall made of magical force (AC 25, 10 HP). The wall is a solid object and appears within range. It lasts for the duration or until it takes damage. You can make a straight wall up to 40 feet long, 40 feet high, and 5 feet thick. The wall provides full cover to creatures on either side of it and only creatures you allow can pass through it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fire Whip" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_FIRE_WHIP">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You create a whip made of scorching flame and select one creature within range, with the intention of unbalancing it. The target must make a Dexterity saving throw. On a failed save, the target takes 5d8 fire damage. If the target is Huge or smaller you can additionally choose to knock it prone or to pull it up to 30 feet closer to your location. </p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 and you can pull the target an additional 5 feet for each slot level above 3rd. </p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grim Scythe" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_GRIM_SCYTHE">
+		<supports>DMSG_GRIM_Grave_Warden, Warlock, Wizard</supports>
+		<description>
+			<p>For the duration, a spectral blade forms on the end of a quarterstaff you touch. While this blade lasts, you use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon. The staff retains the damage die and bonusus of the quarterstaff used.  The weapon also becomes magical if it isn’t already and deals necrotic damage instead of bludgeoning. The spell ends if you cast it again or if you let go of the weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of bonemeal and a quarterstaff</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Poison Darts" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_POISON_DARTS">
+		<supports>Bard, Druid, Ranger, Wizard</supports>
+		<description>
+			<p>You conjure 2d4 magical darts that last for one hour or until they are used. As an action on your turn, you may expend one of the darts to make a ranged spell attack against a creature you can see within in range. On a successful attack, you deal 2d6 poison damage to the target and force them to make a Constitution saving throw or become poisoned until the end of their next turn.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the you summon and additional 1d4 darts and they last for 1 additional hour for each slot level above 3rd. </p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Up to 1 hour</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Starry Rod" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_STARRY_ROD">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in cosmic energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 radiant damage, and the spell ends.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> At 5th level, the melee attack deals an extra 1d8 radiant damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+	<element name="Veil" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_VEIL">
+		<supports>Wizard</supports>
+		<description>
+			<p>A thick pale mist radiates from you after you take damage from from a melee attack. You are treated as having total cover, but are blinded and deafened until the end of your next turn, or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 reaction, which you take when you are hit by a melee attack that deals damage</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Zen Archery" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_ZEN_ARCHERY">
+		<supports>Cleric, Druid, Wizard</supports>
+		<description>
+			<p>You channel the call of the hunt to yourself or one willing creature you can see within 60 ft, guiding their ranged weapon attack. For the duration, when the target of the spell makes an attack with a ranged weapon, then can use your Spellcasting ability modifier instead of their Dexterity for all attack and damage rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

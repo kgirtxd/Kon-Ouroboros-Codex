@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="Internals.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/Internals.xml" />
+		</update>
+	</info>
+
+	<!--Conditions-->
+	<element name="Immunity (Blinded Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_BLINDED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Charm Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_CHARM">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Deafened Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_DEAFENED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Disease Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_DISEASE">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Exhaustion Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_EXHAUSTION">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Frightened Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_FRIGHTENED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Paralyzed Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_PARALYZED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Petrified Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_PETRIFIED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Poisoned Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_POISONED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Prone Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_POISONED">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Sleep Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_SLEEP">
+		<supports>Immunity</supports>
+	</element>
+
+	<element name="Immunity (Stunned Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_STUNNED">
+		<supports>Immunity</supports>
+	</element>
+</elements>
+	<!--By definition there are no resistances for conditions
+	<element name="Resistance (Blinded Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_BLINDED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Charm Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_CHARM">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Deafened Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_DEAFENED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Disease Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_DISEASE">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Frightened Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_FRIGHTENED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Paralyzed Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_PARALYZED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Petrified Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_PETRIFIED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Poisoned Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_POISONED">
+		<supports>Resistance</supports>
+	</element>
+
+	<element name="Resistance (Stunned Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_STUNNED">
+		<supports>Resistance</supports>
+	</element>-->

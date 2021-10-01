@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wildfire Circle Spells</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="OCF-Druid-WildfireSpells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Druid-WildfireSpells.xml" />
+		</update>
+	</info>
+
+	<element name="Wildfire Circle Spells" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_WILDFIRE_CIRCLE_SPELLS">
+		<description>
+			<p><em>2nd-level Circle of Wildfire feature</em></p>
+			<p>You have formed a bond with a wildfire spirit, a primal being of creation and destruction. Your link with this spirit grants you access to some spells when you reach certain levels in this class, as shown on the Circle of Wildfire Spells table.</p>
+			<p class="indent">You gain access to one of the following cantrips: Control Flames, Fire Bolt, or Produce Flame</p>
+			<p class="indent">Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5 class="caption">Circle of Wildfire Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>Cantrip Option</td><td><em>control flames, fire bolt, or produce flame</em></td></tr>
+				<tr><td>2nd</td><td><em>burning hands, cure wounds</em></td></tr>
+				<tr><td>3rd</td><td><em>flaming sphere or scorching ray, healing spirit or lesser resteration</em></td></tr>
+				<tr><td>5th</td><td><em>fireball, plant growth or revivify</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life, fire shield</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, mass cure wounds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_WILDFIRE_CIRCLE_SPELLS" />
+			<select type="Spell" name="Wildfire Cantrip" level="2" spellcasting="Druid" supports="ID_PHB_SPELL_FIRE_BOLT|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_CONTROL_FLAMES" />
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="2" spellcasting="Druid" prepared="true" />
+			<select type="Spell" name="Wildfire Healing Spell" level="3" spellcasting="Druid" prepared="true" supports="ID_XGTE_SPELL_HEALING_SPIRIT|ID_PHB_SPELL_LESSER_RESTORATION" />
+			<select type="Spell" name="Wildfire Fire Spell" level="3" spellcasting="Druid" prepared="true" supports="ID_PHB_SPELL_SCORCHING_RAY|ID_PHB_SPELL_FLAMING_SPHERE" />
+			<select type="Spell" name="Wildfire Growth Spell" level="5" spellcasting="Druid" prepared="true" supports="ID_PHB_SPELL_REVIVIFY|ID_PHB_SPELL_PLANT_GROWTH" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+		<spellcasting name="Druid" extend="true">
+			<extend>ID_PHB_SPELL_FIRE_BOLT</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Druid, LV02: Wildfire Circle Spells" type="Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_OCF_DRUID_WILDFIRE_CIRCLE_SPELLS">
+		<compendium display="false" />
+		<description>
+			<p>Bridges the gap between the UA and TCoE versions of the Wildfire Druid's Circle Spells feature.</p>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_OBC_HNMC_OCF_WILDFIRE_CIRCLE_SPELLS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">OCF, Druid, first level, 2nd level, spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_WILDFIRE_CIRCLE_SPELLS" requirements="[level:druid:2], ID_WOTC_TCOE_ARCHETYPE_DRUID_CIRCLE_OF_WILDFIRE"/>
+		</rules>
+	</element>
+</elements>

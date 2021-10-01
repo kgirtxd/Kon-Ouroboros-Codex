@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats</description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Feats.xml" />
+		</update>
+	</info>
+
+	<element name="Shield Master - Armshield Variant" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_FEAT_SHIELDMASTER_ARMSHIELD">
+		<description>
+			<p>You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:</p>
+			<ul>
+				<li>If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.</li>
+				<li>If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.</li>
+				<li>If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect. Does not apply to armshields.</li>
+				<li>Wearing an armshield no longer removes proficiency of two handed weapons</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.
+			If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
+			If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.  (Does not apply to armshields) 
+			Wearing an armshield no longer removes proficiency bonus of two handed weapons.</description>
+		</sheet>
+	</element>
+
+</elements>

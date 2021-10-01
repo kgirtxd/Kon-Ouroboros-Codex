@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kitsune Race</name>
+		<update version="0.0.1">
+			<file name="Race-Kitsune.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Race-Kitsune.xml" />
+		</update>
+	</info>
+
+	<!--WIP-->
+	<!--
+
+	<element name="Kitsune" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_KITSUNE">
+		<description>
+			<p>HERE.</p>
+			<p>
+				<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one score by 2 and increase a different score by 1, or you increase three different scores by 1.</p>
+				<span class="feature">Nimble Fox.</span> Your walking speed increases by 5.<br />
+				<span class="feature">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.<br />
+				<span class="feature">Beast Sense. You can detect the location of all living creatures within 30ft as if you can see them.<br />
+				<span class="feature">Foxfire.</span>Due to your connection with magic and the fey ancestry, you are able to cast dancing lights at will. Your spellcasting ability for this spell is Charisma, and the dancing lights will always appear as a blue flame.<br />
+				<span class="feature">Tailed Beast.</span>All kitsune have at least 1 tail. As kitsune grow in power so too do the number of tails. You gain a tail at levels 3, 5, 8, 11, 13, 15, 18, and 20.<br />
+				<span class="feature">Masked Form.</span>As an action, you can assume the appearance of a specific human form of the same sex. This form is the same every time the ability is used. If someone wants to see your kitsune form, they must actively succeed on an Investigation or Perception check with a DC 10 + your Deception Modifier.<br />
+			</p>
+			<p>Kitsune retain their beastkin abilities.</p>
+			
+			<p class="indent"><strong><em>Animal Instincts.</em></strong> You gain proficiency in 2 of Perception, Animal Handling, Survival, Nature, or Insight.</p>
+			<p class="indent"><strong><em>Speak with Beasts.</em></strong> You can communicate with neutral and friendly animals using sounds and gestures. Animals can only handle basic concepts and are not under your control.</p>
+			<p class="indent"><strong><em>Tireless.</em></strong> You have the energy of a beast within you. You require little sleep, and you are always generally aware of what goes on around you when you do sleep. When asleep you get to roll perception to detect attacks and you only need to sleep 4 hours a night.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_FOXFIRE" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TAILED_BEAST" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_SHAPESHIFT" />
+		</rules>
+	</element>
+
+	<element name="Foxfire" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_FOXFIRE">
+		<description>
+			<p>Due to your connection with magic and the fey ancestry, you are able to cast dancing lights at will. Your spellcasting ability for this spell is Charisma, and the dancing lights will always appear as a blue flame.</p>
+		</description>
+		<sheet>
+			<description>You are able to cast dancing lights at will. Your spellcasting ability for this spell is Charisma, and the dancing lights will always appear as a blue flame.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+		</rules>
+	</element>
+
+	<element name="Tailed Beast" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_TAILED_BEAST">
+		<description>
+			<p>All kitsune have at least 1 tail. As kitsune grow in power so too do the number of tails. You gain a tail at levels 3, 5, 8, 11, 13, 15, 18, and 20.</p>
+		</description>
+		<sheet>
+			<description>All kitsune have at least 1 tail and increase as you gain in power. Your {{kitsune:tails}} tails give a hint to your power.</description>
+		</sheet>
+		<rules>
+			<stat name="kitsune:tails" value="1" bonus="base" />
+			<stat name="kitsune:tails" value="1" level="3" />
+			<stat name="kitsune:tails" value="1" level="5" />
+			<stat name="kitsune:tails" value="1" level="8" />
+			<stat name="kitsune:tails" value="1" level="11" />
+			<stat name="kitsune:tails" value="1" level="13" />
+			<stat name="kitsune:tails" value="1" level="15" />
+			<stat name="kitsune:tails" value="1" level="18" />
+			<stat name="kitsune:tails" value="1" level="20" />
+		</rules>
+	</element>
+
+	<element name="Masked Form" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_SHAPESHIFT">
+		<description>
+			<p>As an action, you can assume the appearance of a specific human form of the same sex. This form is the same every time the ability is used. If someone wants to see your kitsune form, they must actively succeed on an Investigation or Perception check with a DC 10 + your Deception Modifier.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can assume the appearance of a specific human form of the same sex. This form is the same every time the ability is used. If someone wants to see your kitsune form, they must actively succeed on an Investigation or Perception check DC {{dc:masked form}}.</description>
+		</sheet>
+		<rules>
+			<stat name="dc:masked form" value="10" bonus="base" />
+			<stat name="dc:masked form" value="deception:proficiency" />
+			<stat name="dc:masked form" value="charisma:modifier" />
+		</rules>
+	</element>
+	
+	
+	-->
+</elements>

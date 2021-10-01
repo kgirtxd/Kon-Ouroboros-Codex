@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rules</name>
+		<update version="0.0.1">
+			<file name="rules.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/rules.xml" />
+		</update>
+	</info>
+
+	<!--Conditions-->
+	<element name="Conditions" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS">
+		<description>
+			<p>Conditions alter a creature's capabilities in a variety of ways and can arise as a result of a spell, a class feature, a monster's attack, or other effect. Most conditions, such as blinded, are impairments, but a few, such as invisible, can be advantageous.</p>
+			<p class="indent">A condition lasts either until it is countered (the prone condition is countered by standing up, for example) or for a duration specified by the effect that imposed the condition.</p>
+			<p class="indent">If multiple effects impose the same condition on a creature, each instance of the condition has its own duration, but the condition's effects don't get worse. A creature either has a condition or doesn't.</p>
+			<p class="indent">The following definitions specify what happens to a creature while it is subjected to a condition.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_BLINDED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_CHARMED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_DEAFENED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_EXHAUSTION" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_FRIGHTENED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_GRAPPLED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_INCAPACITATED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_INVISIBLE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_PARALYZED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_PETRIFIED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_POISONED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_PRONE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_RESTRAINED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_STUNNED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_UNCONSCIOUS" />
+			</div>
+		</description>
+	</element>
+
+	<element name="Blinded" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_BLINDED">
+		<description>
+			<ul>
+				<li>A blinded creature can't see and automatically fails any ability check that requires sight.</li>
+				<li>Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Charmed" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_CHARMED">
+		<description>
+			<ul>
+				<li>A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.</li>
+				<li>The charmer has advantage on any ability check to interact socially with the creature.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Deafened" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_DEAFENED">
+		<description>
+			<ul>
+				<li>A deafened creature can't hear and automatically fails any ability check that requires hearing.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Exhaustion" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_EXHAUSTION">
+		<description>
+			<p>Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.</p>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Disadvantage on ability checks</td></tr>
+				<tr><td>2</td><td>Speed halved</td></tr>
+				<tr><td>3</td><td>Disadvantage on attack rolls and saving throws</td></tr>
+				<tr><td>4</td><td>Hit point maximum halved</td></tr>
+				<tr><td>5</td><td>Speed reduced to 0</td></tr>
+				<tr><td>6</td><td>Death</td></tr>
+			</table>
+			<p>If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.</p>
+			<p class="indent">A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks.</p>
+			<p class="indent">An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.</p>
+			<p class="indent">Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature’s exhaustion level by 1.</p>
+		</description>
+	</element>
+
+	<element name="Frightened" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_FRIGHTENED">
+		<description>
+			<ul>
+				<li>A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.</li>
+				<li>The creature can't willingly move closer to the source of its fear.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Grappled" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_GRAPPLED">
+		<description>
+			<ul>
+				<li>A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
+				<li>The condition ends if the grappler is incapacitated.</li>
+				<li>The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the <i>thunderwave</i> spell.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Incapacitated" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_INCAPACITATED">
+		<description>
+			<ul>
+				<li>An incapacitated creature can't take actions or reactions.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Invisible" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_INVISIBLE">
+		<description>
+			<ul>
+				<li>An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.</li>
+				<li>Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Paralyzed" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_PARALYZED">
+		<description>
+			<ul>
+				<li>A paralyzed creature is incapacitated and can't move or speak.</li>
+				<li>The creature automatically fails Strength and Dexterity saving throws.</li>
+				<li>Attack rolls against the creature have advantage.</li>
+				<li>Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Petrified" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_PETRIFIED">
+		<description>
+			<ul>
+				<li>A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.</li>
+				<li>The creature is incapacitated, can't move or speak, and is unaware of its surroundings.</li>
+				<li>Attack rolls against the creature have advantage.</li>
+				<li>The creature automatically fails Strength and Dexterity saving throws.</li>
+				<li>The creature has resistance to all damage.</li>
+				<li>The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Poisoned" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_POISONED">
+		<description>
+			<ul>
+				<li>A poisoned creature has disadvantage on attack rolls and ability checks.</li>
+			</ul>
+		</description>
+	</element>
+	
+	<element name="Prone" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_PRONE">
+		<description>
+			<ul>
+				<li>A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.</li>
+				<li>The creature has disadvantage on attack rolls.</li>
+				<li>An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Restrained" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_RESTRAINED">
+		<description>
+			<ul>
+				<li>A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
+				<li>Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</li>
+				<li>The creature has disadvantage on Dexterity saving throws.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Stunned" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_STUNNED">
+		<description>
+			<ul>
+				<li>A stunned creature is incapacitated, can't move, and can speak only falteringly.</li>
+				<li>The creature automatically fails Strength and Dexterity saving throws.</li>
+				<li>Attack rolls against the creature have advantage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Unconscious" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_CONDITIONS_UNCONSCIOUS">
+		<description>
+			<ul>
+				<li>An unconscious creature is incapacitated, can't move or speak, and is unaware of its surroundings.</li>
+				<li>The creature drops whatever it's holding and falls prone.</li>
+				<li>The creature automatically fails Strength and Dexterity saving throws.</li>
+				<li>Attack rolls against the creature have advantage.</li>
+				<li>Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.</li>
+			</ul>
+		</description>
+	</element>
+	<!--End Conditions-->
+
+	<!--Equipment-->
+	<element name="Equipment" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_EQUIPMENT">
+		<description>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEALTH" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_COINAGE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_EQUIPMENT_ARMOR_AND_SHIELDS" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_EQUIPMENT_WEAPONS" />
+			</div>
+		</description>
+	</element>
+
+	<element name="Armor and Shields" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_EQUIPMENT_ARMOR_AND_SHIELDS">
+		<description>
+			<p>D&amp;D worlds are a vast tapestry made up of many different cultures, each with its own technology level. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. The Armor table collects the most commonly available types of armor found in the game and separates them into three categories: light armor, medium armor, and heavy armor. Many warriors supplement their armor with a shield.</p>
+			<p class="indent">The Armor table shows the cost, weight, and other properties of the common types of armor and shields used in the worlds of D&amp;D.</p>
+			<p class="indent"><strong>Armor Proficiency.</strong> Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can't cast spells.</p>
+			<p class="indent"><strong>Armor Class (AC).</strong> Armor protects its wearer from attacks. The armor (and shield) you wear determines your base Armor Class.</p>
+			<p class="indent"><strong>Heavy Armor.</strong> Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows "Str 13" or "Str 15" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score.</p>
+			<p class="indent"><strong>Stealth.</strong>  If the Armor table shows "Disadvantage" in the Stealth column, the wearer has disadvantage on Dexterity (Stealth) checks.</p>
+			<p class="indent"><strong>Shields.</strong> A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+			<h5>Light Armor</h5>
+			<table>
+				<thead>
+					<tr><td>Armor Name</td><td>Cost</td><td>Armor Class (AC)</td><td>Strength</td><td>Stealth</td><td>Weight</td></tr>
+				</thead>
+				<tr><td>Padded</td><td>5 gp</td><td>11 + Dex modifier</td><td>-</td><td>Disadvantage</td><td>8 lb.</td></tr>
+				<tr><td>Leather</td><td>10 gp</td><td>11 + Dex modifier</td><td>-</td><td>-</td><td>10 lb.</td></tr>
+				<tr><td>Studded leather</td><td>45 gp</td><td>12 + Dex modifier</td><td>-</td><td>-</td><td>13 lb.</td></tr>
+			</table>
+			<h5>Medium Armor</h5>
+			<table>
+				<thead>
+					<tr><td>Armor Name</td><td>Cost</td><td>Armor Class (AC)</td><td>Strength</td><td>Stealth</td><td>Weight</td></tr>
+				</thead>
+				<tr><td>Hide</td><td>10 gp</td><td>12 + Dex modifier (max 2)</td><td>-</td><td>-</td><td>12 lb.</td></tr>
+				<tr><td>Chain shirt</td><td>50 gp</td><td>13 + Dex modifier (max 2)</td><td>-</td><td>-</td><td>20 lb.</td></tr>
+				<tr><td>Scale mail</td><td>50 gp</td><td>14 + Dex modifier (max 2)</td><td>-</td><td>Disadvantage</td><td>45 lb.</td></tr>
+				<tr><td>Breastplate</td><td>400 gp</td><td>14 + Dex modifier (max 2)</td><td>-</td><td>-</td><td>20 lb.</td></tr>
+				<tr><td>Half plate</td><td>750 gp</td><td>15 + Dex modifier (max 2)</td><td>-</td><td>Disadvantage</td><td>40 lb.</td></tr>
+			</table>
+			<h5>Heavy Armor</h5>
+			<table>
+				<thead>
+					<tr><td>Armor Name</td><td>Cost</td><td>Armor Class (AC)</td><td>Strength</td><td>Stealth</td><td>Weight</td></tr>
+				</thead>
+				<tr><td>Ring mail</td><td>30 gp</td><td>14</td><td>-</td><td>Disadvantage</td><td>40 lb.</td></tr>
+				<tr><td>Chain mail</td><td>75 gp</td><td>16</td><td>Str 13</td><td>Disadvantage</td><td>55 lb.</td></tr>
+				<tr><td>Splint</td><td>200 gp</td><td>17</td><td>Str 15</td><td>Disadvantage</td><td>60 lb.</td></tr>
+				<tr><td>Plate</td><td>1,500 gp</td><td>18</td><td>Str 15</td><td>Disadvantage</td><td>65 lb.</td></tr>
+			</table>
+			<h5>Shield</h5>
+			<table>
+				<thead>
+					<tr><td>Armor Name</td><td>Cost</td><td>Armor Class (AC)</td><td>Strength</td><td>Stealth</td><td>Weight</td></tr>
+				</thead>
+				<tr><td>Shield</td><td>10 gp</td><td>+2</td><td>-</td><td>-</td><td>6 lb.</td></tr>
+			</table>
+			<h4>Getting Into and Out of Armor</h4>
+			<p>The time it takes to don or doff a type of armor or a shield is shown in the Donning and Doffing Armor table.</p>
+			<p class="indent"><strong>Don.</strong> This is the time it takes to put on the item. You benefit from it's AC only if you take the full time to don it.</p>
+			<p class="indent"><strong>Doff.</strong> This is the time it takes to take off the item. If you have help removing armor, reduce this time by half.</p>
+			<table>
+				<thead>
+					<tr><td>Category</td><td>Don</td><td>Doff</td></tr>
+				</thead>
+				<tr><td>Light Armor</td><td>1 minute</td><td>1 minute</td></tr>
+				<tr><td>Medium Armor</td><td>5 minutes</td><td>1 minute</td></tr>
+				<tr><td>Heavy Armor</td><td>10 minutes</td><td>5 minutes</td></tr>
+				<tr><td>Shield</td><td>1 action</td><td>1 action</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Coinage" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_COINAGE">
+		<description>
+			<p>Common coins come in several different denominations based on the relative worth of the metal from which they are made. The three most common coins are the gold piece (gp), the silver piece (sp), and the copper piece (cp).</p>
+			<p class="indent">With one gold piece, a character can buy a bedroll, 50 feet of good rope, or a goat. A skilled (but not exceptional) artisan can earn one gold piece a day. The gold piece is the standard unit of measure for wealth, even if the coin itself is not commonly used. When merchants discuss deals that involve goods or services worth hundreds or thousands of gold pieces, the transactions don't usually involve the exchange of individual coins. Rather, the gold piece is a standard measure of value, and the actual exchange is in gold bars, letters of credit, or valuable goods.</p>
+			<p class="indent">One gold piece is worth ten silver pieces, the most prevalent coin among commoners. A silver piece buys a laborer's work for half a day, a flask of lamp oil, or a night's rest in a poor inn.</p>
+			<p class="indent">One silver piece is worth ten copper pieces, which are common among laborers and beggars. A single copper piece buys a candle, a torch, or a piece of chalk.</p>
+			<p class="indent">In addition, unusual coins made of other precious metals sometimes appear in treasure hoards. The electrum piece (ep) and the platinum piece (pp) originate from fallen empires and lost kingdoms, and they sometimes arouse suspicion and skepticism when used in transactions. An electrum piece is worth five silver pieces, and a platinum piece is worth ten gold pieces.</p>
+			<p class="indent">A standard coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
+			<h5>Standard Exchange Rates</h5>
+			<table>
+				<thead>
+					<tr><td>Coin</td><td>cp</td><td>sp</td><td>ep</td><td>gp</td><td>pp</td></tr>
+				</thead>
+				<tr><td>Copper (cp)</td><td>1</td><td>1/10</td><td>1/50</td><td>1/100</td><td>1/1,000</td></tr>
+				<tr><td>Silver (sp)</td><td>10</td><td>1</td><td>1/5</td><td>1/10</td><td>1/100</td></tr>
+				<tr><td>Electrum (ep)</td><td>50</td><td>5</td><td>1</td><td>1/2</td><td>1/20</td></tr>
+				<tr><td>Gold (gp)</td><td>100</td><td>10</td><td>2</td><td>1</td><td>1/10</td></tr>
+				<tr><td>Platinum (pp)</td><td>1,000</td><td>100</td><td>20</td><td>10</td><td>1</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Wealth" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEALTH">
+		<description>
+			<p>Wealth appears in many forms in a D&amp;D world. Coins, gemstones, trade goods, art objects, animals, and property can reflect your character’s financial well-being. Members of the peasantry trade in goods, bartering for what they need and paying taxes in grain and cheese.</p>
+			<p class="indent">Members of the nobility trade either in legal rights, such as the rights to a mine, a port, or farmland, or in gold bars, measuring gold by the pound rather than by the coin. Only merchants, adventurers, and those offering professional services for hire commonly deal in coins.</p>
+			<h5>Starting Wealth by Class</h5>
+			<table>
+				<thead>
+					<tr><td>Class</td><td>Funds</td></tr>
+				</thead>
+				<tr><td>Artificer</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Barbarian</td><td>2d4 × 10 gp</td></tr>
+				<tr><td>Bard</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Cleric</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Druid</td><td>2d4 × 10 gp</td></tr>
+				<tr><td>Fighter</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Monk</td><td>5d4 gp</td></tr>
+				<tr><td>Paladin</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Ranger</td><td>5d4 × 10 gp</td></tr>
+				<tr><td>Rogue</td><td>4d4 × 10 gp</td></tr>
+				<tr><td>Sorcerer</td><td>3d4 × 10 gp</td></tr>
+				<tr><td>Warlock</td><td>4d4 × 10 gp</td></tr>
+				<tr><td>Wizard</td><td>4d4 × 10 gp</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Weapons" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_EQUIPMENT_WEAPONS">
+		<description>
+			<p>Your class grants proficiency in certain weapons, reflecting both the class's focus and the tools you are most likely to use. Whether you favor a longsword or a longbow, your weapon and your ability to wield it effectively can mean the difference between life and death while adventuring.</p>
+			<p class="indent">The Weapons table shows the most common weapons used in the worlds of D&amp;D, their price and weight, the damage they deal when they hit, and any special properties they possess. Every weapon is classified as either melee or ranged. A melee weapon is used to attack a target within 5 feet of you, whereas a ranged weapon is used to attack a target at a distance.</p>
+			<h5>Simple Melee Weapons</h5>
+			<table>
+				<thead>
+					<tr><td>Weapon Name</td><td>Cost</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Club</td><td>1 sp</td><td>1d4 bludgeoning</td><td>2 lb.</td><td>Light</td></tr>
+				<tr><td>Dagger</td><td>2 gp</td><td>1d4 piercing</td><td>1 lb.</td><td>Finesse, light, thrown (range 20/60)</td></tr>
+				<tr><td>Greatclub</td><td>2 sp</td><td>1d8 bludgeoning</td><td>10 lb.</td><td>Two-handed</td></tr>
+				<tr><td>Handaxe</td><td>5 gp</td><td>1d6 slashing</td><td>2 lb.</td><td>Light, thrown (range 20/60)</td></tr>
+				<tr><td>Javelin</td><td>5 sp</td><td>1d6 piercing</td><td>2 lb.</td><td>Thrown (range 30/120)</td></tr>
+				<tr><td>Light hammer</td><td>2 gp</td><td>1d4 bludgeoning</td><td>2 lb.</td><td>Light, thrown (range 20/60)</td></tr>
+				<tr><td>Mace</td><td>5 gp</td><td>1d6 bludgeoning</td><td>4 lb.</td><td>-</td></tr>
+				<tr><td>Quarterstaff</td><td>2 sp</td><td>1d6 bludgeoning</td><td>4 lb.</td><td>Versatile (1d8)</td></tr>
+				<tr><td>Sickle</td><td>1 gp</td><td>1d4 slashing</td><td>2 lb.</td><td>Light</td></tr>
+				<tr><td>Spear</td><td>1 gp</td><td>1d6 piercing</td><td>3 lb.</td><td>Thrown (range 20/60), versatile (1d8)</td></tr>
+			</table>
+			<h5>Simple Ranged Weapons</h5>
+			<table>
+				<thead>
+					<tr><td>Weapon Name</td><td>Cost</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Crossbow, light</td><td>25 gp</td><td>1d8 piercing</td><td>5 lb.</td><td>Ammunition (range 80/320), loading, two-handed</td></tr>
+				<tr><td>Dart</td><td>5 cp</td><td>1d4 piercing</td><td>1/4 lb.</td><td>Finesse, thrown (range 20/60)</td></tr>
+				<tr><td>Shortbow</td><td>25 gp</td><td>1d6 piercing</td><td>2 lb.</td><td>Ammunition (range 80/320), two-handed</td></tr>
+				<tr><td>Sling</td><td>1 sp</td><td>1d4 bludgeoning</td><td>-</td><td>Ammunition (range 30/120)</td></tr>
+			</table>
+			<h5>Martial Melee Weapons</h5>
+			<table>
+				<thead>
+					<tr><td>Weapon Name</td><td>Cost</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Battleaxe</td><td>10 gp</td><td>1d8 slashing</td><td>4 lb.</td><td>Versatile (1d10)</td></tr>
+				<tr><td>Flail</td><td>10 gp</td><td>1d8 bludgeoning</td><td>2 lb.</td><td>-</td></tr>
+				<tr><td>Glaive</td><td>20 gp</td><td>1d10 slashing</td><td>6 lb.</td><td>Heavy, reach, two-handed</td></tr>
+				<tr><td>Greataxe</td><td>30 gp</td><td>1d12 slashing</td><td>7 lb.</td><td>Heavy, two-handed</td></tr>
+				<tr><td>Greatsword</td><td>50 gp</td><td>2d6 slashing</td><td>6 lb.</td><td>Heavy, two-handed</td></tr>
+				<tr><td>Halberd</td><td>20 gp</td><td>1d10 slashing</td><td>6 lb.</td><td>Heavy, reach, two-handed</td></tr>
+				<tr><td>Lance</td><td>10 gp</td><td>1d12 piercing</td><td>6 lb.</td><td>Reach, special</td></tr>
+				<tr><td>Longsword</td><td>15 gp</td><td>1d8 slashing</td><td>3 lb.</td><td>Versatile (1d10)</td></tr>
+				<tr><td>Maul</td><td>10 gp</td><td>2d6 bludgeoning</td><td>10 lb.</td><td>Heavy, two-handed</td></tr>
+				<tr><td>Morningstar</td><td>15 gp</td><td>1d8 piercing</td><td>4 lb.</td><td>-</td></tr>
+				<tr><td>Pike</td><td>5 gp</td><td>1d10 piercing</td><td>18 lb.</td><td>Heavy, reach, two-handed</td></tr>
+				<tr><td>Rapier</td><td>25 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>Finesse</td></tr>
+				<tr><td>Scimitar</td><td>25 gp</td><td>1d6 slashing</td><td>3 lb.</td><td>Finesse, light</td></tr>
+				<tr><td>Shortsword</td><td>10 gp</td><td>1d6 piercing</td><td>2 lb.</td><td>Finesse, light</td></tr>
+				<tr><td>Trident</td><td>5 gp</td><td>1d6 piercing</td><td>4 lb.</td><td>Thrown (range 20/60), versatile (1d8)</td></tr>
+				<tr><td>War pick</td><td>5 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>-</td></tr>
+				<tr><td>Warhammer</td><td>15 gp</td><td>1d8 bludgeoning</td><td>2 lb.</td><td>Versatile (1d10)</td></tr>
+				<tr><td>Whip</td><td>2 gp</td><td>1d4 slashing</td><td>3 lb.</td><td>Finesse, reach</td></tr>
+			</table>
+			<h5>Martial Ranged Weapons</h5>
+			<table>
+				<thead>
+					<tr><td>Weapon Name</td><td>Cost</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Blowgun</td><td>10 gp</td><td>1 piercing</td><td>1 lb.</td><td>Ammunition (range 25/100), loading</td></tr>
+				<tr><td>Crossbow, hand</td><td>75 gp</td><td>1d6 piercing</td><td>3 lb.</td><td>Ammunition (range 30/120), light, loading</td></tr>
+				<tr><td>Crossbow, heavy</td><td>50 gp</td><td>1d10 piercing</td><td>18 lb.</td><td>Ammunition (range 100/400), heavy, loading, two-handed</td></tr>
+				<tr><td>Longbow</td><td>50 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>Ammunition (range 150/600), heavy, two-handed</td></tr>
+				<tr><td>Net</td><td>1 gp</td><td>-</td><td>3 lb.</td><td>Special, thrown (range 5/15)</td></tr>
+			</table>
+			<h4>Weapon Proficiency</h4>
+			<p>Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are simple and martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.</p>
+			<p class="indent">Proficiency with a weapon allows you to add your proficiency bonus to the attack roll for any attack you make with that weapon. If you make an attack roll using a weapon with which you lack proficiency, you do not add your proficiency bonus to the attack roll.</p>
+		</description>
+	</element>
+	<!--End Equipment-->
+
+	<element name="Grappling" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_GRAPPLING">
+		<description>
+			<p>When you want to grab a creature or wrestle with it, you can use the Attack action to make a Special melee Attack, a grapple. If you’re able to make multiple attacks with the Attack action, this Attack replaces one of them.</p>
+			<p class="indent">The target of your grapple must be no more than one size larger than you and must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check instead of an Attack roll: a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, you subject the target to the Grappled condition. The condition specifies the things that end it, and you can release the target whenever you like (no action required).</p>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_CONDITIONS_GRAPPLED" />
+			</div>
+			<p></p>
+			<p class="indent"><strong>Escaping a Grapple: </strong>A Grappled creature can use its action to Escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.</p>
+			<p class="indent"><strong>Moving a Grappled Creature: </strong>When you move, you can drag or carry the Grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you.</p>
+		</description>
+	</element>
+
+	<element name="Improvised Weapons" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_IMPROVISED_WEAPONS">
+		<description>
+			<p>Sometimes characters don't have their weapons and have to attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin.</p>
+			<p class="indent">Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the DM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus.</p>
+			<p class="indent">An object that bears no resemblance to a weapon deals 1d4 damage (the DM assigns a damage type appropriate to the object). If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 20 feet and a long range of 60 feet.</p>
+		</description>
+	</element>
+
+	<element name="Multiclassing" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_MULTICLASSING">
+		<description>
+			<p>Multiclassing allows you to gain levels in multiple classes. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in one of the standard class options.</p>
+			<p class="indent">With this rule, you have the option of gaining a level in a new class whenever you advance in level, instead of gaining a level in your current class. Your levels in all your classes are added together to determine your character level. For example, if you have three levels in wizard and two in fighter, you're a 5th-level character.</p>
+			<p class="indent">As you advance in levels, you might primarily remain a member of your original class with just a few levels in another class, or you might change course entirely, never looking back at the class you left behind. You might even start progressing in a third or fourth class. Compared to a single-class character of the same level, you'll sacrifice some focus in exchange for versatility.</p>
+			<h4>Prerequisites</h4>
+			<p>To qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one, as shown in the Multiclassing Prerequisites table. For example, a barbarian who decides to multiclass into the druid class must have both Strength and Wisdom scores of 13 or higher. Without the full training that a beginning character receives, you must be a quick study in your new class, having a natural aptitude that is reflected by higher-than-average ability scores.</p>
+			<table>
+				<thead>
+					<tr><td>Class</td><td>Ability Score Minimum</td></tr>
+				</thead>
+				<tr><td>Artificer</td><td class="left">Intelligence 13</td></tr>
+				<tr><td>Barbarian</td><td class="left">Strength 13</td></tr>
+				<tr><td>Bard</td><td class="left">Charisma 13</td></tr>
+				<tr><td>Cleric</td><td class="left">Wisdom 13</td></tr>
+				<tr><td>Druid</td><td class="left">Wisdom 13</td></tr>
+				<tr><td>Fighter</td><td class="left">Strength 13 or Dexterity 13</td></tr>
+				<tr><td>Monk</td><td class="left">Dexterity 13 and Wisdom 13</td></tr>
+				<tr><td>Paladin</td><td class="left">Strength 13 and Charisma 13</td></tr>
+				<tr><td>Ranger</td><td class="left">Dexterity 13 and Wisdom 13</td></tr>
+				<tr><td>Rogue</td><td class="left">Dexterity 13</td></tr>
+				<tr><td>Sorcerer</td><td class="left">Charisma 13</td></tr>
+				<tr><td>Warlock</td><td class="left">Charisma 13</td></tr>
+				<tr><td>Wizard</td><td class="left">Intelligence 13</td></tr>
+			</table>
+			<h4>Experience Points</h4>
+			<p>The experience point cost to gain a level is always based on your total character level, as shown in the Character Advancement table in chapter 1, not your level in a particular class. So, if you are a cleric 6/fighter 1, you must gain enough XP to reach 8th level before you can take your second level as a fighter or your seventh level as a cleric.</p>
+			<h4>Hit Points and Hit Dice</h4>
+			<p>You gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character.</p>
+			<p class="indent">You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10, so if you are a paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you are a paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice.</p>
+			<h4>Proficiency Bonus</h4>
+			<p>Your proficiency bonus is always based on your total character level, as shown in the Character Advancement table in chapter 1, not your level in a particular class. For example, if you are a fighter 3/rogue 2, you have the proficiency bonus of a 5th-level character, which is +3.</p>
+			<h4>Proficiencies</h4>
+			<p>When you gain your first level in a class other than your initial class, you gain only some of new class's starting proficiencies, as shown in the Multiclassing Proficiencies table.</p>
+			<table>
+				<thead>
+					<tr><td>Class</td><td>Proficiencies Gained</td></tr>
+				</thead>
+				<tr><td>Artificer</td><td class="left">light armor, medium armor, shields, thieves’ tools, tinker’s tools</td></tr>
+				<tr><td>Barbarian</td><td class="left">Shields, simple weapons, martial weapons</td></tr>
+				<tr><td>Bard</td><td class="left">Light armor, one skill of your choice, one musical instrument of your choice</td></tr>
+				<tr><td>Cleric</td><td class="left">Light armor, medium armor, shields</td></tr>
+				<tr><td>Druid</td><td class="left">Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)</td></tr>
+				<tr><td>Fighter</td><td class="left">Light armor, medium armor, shields, simple weapons, martial weapons</td></tr>
+				<tr><td>Monk</td><td class="left">Simple weapons, shortswords</td></tr>
+				<tr><td>Paladin</td><td class="left">Light armor, medium armor, shields, simple weapons, martial weapons</td></tr>
+				<tr><td>Ranger</td><td class="left">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class's skill list</td></tr>
+				<tr><td>Rogue</td><td class="left">Light armor, one skill from the class's skill list, thieves' tools</td></tr>
+				<tr><td>Sorcerer</td><td class="left">-</td></tr>
+				<tr><td>Warlock</td><td class="left">Light armor, simple weapons</td></tr>
+				<tr><td>Wizard</td><td class="left">-</td></tr>
+			</table>
+			<h4>Class Features</h4>
+			<p>When you gain a new level in a class, you get its features for that level. You don't, however, receive the class's starting equipment, and a few features have additional rules when you're multiclassing: Channel Divinity, Extra Attack, Unarmored Defense, and Spellcasting.</p>
+			<h5>Channel Divinity</h5>
+			<p>If you already have the Channel Divinity feature and gain a level in a class that also grants the feature, you gain the Channel Divinity effects granted by that class, but getting the feature again doesn't give you an additional use of it. You gain additional uses only when you reach a class level that explicitly grants them to you. For example, if you are a cleric 6/paladin 4, you can use Channel Divinity twice between rests because you are high enough level in the cleric class to have more uses. Whenever you use the feature, you can choose any of the Channel Divinity effects available to you from your two classes.</p>
+			<h5>Extra Attack</h5>
+			<p>If you gain the Extra Attack class feature from more than one class, the features don't add together. You can't make more than two attacks with this feature unless it says you do (as the fighter's version of Extra Attack does). Similarly, the warlock's eldritch invocation Thirsting Blade doesn't give you additional attacks if you also have Extra Attack.</p>
+			<h5>Unarmored Defense</h5>
+			<p>If you already have the Unarmored Defense feature, you can't gain it again from another class.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_SPELLCASTING" />
+			</div>
+		</description>
+	</element>
+
+	<element name="Silvered Weapons" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_SILVERED_WEAPONS">
+		<description>
+			<p>Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective.</p>
+		</description>
+	</element>
+
+	<element name="Spellcasting" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_SPELLCASTING">
+		<description>
+			<p>Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules below. If you multiclass but have the Spellcasting feature from only one class, you follow the rules as described in that class.</p>
+			<h5>Spells Known and Prepared.</h5>
+			<p>You determine what spells you know and can prepare for each class individually, as if you were a single-classed member of that class. If you are a ranger 4/wizard 3, for example, you know three 1st-level ranger spells based on your levels in the ranger class. As 3rd-level wizard, you know three wizard cantrips, and your spellbook contains ten wizard spells, two of which (the two you gained when you reached 3rd level as a wizard) can be 2nd-level spells. If your Intelligence is 16, you can prepare six wizard spells from your spellbook.</p>
+			<p class="indent">Each spell you know and prepare is associated with one of your classes, and you use the spellcasting ability of that class when you cast the spell. Similarly, a spellcasting focus, such as a holy symbol, can be used only for the spells from the class associated with that focus.</p>
+			<p class="indent">If a cantrip of yours increases in power at higher levels, the increase is based on your character level, not your level in a particular class.</p>
+			<h5>Spell Slots</h5>
+			<p>You determine your available spell slots by adding together all your levels in the bard, cleric, druid, sorcerer, and wizard classes, half your levels (rounded down) in the paladin and ranger classes, and a third of your fighter or rogue levels (rounded down) if you have the Eldritch Knight or the Arcane Trickster feature. Use this total to determine your spell slots by consulting the Multiclass Spellcaster table.</p>
+			<p class="indent">If you have more than one spellcasting class, this table might give you spell slots of a level that is higher than the spells you know or can prepare. You can use those slots, but only to cast your lower-level spells. If a lower-level spell that you cast, like <i>burning hands</i>, has an enhanced effect when cast using a higher-level slot, you can use the enhanced effect, even though you don't have any spells of that higher level</p>
+			<p class="indent">For example, if you are the aforementioned ranger 4/wizard 3, you count as a 5th-level character when determining your spell slots: you have four 1st-level slots, three 2nd-level slots, and two 3rd-level slots. However, you don't know any 3rd-level spells, nor do you know any 2nd-level ranger spells. You can use the spell slots of those levels to cast the spells you do know — and potentially enhance their effects.</p>
+			<h5>Pact Magic</h5>
+			<p>If you have both the Spellcasting class feature and the Pact Magic class feature from the warlock class, you can use the spell slots you gain from the Pact Magic feature to cast spells you know or have prepared from classes with the Spellcasting class feature, and you can use the spell slots you gain from the Spellcasting class feature to cast warlock spells you know.</p>
+			<h5 class="caption">Multiclass Spellcaster</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Vision and Light" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_VISION_AND_LIGHT">
+		<description>
+			<p>The most fundamental tasks of adventuring — noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few — rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.</p>
+			<p class="indent">A given area might be lightly or heavily obscured. In a <i>lightly obscured</i> area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.</p>
+			<p class="indent">A <i>heavily obscured</i> area—such as darkness, opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition when trying to see something in that area.</p>
+			<p class="indent">The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.</p>
+			<p></p>
+			<p class="indent"><strong>Bright light</strong> lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</p>
+			<p class="indent"><strong>Dim light</strong> also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</p>
+			<p class="indent"><strong>Darkness</strong> creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</p>
+			<div class="reference">
+				<div element="ID_VISION_BLINDSIGHT" />
+			</div>
+			<div class="reference">
+				<div element="ID_VISION_DARKVISION" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT" />
+			</div>
+			<div class="reference">
+				<div element="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
+			</div>
+			<div class="reference">
+				<div element="ID_VISION_TREMORSENSE" />
+			</div>
+			<div class="reference">
+				<div element="ID_VISION_TRUESIGHT" />
+			</div>
+			<table>
+				<thead>
+					<tr><td>To See</td><td>Normal Vision</td><td>Darkvision</td><td>Sunlight Sensitivity</td><td>Devil Sight</td><td>Blindsight or Truesight</td><td>Tremorsense</td></tr>
+				</thead>
+				<tr><td>Direct Sunlight</td><td>See Normally</td><td>See Normally</td><td>Disadvantage</td><td>-</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+				<tr><td>Bright Light</td><td>See Normally</td><td>See Normally</td><td>-</td><td>-</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+				<tr><td>Dim Light</td><td>Disadvantage</td><td>See Normally</td><td>-</td><td>-</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+				<tr><td>Darkness</td><td>Can't See</td><td>Disadvantage</td><td>-</td><td>See Normally</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+				<tr><td>Magical Darkness</td><td>Can't See</td><td>Can't See</td><td>-</td><td>See Normally</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+				<tr><td>Invisible</td><td>Can't See</td><td>Can't See</td><td>-</td><td>-</td><td>See Normally</td><td>Sense Nonflying</td></tr>
+			</table>
+			<table>
+				<thead>
+					<tr><td>To Attack</td><td>Normal Vision</td><td>Darkvision</td><td>Sunlight Sensitivity</td><td>Devil Sight</td><td>Blindsight or Truesight</td><td>Tremorsense</td></tr>
+				</thead>
+				<tr><td>Direct Sunlight</td><td>-</td><td>-</td><td>Disadvantage</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>Bright Light</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>Dim Light</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>Darkness</td><td>Disadvantage</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>Magical Darkness</td><td>Disadvantage</td><td>Disadvantage</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>Invisible</td><td>Disadvantage</td><td>Disadvantage</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<!--Weapon Properties-->
+	<element name="Weapon Properties" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES">
+		<description>
+			<p>Many weapons have special properties related to their use, as shown in the Weapons table.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_AMMUNITION" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_FINESSE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_HEAVY" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_LIGHT" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_LOADING" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_RANGE" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_REACH" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_SPECIAL" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_THROWN" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_TWOHANDED" />
+			</div>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_VERSATILE" />
+			</div>
+		</description>
+	</element>
+
+	<element name="Ammunition" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_AMMUNITION">
+		<description>
+			<p>You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</p>
+			<p class="indent">If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way.</p>	
+		</description>
+	</element>
+
+	<element name="Finesse" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_FINESSE">
+		<description>
+			<p>When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.</p>
+		</description>
+	</element>
+
+	<element name="Heavy" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_HEAVY">
+		<description>
+			<p>Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.</p>
+		</description>
+	</element>
+
+	<element name="Light" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_LIGHT">
+		<description>
+			<p>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
+		</description>
+	</element>
+
+	<element name="Loading" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_LOADING">
+		<description>
+			<p>Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.</p>
+		</description>
+	</element>
+
+	<element name="Range" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_RANGE">
+		<description>
+			<p>A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</p>
+		</description>
+	</element>
+
+	<element name="Reach" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_REACH">
+		<description>
+			<p>This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it.</p>
+		</description>
+	</element>
+
+	<element name="Special" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_SPECIAL">
+		<description>
+			<p>A weapon with the special property has unusual rules governing its use, explained in the weapon's description.</p>
+		</description>
+	</element>
+
+	<element name="Thrown" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_THROWN">
+		<description>
+			<p>If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.</p>
+		</description>
+	</element>
+
+	<element name="Two-Handed" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_TWOHANDED">
+		<description>
+			<p>This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</p>
+		</description>
+	</element>
+
+	<element name="Versatile" type="Rule" source="Player’s Handbook" id="ID_WOTC_PHB_RULE_WEAPON_PROPERTIES_VERSATILE">
+		<description>
+			<p>This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.</p>
+		</description>
+	</element>
+	<!--End Weapon Properties-->
+</elements>

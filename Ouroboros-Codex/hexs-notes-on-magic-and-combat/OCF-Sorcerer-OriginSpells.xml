@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sorcerer Origin Spells</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="OCF-Sorcerer-OriginSpells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Sorcerer-OriginSpells.xml" />
+		</update>
+	</info>
+
+	<!--Divine Soul-->
+	<element name="Arcana Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ARCANA_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Arcana Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>detect magic, magic missile</em></td></tr>
+				<tr><td>3rd</td><td><em>magic weapon, Nystul's magic aura</em></td></tr>
+				<tr><td>5th</td><td><em>dispel magic, magic circle</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, Leomund's secret chest</em></td></tr>
+				<tr><td>9th</td><td><em>planar binding, teleportation circle</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Arcana Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANAR_BINDING" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Death Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_DIVINE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Death Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life, ray of sickness</em></td></tr>
+				<tr><td>3rd</td><td><em>blindness/deafness, ray of enfeeblement</em></td></tr>
+				<tr><td>5th</td><td><em>animate dead, vampiric touch</em></td></tr>
+				<tr><td>7th</td><td><em>blight, death ward</em></td></tr>
+				<tr><td>9th</td><td><em>antilife shell, cloudkill</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Divine Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Forge Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_FORGE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Forge Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>identify, searing smite</em></td></tr>
+				<tr><td>3rd</td><td><em>heat metal, magic weapon</em></td></tr>
+				<tr><td>5th</td><td><em>elemental weapon, protection from energy</em></td></tr>
+				<tr><td>7th</td><td><em>fabricate, wall of fire</em></td></tr> 
+				<tr><td>9th</td><td><em>animate objects, creation</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Forge Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_WEAPON" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATION" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Grave Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_GRAVE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Grave Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>bane, false life</em></td></tr>
+				<tr><td>3rd</td><td><em>gentle repose, ray of enfeeblement</em></td></tr>
+				<tr><td>5th</td><td><em>revivify, vampiric touch</em></td></tr>
+				<tr><td>7th</td><td><em>blight, death ward</em></td></tr>
+				<tr><td>9th</td><td><em>antilife shell, raise dead</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Grave Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Knowledge Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_KNOWLEDGE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Knowledge Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>command, identify</em></td></tr>
+				<tr><td>3rd</td><td><em>augury, suggestion</em></td></tr>
+				<tr><td>5th</td><td><em>nondetection, speak with dead</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, confusion</em></td></tr>
+				<tr><td>9th</td><td><em>legend lore, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Knowledge Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Life Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIFE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Life Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>bless, cure wounds</em></td></tr>
+				<tr><td>3rd</td><td><em>lesser restoration, spiritual weapon</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, revivify</em></td></tr>
+				<tr><td>7th</td><td><em>death ward, guardian of faith</em></td></tr>
+				<tr><td>9th</td><td><em>mass cure wounds, raise dead</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Life Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Light Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIGHT_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Light Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands, faerie fire</em></td></tr>
+				<tr><td>3rd</td><td><em>flaming sphere, scorching ray</em></td></tr>
+				<tr><td>5th</td><td><em>daylight, fireball</em></td></tr>
+				<tr><td>7th</td><td><em>guardian of faith, wall of fire</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Light Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Nature Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_NATURE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Nature Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>animal friendship, speak with animals</em></td></tr>
+				<tr><td>3rd</td><td><em>barkskin, spike growth</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth, wind wall</em></td></tr>
+				<tr><td>7th</td><td><em>dominate beast, grasping vine</em></td></tr>
+				<tr><td>9th</td><td><em>insect plague, tree stride</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Nature Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Order Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ORDER_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Order Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>command, heroism</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person, zone of truth</em></td></tr>
+				<tr><td>5th</td><td><em>mass healing word, slow</em></td></tr>
+				<tr><td>7th</td><td><em>compulsion, locate creature</em></td></tr>
+				<tr><td>9th</td><td><em>commune, dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Order Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Peace Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_PEACE_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Peace Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>heroism, sanctuary</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, warding bond</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, sending</em></td></tr>
+				<tr><td>7th</td><td><em>aura of purity, Otiluke’s resilient sphere</em></td></tr>
+				<tr><td>9th</td><td><em>greater restoration, Rary’s telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Peace Domain.</description>
+		</sheet>
+		<rules>	
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Tempest Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TEMPEST_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Tempest Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>gust of wind, shatter</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, sleet storm</em></td></tr>
+				<tr><td>7th</td><td><em>control water, ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>destructive wave, insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Tempest Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Trickery Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TRICKERY_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Trickery Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>charm person, disguise self</em></td></tr>
+				<tr><td>3rd</td><td><em>mirror image, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>blink, dispel magic</em></td></tr>
+				<tr><td>7th</td><td><em>dimension door, polymorph</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, modify memory</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Trickery Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Twilight Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TWILIGHT_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Twilight Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>faerie fire, sleep</em></td></tr>
+				<tr><td>3rd</td><td><em>moonbeam, see invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>aura of vitality, Leomund’s tiny hut</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life, greater invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>circle of power, mislead</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Twilight Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_VITALITY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="War Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_WAR_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>War Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>divine favor, shield of faith</em></td></tr>
+				<tr><td>3rd</td><td><em>magic weapon, spiritual weapon</em></td></tr>
+				<tr><td>5th</td><td><em>crusader’s mantle, spirit guardians</em></td></tr>
+				<tr><td>7th</td><td><em>freedom of movement, stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, hold monster</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the War Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<!--Draconic Bloodline-->
+	<element name="Draconic Bloodline Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_DRACONIC_BLOODLINE_SPELLS">
+		<description>
+			<h5>Draconic Bloodline Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>chromatic orb, cause fear</em></td></tr>
+				<tr><td>3rd</td><td><em>dragon’s breath, levitate</em></td></tr>
+				<tr><td>5th</td><td><em>fly, fear</em></td></tr>
+				<tr><td>7th</td><td><em>leomund’s secret chest, elemental bane</em></td></tr>
+				<tr><td>9th</td><td><em>legend lore, control winds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHROMATIC_ORB" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+
+	<!--Shadow Magic-->
+	<element name="Shadow Magic Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_SHADOW_MAGIC_SPELLS">
+		<description>
+			<h5>Shadow Magic Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, disguise self</em></td></tr>
+				<tr><td>3rd</td><td><em>shadow blade, blindness/deafness</em></td></tr>
+				<tr><td>5th</td><td><em>animate dead, gaseous form</em></td></tr>
+				<tr><td>7th</td><td><em>shadow of moil, evard’s black tentacles</em></td></tr>
+				<tr><td>9th</td><td><em>negative energy flood, danse macabre</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DANSE_MACABRE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	
+	<!--Storm Sorcery-->
+	<element name="Storm Sorcery Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_STORM_SORCERY_SPELLS">
+		<description>
+			<h5>Storm Sorcery Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderwave, feather fall</em></td></tr>
+				<tr><td>3rd</td><td><em>warding wind, gust of wind</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, thunder step</em></td></tr>
+				<tr><td>7th</td><td><em>storm sphere, freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>control winds, wrath of nature</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WRATH_OF_NATURE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	
+	<!--Wild Magic-->
+	<element name="Wild Magic Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_WILD_MAGIC_SPELLS">
+		<description>
+			<h5>Wild Magic Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>chaos bolt, color spray</em></td></tr>
+				<tr><td>3rd</td><td><em>enlarge/reduce, mirror image</em></td></tr>
+				<tr><td>5th</td><td><em>hypnotic pattern, slow</em></td></tr>
+				<tr><td>7th</td><td><em>polymorph, dimension door</em></td></tr>
+				<tr><td>9th</td><td><em>reincarnate, wall of force</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_GGTR_SPELL_CHAOS_BOLT" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	
+
+	<!--Item-->
+	<element name="Sorcerer, LV01: Origin Spells" type="Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_OCF_SORCERER_ORIGIN_SPELLS">
+		<compendium display="false" />
+		<description>
+			<p>Adds much needed origin spells to older sorcerer origins.</p>
+			<p>List taken from locked reddit thread https://www.reddit.com/r/DnDHomebrew/comments/d1t3zk/bonus_spell_lists_mirroring_the_abberant_mind_ua/ </p>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<h5>Divine Soul Origin Spells</h5>
+			<p>Choose a cleric domain. Gain those spells upon reaching the appropriate level.</p>
+			<h5>Draconic Bloodline Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>chromatic orb, cause fear</em></td></tr>
+				<tr><td>3rd</td><td><em>dragon’s breath, levitate</em></td></tr>
+				<tr><td>5th</td><td><em>fly, fear</em></td></tr>
+				<tr><td>7th</td><td><em>leomund’s secret chest, elemental bane</em></td></tr>
+				<tr><td>9th</td><td><em>legend lore, control winds</em></td></tr>
+			</table>
+			<h5>Shadow Magic Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, disguise self</em></td></tr>
+				<tr><td>3rd</td><td><em>shadow blade, blindness/deafness</em></td></tr>
+				<tr><td>5th</td><td><em>animate dead, gaseous form</em></td></tr>
+				<tr><td>7th</td><td><em>shadow of moil, evard’s black tentacles</em></td></tr>
+				<tr><td>9th</td><td><em>negative energy flood, danse macabre</em></td></tr>
+			</table>
+			<h5>Storm Sorcery Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>thunderwave, feather fall</em></td></tr>
+				<tr><td>3rd</td><td><em>warding wind, gust of wind</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, thunder step</em></td></tr>
+				<tr><td>7th</td><td><em>storm sphere, freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>control winds, wrath of nature</em></td></tr>
+			</table>
+			<h5>Wild Magic Origin Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>chaos bolt, color spray</em></td></tr>
+				<tr><td>3rd</td><td><em>enlarge/reduce, mirror image</em></td></tr>
+				<tr><td>5th</td><td><em>hypnotic pattern, slow</em></td></tr>
+				<tr><td>7th</td><td><em>polymorph, dimension door</em></td></tr>
+				<tr><td>9th</td><td><em>reincarnate, wall of force</em></td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">OCF, Sorcerer, first level, 1st level, spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Divine Origin" supports="Divine Origin" requirements="ID_WOTC_XGTE_SORCERER_ARCHETYPE_DIVINE_SOUL"/>
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_DRACONIC_BLOODLINE_SPELLS" requirements="ID_WOTC_PHB_ARCHETYPE_DRACONIC_BLOODLINE"/>
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_SHADOW_MAGIC_SPELLS" requirements="ID_WOTC_XGTE_SORCERER_ARCHETYPE_SHADOW_MAGIC"/>
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_STORM_SORCERY_SPELLS" requirements="ID_WOTC_SCAG_ARCHETYPE_STORM_SORCERY"/>
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_WILD_MAGIC_SPELLS" requirements="ID_WOTC_PHB_ARCHETYPE_WILD_MAGIC"/>
+		</rules>
+	</element>
+</elements>

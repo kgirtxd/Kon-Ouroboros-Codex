@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Imprisoned</name>
+		<description>Imprisoned Background</description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="Background-Imprisoned.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Background-Imprisoned.xml" />
+		</update>
+	</info>
+
+	<element name="Imprisoned" type="Background" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_BACKGROUND_IMPRISONED">
+		<description>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> 2 from Athletics, Slight of Hand, Stealth, Survival </li>
+				<li><strong>Language:</strong> The language of your captors</li>
+				<li><strong>Tool Proficiency / Language:</strong> Learned while doing time</li>
+				<li><strong>Equipment:</strong> A tattoo or brand to mark where you are/were captive, ragged common clothes, small sack with 10gp</li>
+			</ul>
+			<div element="ID_OBC_FLMR_BACKGROUND_FEATURE_IMPRISONED_NEVER_UNARMED" />
+		</description>
+		<setters>
+			<set name="short">2 Athletics / Slight of Hand / Stealth / Survival, Tool / Language, Language</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Tool (Imprisoned)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+			<select type="Language" name="Captor's Language (Imprisoned)" supports="Standard||Exotic" />
+			<select type="Background Feature" name="First Tool Proficiency / Language" supports="Imprisoned Select" />
+			<grant type="Background Feature" id="ID_OBC_FLMR_BACKGROUND_FEATURE_IMPRISONED_NEVER_UNARMED" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Background Feature" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_BACKGROUND_IMPRISONED_SELECT">
+		<supports>Imprisoned Select</supports>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Imprisoned)" supports="Tool" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="Additional Language" type="Background Feature" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_BACKGROUND_IMPRISONED_LANGUAGE_SELECT">
+		<supports>Imprisoned Select</supports>
+		<rules>
+			<select type="Language" name="Additional Language (Imprisoned)" supports="Standard||Exotic" />
+		</rules>
+		<sheet display="false" />
+		<compendium display="false" />
+	</element>
+
+	<element name="Feature: Never Unarmed" type="Background Feature" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_BACKGROUND_FEATURE_IMPRISONED_NEVER_UNARMED">
+		<supports>Background Feature, Imprisoned</supports>
+		<description>
+			<p>Your time in the slammer has taught you a great many things. One of the most valuable is how to remain armed. You can hide a dagger on your person in such a way to where it is difficult to be found, those searching you for it roll investigation at disadvantage vs your deception. </p>
+			<p class="indent">Additionally with just some basic materials and a hour of work you can craft yourself a shiv. Stats identical to dagger without the thrown property.</p>
+		</description>
+		<sheet alt="Never Unarmed" />
+	</element>
+</elements>
