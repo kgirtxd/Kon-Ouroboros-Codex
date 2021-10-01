@@ -2,12 +2,20 @@
 <index>
 	<info>
 		<name>Ouroboros Codex</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Ouroboros-Codex.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex.index" />
 		</update>
 	</info>
 	<files>
 		<!--AMPS-->
 		<file name="vandersnitch-guide-to-races-and-cultures.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures.index" />
+
+		<!--Konard-->
+		<file name="festers-list-of-monsters-and-races.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races.index" />
+		<file name="hexs-notes-on-magic-and-combat.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat.index" />
+
+		<!--Other-->
+		<file name="Aurora-Outtakes.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes.index" />
+		<file name="Campaigns.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns.index" />
 	</files>
 </index>

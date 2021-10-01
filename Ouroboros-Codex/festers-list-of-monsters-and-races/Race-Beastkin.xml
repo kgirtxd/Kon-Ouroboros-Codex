@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.0.1">
+			<file name="Race-Beastkin.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Beastkin.xml" />
+		</update>
+	</info>
+
+	<element name="Beastkin" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_BEASTKIN">
+		<description>
+			<p></p>
+			<h4>HEADING</h4>
+			<p></p>
+			<p class="indent"></p>
+			<h4>HEADING</h4>
+			<p></p>
+			<p class="indent"></p>
+			<h4>name Traits</h4>
+			<p></p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one score by 2 and increase a different score by 1, or you increase three different scores by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Beastkin mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 50 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Beastkin who live in groups tend to have a similar disposition.  When alone their alignments differ based on their circumstances.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is medium, anywhere beteen 4-6 feet tall depending on species.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your speed is 30ft.</p>
+			<p class="indent"><strong><em>Beast Sense.</em></strong> You can detect the location of all living creatures within 30ft as if you can see them.</p>
+			<p class="indent"><strong><em>Animal Instincts.</em></strong> You gain proficiency in 2 of Perception, Animal Handling, Survival, Nature, or Insight.</p>
+			<p class="indent"><strong><em>Speak with Beasts.</em></strong> You can communicate with neutral and friendly animals using sounds and gestures. Animals can only handle basic concepts and are not under your control.</p>
+			<p class="indent"><strong><em>Tireless.</em></strong> You have the energy of a beast within you. You require little sleep, and you are always generally aware of what goes on around you when you do sleep. When asleep you get to roll perception to detect invaders and you only need to sleep 4 hours a night.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Commonand one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Beastkin)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language, Beastkin" supports="Standard||Exotic" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_OBC_FLMC_VISION_BEAST_SENSE" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_VISION_ANIMAL_INSTINCTS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_SPEAK_WITH_BEASTS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TIRELESS" />
+			<select type="Sub Race" name="Beaskin Species" supports="Beastkin" />
+		</rules>
+	</element>
+
+	<element name="Beast Sense" type="Vision" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_VISION_BEAST_SENSE">
+		<description>
+			<p>You can detect the location of all living creatures within 30ft as if you can see them. </p>
+		</description>
+		<sheet>
+			<description>You can detect the location of all living creatures within 30ft as if you can see them. </description>
+		</sheet>
+	</element>
+
+	<element name="Animal Instincts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_VISION_ANIMAL_INSTINCTS">
+		<description>
+			<p>You gain proficiency in 2 of Perception, Animal Handling, Survival, Nature, or Insight. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Animal Instincts" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency, Animal Instincts" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Speak with Beasts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_SPEAK_WITH_BEASTS">
+		<description>
+			<p>You can communicate with neutral and friendly animals using sounds and gestures. Animals can only handle basic concepts and are not under your control.</p>
+		</description>
+		<sheet>
+			<description>You can communicate with neutral and friendly animals using sounds and gestures. Animals can only handle basic concepts and are not under your control.</description>
+		</sheet>
+	</element>
+
+	<element name="Tireless" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_TIRELESS">
+		<description>
+			<p>You have the energy of a beast within you.  You require little sleep, and you are always generally aware of what goes on around you when you do sleep. When asleep you get to roll perception to detect attacks and you only need to sleep 4 hours a night.</p>
+		</description>
+		<sheet>
+			<description>You require little sleep, and you are always generally aware of what goes on around you when you do sleep. When asleep you get to roll perception to detect attacks and you only need to sleep 4 hours a night.</description>
+		</sheet>
+	</element>
+
+	<!--Subraces-->
+	<!--Bearkin-->
+	<element name="Bearkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_BEARKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Tough Skin.</em></strong> You gain +1 AC and resistance to cold.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN" />
+		</rules>
+	</element>
+
+	<element name="Tough Skin" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN">
+		<description>
+			<p>You gain +1 AC and resistance to cold.</p>
+		</description>
+		<sheet>
+			<description>You gain +1 AC and resistance to cold.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat name="ac:calculation" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<!--Bunnykin-->
+	<element name="Bunnykin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_BUNNYKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity or Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Jackrabbit.</em></strong> Your walking speed increases by 5.</p>
+			<p class="indent"><strong><em>Overlooked.</em></strong> Lapines are fast and it is hard to take them seriously in a fight, opponents who would get an attack of opportunity against them must pass a dc 12 wisdom save or be unable to make the attack. This means they do not lose the reaction but cannot make said action against the Lapine.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="innate speed" value="5" bonus="bonus" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED" />
+		</rules>
+	</element>
+
+	<element name="Overlooked" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED">
+		<description>
+			<p>Lapines are fast and it is hard to take them seriously in a fight, opponents who would get an attack of opportunity against them must pass a dc 12 wisdom save or be unable to make the attack. This means they do not lose the reaction but cannot make said action against the Lapine.</p>
+		</description>
+		<sheet>
+			<description>Lapines are fast and it is hard to take them seriously in a fight, opponents who would get an attack of opportunity against them must pass a dc 12 wisdom save or be unable to make the attack. This means they do not lose the reaction but cannot make said action against the Lapine.</description>
+		</sheet>
+	</element>
+
+	<!--Catkin-->
+	<element name="Catkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_CATKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 90 feet of you as if it were bright light, and in darkness as if it were dim light.</p>
+			<p class="indent"><strong><em>Good Climber.</em></strong> You gain a climbing speed equal to your walking speed as long as you are not wearing medium or heavy armor nor a shield. Otherwise you have a climbing speed of 10.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="90" bonus="base" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER" />
+		</rules>
+	</element>
+
+	<element name="Good Climber" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER">
+		<description>
+			<p>You gain a climbing speed equal to your walking speed as long as you are not wearing medium or heavy armor nor a shield. Otherwise you have a climbing speed of 10.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy],[shield:none]" />
+			<stat name="innate speed:climb" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Foxkin-->
+	<element name="Foxkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_FOXKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Nimble Fox.</em></strong> Your walking speed increases by 5.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.</p>
+			<p class="indent"><strong><em>Carrion Eater.</em></strong> You gain Resistance to poison and disease.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="innate speed" value="5" bonus="bonus" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER" />
+		</rules>
+	</element>
+
+	<element name="Carrion Eater" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER">
+		<description>
+			<p>You gain immunity to the poisoned and diseased conditions.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_POISONED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_DISEASE" />
+		</rules>
+	</element>	
+
+	<!--Squirrelkin-->
+	<element name="Squirrelkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_SQUIRRELKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Danger Sense.</em></strong> Your tail gives you insight into danger. When faced with an enemy or situation that is dangerous to you, your tail will stiffen based on how deadly the situation.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_DANGER_SENSE" />
+		</rules>
+	</element>
+
+	<element name="Danger Sense" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_DANGER_SENSE">
+		<description>
+			<p>Your tail gives you insight into danger. When faced with an enemy or situation that is dangerous to you, your tail will stiffen based on how deadly the situation.</p>
+		</description>
+		<sheet>
+			<description>Your tail gives you insight into danger. When faced with an enemy or situation that is dangerous to you, your tail will stiffen based on how deadly the situation.</description>
+		</sheet>
+	</element>
+
+	<!--Wolfkin-->
+	<element name="Wolfkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_WOLFKIN">
+		<supports>Beastkin</supports>
+		<description>
+			<p>HERE</p>
+			<p class="indent"><strong><em>Ambush Predator.</em></strong> You add your proficiency bonus to your initiative rolls.</p>
+			<p class="indent"><strong><em>Pack Tactics.</em></strong> You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_AMBUSH_PREDATOR" />
+			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_PACK_TACTICS" />
+		</rules>
+	</element>
+
+	<element name="Ambush Predator" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_AMBUSH_PREDATOR">
+		<description>
+			<p>You add your proficiency bonus to your initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>You add your proficiency bonus to your initiative rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Pack Tactics" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_PACK_TACTICS">
+		<description>
+			<p>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+		</sheet>
+	</element>
+</elements>

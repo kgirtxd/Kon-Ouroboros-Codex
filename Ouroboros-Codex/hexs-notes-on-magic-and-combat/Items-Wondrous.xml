@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wondrous Items</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="Items-Wondrous.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Items-Wondrous.xml" />
+		</update>
+	</info>
+
+	<element name="Living Diamond" type="Magic Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_MAGIC_ITEM_LIVING_DIAMOND_UNCOMMON">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 3 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 10 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Living Diamond" type="Magic Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_MAGIC_ITEM_LIVING_DIAMOND_RARE">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 5 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 6 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Living Diamond" type="Magic Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_MAGIC_ITEM_LIVING_DIAMOND_LEGENDARY">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 10 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 3 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Unstoppable Rod" type="Magic Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_UNSTOPPABLE_ROD">
+		<description>
+			<p>This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to continue to move magically. Until you or another creature uses an action to push the button again, the rod continues to move at a constant speed and direction, even if it is defying gravity. 
+			The rod can handle up to 8,000 pounds of opposing force. More force causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, to alter the movement of the rod for 6 seconds on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+</elements>

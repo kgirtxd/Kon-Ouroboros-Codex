@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>ArmorKon</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="Items-Weapons.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Items-Weapons.xml" />
+		</update>
+	</info>
+
+	
+
+</elements>

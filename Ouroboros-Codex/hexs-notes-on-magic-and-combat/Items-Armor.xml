@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>ArmorKon</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="Items-Armor.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Items-Armor.xml" />
+		</update>
+	</info>
+
+	<!-- light armor -->
+
+
+	<!-- heavy armor -->
+
+
+	<!--shield-->
+	<element name="Armshield" type="Armor" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARMOR_ARMSHIELD">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>A armshield is made from wood or metal and is strapped to the offhand forearm. Wielding a armshield increases your Armor Class by 1. Wearing a armshield will cause you to lose proficiency bonus with two handed weapons.  You can benefit from only one armshield at a time.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">6</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">forearm, secondary</set>
+			<set name="type">Armshield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+1</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" />
+		</rules>
+	</element>
+</elements>

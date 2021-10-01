@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arcane Trickster and Eldritch Knight Spellcasting</name>
+		<update version="0.0.1">
+			<file name="OCF-ATnEK-Spellcasting.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-ATnEK-Spellcasting.xml" />
+		</update>
+	</info>
+
+	<!--OCF Grants and Spellcasting Overloading-->
+	<element name="Eldritch Knight Sellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ELDRITCH_KNIGHT_SPELLCASTING" />
+
+	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ELDRITCH_KNIGHT_SPELLCASTING</requirements>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Eldritch Knight" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Arcane Trickster Sellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARCANE_TRICKSTER_SPELLCASTING" />
+
+	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARCANE_TRICKSTER_SPELLCASTING</requirements>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Intelligence" allowReplace="true">
+			<list>Wizard,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<!--Fighter-->
+	<element name="Bard Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_BARD">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the bard spell list. You learn an additional bard cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level bard spells of your choice, two of which you must choose from the abjuration and evocation spells on the bard spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more bard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the bard spells you know with another spell of your choice from the bard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Charisma is your spellcasting ability for your bard spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" ability="Charisma" prepare="false" allowReplace="true">
+			<list>Bard,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Bard, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Bard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Bard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Cleric Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_CLERIC">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the cleric spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the cleric spell list. You learn an additional cleric cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level cleric spells of your choice, two of which you must choose from the abjuration and evocation spells on the cleric spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Wisdom is your spellcasting ability for your cleric spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Cleric,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Cleric, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Cleric, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Cleric), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Druid Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_DRUID">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the druid spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the druid spell list. You learn an additional druid cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level druid spells of your choice, two of which you must choose from the abjuration and evocation spells on the druid spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more druid spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Wisdom is your spellcasting ability for your druid spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<compendium display="false" />
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Eldritch Knight" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Druid,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Druid, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Druid, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Druid), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Sorcerer Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_SORCERER">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the sorcerer spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level sorcerer spells of your choice, two of which you must choose from the abjuration and evocation spells on the sorcerer spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more sorcerer spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the sorcerer spells you know with another spell of your choice from the sorcerer spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Charisma is your spellcasting ability for your sorcerer spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" ability="Charisma" prepare="false" allowReplace="true">
+			<list>Sorcerer,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Sorcerer, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Sorcerer), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Warlock Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_WARLOCK">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your warlock spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level warlock spells of your choice, two of which you must choose from the abjuration and evocation spells on the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more warlock spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the warlock spells you know with another spell of your choice from the warlock spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Charisma is your spellcasting ability for your warlock spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Warlock,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Warlock, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Warlock, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Warlock), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Wizard Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING_WIZARD">
+		<supports>EK OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<compendium display="false" />
+		<spellcasting name="Eldritch Knight" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+
+	<element name="Fighter, LV03: Eldritch Knight Spellcasting" type="Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_OCF_ELDRITCH_KNIGHT_SPELLCASTING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<p>You may select what class your Eldritch Knight Spellcasting is tied to.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">OCF, Fighter, Spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ELDRITCH_KNIGHT_SPELLCASTING" />
+			<select type="Archetype Feature" name="Magic Source" supports="EK OCF Spellcasting" requirements="ID_WOTC_PHB_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT" />
+		</rules>
+	</element>
+
+	<!--Rogue-->
+	<element name="Bard Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_BARD">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the bard spell list. You learn another bard cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level bard spells of your choice, two of which you must choose from the enchantment and illusion spells on the bard spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more bard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the bard spells you know with another spell of your choice from the bard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Charisma is your spellcasting ability for your bard spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Charisma" allowReplace="true">
+			<list>Bard,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Bard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Bard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Bard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Cleric Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_CLERIC">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the cleric spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the cleric spell list. You learn another cleric cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level cleric spells of your choice, two of which you must choose from the enchantment and illusion spells on the cleric spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Wisdom is your spellcasting ability for your cleric spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Wisdom" allowReplace="true">
+			<list>Cleric,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Cleric, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Cleric, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Cleric, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Druid Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_DRUID">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the druid spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the druid spell list. You learn another druid cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level druid spells of your choice, two of which you must choose from the enchantment and illusion spells on the druid spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more druid spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Wisdom is your spellcasting ability for your druid spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Wisdom" allowReplace="true">
+			<list>Druid,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Druid, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Druid, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Druid, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Druid||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Sorcerer Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_SORCERER">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the sorcerer spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the sorcerer spell list. You learn another sorcerer cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level sorcerer spells of your choice, two of which you must choose from the enchantment and illusion spells on the sorcerer spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more sorcerer spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the sorcerer spells you know with another spell of your choice from the sorcerer spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Charisma is your spellcasting ability for your sorcerer spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Charisma" allowReplace="true">
+			<list>Sorcerer,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Sorcerer, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Sorcerer, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Warlock Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_WARLOCK">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the warlock spell list. You learn another warlock cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your warlock spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level warlock spells of your choice, two of which you must choose from the enchantment and illusion spells on the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more warlock spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the warlock spells you know with another spell of your choice from the warlock spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Charisma is your spellcasting ability for your warlock spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Charisma" allowReplace="true">
+			<list>Warlock,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Warlock, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Warlock, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Warlock, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Warlock||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Wizard Spellcasting" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING_WIZARD">
+		<supports>AT OCF Spellcasting</supports>
+		<description>
+			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Arcane Trickster" ability="Intelligence" allowReplace="true">
+			<list>Wizard,(Enchantment||Illusion)</list>
+		</spellcasting>
+		<rules>
+			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+		</rules>
+	</element>
+
+	<element name="Rogue, LV03: Arcane Trickster Spellcasting" type="Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_OCF_ARCANE_TRICKSTER_SPELLCASTING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<p>You may select what class your Arcane Trickster Spellcasting is tied to.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">OCF, Rogue, Spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARCANE_TRICKSTER_SPELLCASTING" />
+			<select type="Archetype Feature" name="Magic Source" supports="AT OCF Spellcasting" requirements="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER" />
+		</rules>
+	</element>
+</elements>
