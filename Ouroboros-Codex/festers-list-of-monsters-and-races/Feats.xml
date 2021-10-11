@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Racial Feats</name>
+		<update version="0.0.1">
+			<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Feats.xml" />
+		</update>
+	</info>
+
+	<!--Kandra-->
+	<element name="Improvised Form" type="Feat" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_FEAT_IMPROVISED_FORM">
+		<requirements>ID_OBC_FLMC_RACE_KANDRA</requirements>
+		<prerequisite>Kandra</prerequisite>
+		<description>
+			<p>Your experience with different bodies has given you better understanding on how to shape yourself.  You are able to recreate any organs that you have previously digested from memory thereby enhancing your ooze or borrowed form.  In addition you can add extra features or appendages to any humanoid or beast form as long as you have used them previously.</p>
+		</description>
+		<sheet>
+			<description>You are able to recreate any organs that you have previously digested from memory thereby enhancing your ooze or borrowed form. In addition you can add extra features or appendages to any humanoid or beast form as long as you have used them previously.</description>
+		</sheet>
+	</element>
+
+	<element name="Sculptor of Flesh" type="Feat" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_FEAT_SCULPTOR_OF_FLESH">
+		<requirements>ID_OBC_FLMC_RACE_KANDRA</requirements>
+		<prerequisite>Kandra</prerequisite>
+		<description>
+			<p>You gain the ability to deduce the appearance of a cadaver’s missing tissue and fill in the gapes.  You can estimate the proper appearance for a skeleton you haven’t seen the owner of and become a believable form of a creature that the bones belonged to.</p>
+		</description>
+		<sheet>
+			<description>You can estimate the proper appearance for a skeleton you haven’t seen the owner of and become a believable form of a creature that the bones belonged to.</description>
+		</sheet>
+	</element>	
+</elements>

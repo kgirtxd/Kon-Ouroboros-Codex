@@ -2,13 +2,15 @@
 <index>
 	<info>
 		<name>Fester's List of Monsters and Races</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="festers-list-of-monsters-and-races.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races.index" />
 		</update>
 	</info>
 	<files>
 		<file name="Background-Imprisoned.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Background-Imprisoned.xml" />
+		<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Feats.xml" />
 		<file name="Race-Beastkin.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Beastkin.xml" />
+		<file name="Race-Kandra.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Kandra.xml" />
 		<file name="Race-Oni.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Oni.xml" />
 		<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/source.xml" />
 	</files>
