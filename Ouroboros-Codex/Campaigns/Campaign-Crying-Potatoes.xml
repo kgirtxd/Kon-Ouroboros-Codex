@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -186,6 +186,48 @@
 			<item>ID_WOTC_PHB_ITEM_WATERSKIN</item>
 			<item>ID_WOTC_PHB_ITEM_ROPE_HEMPEN_50FEET</item>
 		</extract>-->
+	</element>
+
+	<element name="Living Diamond" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_LIVING_DIAMOND_UNCOMMON">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 3 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 10 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Living Diamond" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_LIVING_DIAMOND_RARE">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 5 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 6 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Living Diamond" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_LIVING_DIAMOND_LEGENDARY">
+		<description>
+			<p>A white rock that vaguely resembles an uncut diamond.</p>
+			<p class="indent">This rock has 10 charges. Each charge is equivalent to a diamond worth 100gp that can be consumed for a resurrection spell.</p>
+			<p class="indent">The stone regains 1 charge after 3 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
 	</element>
 
 	<!--Spells-->
