@@ -4,16 +4,16 @@
 		<name>Sorcerer Origin Spells</name>
 		<description></description>
 		<author>Konard</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="OCF-Sorcerer-OriginSpells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Sorcerer-OriginSpells.xml" />
 		</update>
 	</info>
 
 	<!--Divine Soul-->
-	<element name="Arcana Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ARCANA_DOMAIN">
+	<element name="Arcana Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ARCANA_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Arcana Domain Spells</h5>
+			<h5>Arcana Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -41,10 +41,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Death Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_DIVINE_DOMAIN">
+	<element name="Death Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_DIVINE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Death Domain Spells</h5>
+			<h5>Death Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -72,10 +72,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Forge Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_FORGE_DOMAIN">
+	<element name="Forge Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_FORGE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Forge Domain Spells</h5>
+			<h5>Forge Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -103,10 +103,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_CREATION" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Grave Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_GRAVE_DOMAIN">
+	<element name="Grave Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_GRAVE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Grave Domain Spells</h5>
+			<h5>Grave Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -134,10 +134,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Knowledge Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_KNOWLEDGE_DOMAIN">
+	<element name="Knowledge Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_KNOWLEDGE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Knowledge Domain Spells</h5>
+			<h5>Knowledge Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -165,10 +165,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Life Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIFE_DOMAIN">
+	<element name="Life Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIFE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Life Domain Spells</h5>
+			<h5>Life Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -196,10 +196,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Light Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIGHT_DOMAIN">
+	<element name="Light Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_LIGHT_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Light Domain Spells</h5>
+			<h5>Light Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -227,10 +227,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Nature Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_NATURE_DOMAIN">
+	<element name="Nature Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_NATURE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Nature Domain Spells</h5>
+			<h5>Nature Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -258,10 +258,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Order Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ORDER_DOMAIN">
+	<element name="Order Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_ORDER_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Order Domain Spells</h5>
+			<h5>Order Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -289,10 +289,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Peace Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_PEACE_DOMAIN">
+	<element name="Peace Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_PEACE_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Peace Domain Spells</h5>
+			<h5>Peace Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -320,10 +320,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Tempest Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TEMPEST_DOMAIN">
+	<element name="Tempest Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TEMPEST_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Tempest Domain Spells</h5>
+			<h5>Tempest Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -351,10 +351,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Trickery Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TRICKERY_DOMAIN">
+	<element name="Trickery Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TRICKERY_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Trickery Domain Spells</h5>
+			<h5>Trickery Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -382,10 +382,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="Twilight Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TWILIGHT_DOMAIN">
+	<element name="Twilight Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_TWILIGHT_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>Twilight Domain Spells</h5>
+			<h5>Twilight Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
@@ -413,10 +413,10 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
-	<element name="War Domain" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_WAR_DOMAIN">
+	<element name="War Domain Origin Spells" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_CLASS_FEATURE_WAR_DOMAIN">
 		<supports>Divine Origin</supports>
 		<description>
-			<h5>War Domain Spells</h5>
+			<h5>War Domain Origin Spells</h5>
 			<table>
 				<thead>
 					<tr><td>Sorcerer Level</td><td>Spells</td></tr>

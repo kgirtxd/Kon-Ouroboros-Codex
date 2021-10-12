@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -50,6 +50,22 @@
 			<set name="damage" type="piercing">2d6</set>
 			<set name="proficiency">ID_WOTC_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_PISTOL_AUTOMATIC</set>
 			<set name="reload">15</set>
+		</setters>
+	</element>
+
+	<element name="Mom's Love" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_B126_MAGIC_ITEM_MOMS_LOVE"> 
+		<description>
+			<p><em>Mom's Love</em> is the signature weapon of Nalista "Nails" Swiftsteel made from her mother's revolver given to her as she set out to adventure.</p>
+			<p> You gain a +1 bonus to attack and damage rolls with <em>Mom's Love</em>. If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="revolver">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Revolver</set>
 		</setters>
 	</element>
 
@@ -335,6 +351,29 @@
 			<set name="duration">1 round</set>
 		</setters>
 	</element>
+
+	<element name="Time Dilation" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_TIME_DILATION">
+        <supports>Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Chaotic currents of time rip through a 20-foot-sphere. Each creature in the sphere on the turn when you cast the spell must make a Constitution saving throw. On a failed save, a creature takes 2d8 force damage, and its speed is halved until the end of the next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.</p>
+            <p class="indent">Until the start of your next turn, any creature outside the sphere attempting to pick up an object in the sphere that isn’t being worn or carried must make a successful Strength check against your spell save DC to pick up or move that object.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">force,dunamancy,cronourgy</set>
+            <set name="level">1</set>
+            <set name="school" addition="Dunamancy">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 round</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
 	<element name="Veil" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_VEIL">
 		<supports>Wizard</supports>

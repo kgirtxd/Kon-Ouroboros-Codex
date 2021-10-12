@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw/source.xml" />
+		</update>
+	</info>
+
+	<element name="Atelsi's Secrets of The Dragon's Maw" type="Source" source="Core" id="ID_OBC_ASDM_SOURCE_ATELSIS_SECRETS_OF_THE_DRAGONS_MAW">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">ASDM</set>
+			<set name="url"></set>
+			<set name="image"></set>
+			<set name="author" abbreviation="B126" url="https://github.com/Ouroboros-dnd/Codex">Basic126</set>
+			<set name="homebrew">true</set>
+			<set name="release">20211012</set>
+			<set name="information">Ouroboros Codex Supplement</set>
+		</setters>
+	</element>
+</elements>
