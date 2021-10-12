@@ -3,7 +3,7 @@
 	<info>
 		<name>Upgradeable Steel Defender</name>
 		<author>Basic126</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Upgradeable-Steel-Defender.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw/Upgradeable-Steel-Defender.xml" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
 	
 	<!-- class -->
 	<element name="Defender Upgrade" type="Class" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_STEEL_DEFENDER_UPGRADES" >
-		<requirements>ID_B126_RACE_UPGRADEABLE_STEEL_DEFENDER</requirements>
+		<requirements>ID_OBC_ASDM_RACE_UPGRADEABLE_STEEL_DEFENDER</requirements>
 		<sheet display="false"/>
 		<setters>
 			<set name="hd">d8</set>
