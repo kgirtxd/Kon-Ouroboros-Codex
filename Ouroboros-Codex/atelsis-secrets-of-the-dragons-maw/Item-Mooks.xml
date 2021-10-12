@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Mooks</name>
+		<update version="0.0.1">
+			<file name="Item-Mook.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw/Item-Mook.xml" />
+		</update>
+	</info>
+	
+	<element name="Red Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RED_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored red.</p>
+			<description>
+				<p><em>Small ooze</em></p>
+					<ul class="unstyled mb">
+					<li><strong>Armor Class</strong> 1</li>
+					<li><strong>Hit Points</strong>1</li>
+					<li><strong>Speed</strong> 10 ft.</li>
+				</ul>
+				<table style="text-align:center">
+					<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+					<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+				</table>
+				<ul class="unstyled mb">
+					<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+					<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+					<li><strong>Languages</strong> Understands the languages you speak</li>
+					<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+				</ul>
+				<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+				<p><strong><em>Multiply.</em></strong> When fed 8gp worth of red food and water will grow and split into 2 seperate creatures over 1 day.</p>
+				<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within red. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of fire damage.</p>
+			</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Green Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_GREEN_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored green.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of green food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within green. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of acid damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Blue Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_BLUE_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored blue.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of blue food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within blue. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of lightning damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Brown Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_BROWN_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored brown.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of brown food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within brown. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of poison damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Purple Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_PURPLE_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored purple.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of purple food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within purple. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of psychic damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="White Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_WHITE_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored white.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of white food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within white. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of cold damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Clear Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLEAR_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored clear? <em>How does that even work?</em></p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of clear food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within clear? If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of force damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Black Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_BLACK_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored black.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of black food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within black. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of necrotic damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Yellow Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_YELLOW_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored yellow.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of yellow food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within yellow. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of radiant damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Orange Mook" type="Item" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_ORANGE_MOOK ">
+		<description>
+			<p>An adorable slime companion, this one is colored orange.</p>
+			<description>
+			<p><em>Small ooze</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 1</li>
+			<li><strong>Hit Points</strong>1</li>
+			<li><strong>Speed</strong> 10 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>1 (-5)</td><td>6 (-2)</td><td>15 (+3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Condition Immunities</strong> Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone</li>
+				<li><strong>Senses</strong> Blindsight 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> Understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Love.</em></strong> Loves the last person that held it unconditionally.</p>
+			<p><strong><em>Multiply.</em></strong> When fed 8gp worth of orange food and water will grow and split into 2 seperate creatures over 1 day.</p>
+			<p><strong><em>Explosion.</em></strong> When killed will violently explode into a 10ft by 10ft square, painting everything within orange. If thrown the mook will take 1 damage upon landing. Any creature that ends their turn within the 10ft by 10ft square will take 1 point of thunder damage.</p>
+		</description>
+		</description>
+		<setters>
+			<set name="category">Mooks</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Mook</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>

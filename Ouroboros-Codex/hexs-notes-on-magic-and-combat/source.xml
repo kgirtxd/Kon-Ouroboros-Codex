@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/source.xml" />
 		</update>
 	</info>
 
-	<element name="Hex's Notes on Magic and Combat" type="Source" source="Core" id="ID_OBC_HTMC_SOURCE_Hexs_Notes_on_Magic_and_Combat">
+	<element name="Hex's Notes on Magic and Combat" type="Source" source="Core" id="ID_OBC_HTMC_SOURCE_HEXS_NOTES_ON_MAGIC_AND_COMBAT">
 		<description>
 			<![CDATA[<p></p>]]>
 		</description>

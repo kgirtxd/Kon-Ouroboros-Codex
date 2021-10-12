@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Upgradeable Steel Defender</name>
+		<author>Basic126</author>
+		<update version="0.0.1">
+			<file name="Upgradeable-Steel-Defender.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw/Upgradeable-Steel-Defender.xml" />
+		</update>
+	</info>
+	
+	<!-- race -->
+	<element name="Steel Defender" type="Race" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACE_UPGRADEABLE_STEEL_DEFENDER">
+		<description>
+			<p><i>Do <b>NOT</b> select this race unless you plan on using the Upgradeable Steel Defender homebrew! Do not modify the ability scores!</i></p>
+			<p>Your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="4" />
+			<stat name="dexterity" value="2"  />
+			<stat name="constitution" value="4" />
+			<stat name="intelligence" value="-6" />
+			<stat name="charisma" value="-4" />
+			<stat name="innate speed" value="40" bonus="base"/>
+			<stat name="athletics:proficiency" value="proficiency" />
+			<stat name="perception:proficiency" value="proficiency" />
+			<stat name="perception:proficiency" value="proficiency" bonus="double" />
+			<stat name="ac:calculation" value="15" bonus="calculation" equipped="[armor:none]"/>
+			<stat name="ac:calculation" value="2" level="15" />
+			<grant type="size" id="ID_SIZE_MEDIUM" requirements="!ID_INTERNAL_RACIAL_TRAIT_LARGE"/>
+			<grant type="vision" id="ID_VISION_DARKVISION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			<grant type="Racial Trait" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_VIGILANT" />
+			<grant type="Racial Trait" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_CONSTRUCTED_VITALITY" />
+			<grant type="Racial Trait" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_CONSTRUCTED_BEING" />
+		</rules>
+	</element>
+	
+	<!-- racial traits -->
+	<element name="Vigilant" type="Racial Trait" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_VIGILANT">
+		<description>
+			<p>You can’t be surprised.</p>
+		</description>
+		<sheet>
+			<description>You can’t be surprised.</description>
+		</sheet>
+	</element>
+	<element name="Constructed Vitality" type="Racial Trait" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_CONSTRUCTED_VITALITY">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<p>Your innate hit point maximum is {{vital-hp}}.</p>
+		</sheet>
+		<rules>
+			<stat name="vital-hp" value="2" />
+			<stat name="vital-hp" value="artificer int mod:base" />
+			<stat name="vital-hp" value="level" />
+			<stat name="vital-hp" value="level" />
+			<stat name="vital-hp" value="level" />
+			<stat name="vital-hp" value="level" />
+			<stat name="vital-hp" value="level" />
+			<stat name="vital-hp" value="level" requirements="ID_B126_DEFENDER_UPGRADES_LARGER_CHASSIS" />
+			<stat name="vital-hp" value="level" requirements="ID_B126_DEFENDER_UPGRADES_FOUNDATION_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Constructed Being" type="Racial Trait" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_CONSTRUCTED_BEING" >
+		<description>You are unable to be charmed, exhasted, or poisoned.</description>
+		<sheet>
+			<description>You are unable to be charmed, exhasted, or poisoned.</description>
+		</sheet>
+	</element>
+	
+	<!-- class -->
+	<element name="Defender Upgrade" type="Class" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_STEEL_DEFENDER_UPGRADES" >
+		<requirements>ID_B126_RACE_UPGRADEABLE_STEEL_DEFENDER</requirements>
+		<sheet display="false"/>
+		<setters>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_OBC_ASDM_CLASS_FEATURE_DEFENDER_UPGRADES" level="4" />
+		</rules>
+	</element>
+	<element name="Defender Upgrades" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_FEATURE_DEFENDER_UPGRADES" >
+		<description>
+			<p>Each time you level in this class, you may replace any upgrade you have with any other that you meet the requirements for.</p>
+		</description>
+		<sheet>
+			<description>You can have up to {{upgrades:number}} upgrades.</description>
+		</sheet>
+		<rules>
+			
+			<grant type="Class Feature" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_FORCE-EMPOWERED_REND" />
+			<grant type="Class Feature" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_REPAIRS" />
+			<grant type="Class Feature" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_DEFLECT_ATTACK" />
+			<grant type="Class Feature" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_SPELLCASTING" />
+			<select type="Class Feature" name="Defender Upgrades (level 4)" supports="Defender Upgrades" number="2" level="4" />
+			<select type="Class Feature" name="Defender Upgrades (level 6)" supports="Defender Upgrades" number="1" level="6" />
+			<select type="Class Feature" name="Defender Upgrades (level 10)" supports="Defender Upgrades" number="1" level="10" />
+			<select type="Class Feature" name="Defender Upgrades (level 14)" supports="Defender Upgrades" number="1" level="14" />
+			<select type="Class Feature" name="Defender Upgrades (level 16)" supports="Defender Upgrades" number="1" level="16" />
+			<stat name="upgrades:number" value="2" level="4" />
+			<stat name="upgrades:number" value="1" level="6" />
+			<stat name="upgrades:number" value="1" level="10" />
+			<stat name="upgrades:number" value="1" level="14" />
+			<stat name="upgrades:number" value="1" level="16" />
+			
+			<grant type="Class Feature" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_INT_MOD" />
+			<grant type="Class Feature" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS" />
+		</rules>
+	</element>
+	
+	<!-- class features -->
+	<element name="Force-Empowered Rend" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_FORCE-EMPOWERED_REND" >
+		<description></description>
+		<sheet action="Action">
+			<description>Melee Weapon Attack: +{{tohit}} to hit, reach {{FER:reach}} ft., one target you can see. Hit: {{dam:die-count}}d8 + {{proficiency}} force damage.</description>
+		</sheet>
+		<rules>
+			<stat name="FER:reach" value="5" />
+			<stat name="tohit" value="proficiency" />
+			<stat name="tohit" value="artificer int mod:base" />
+			<stat name="dam:die-count" value="1" />
+		</rules>
+	</element>
+	<element name="Repair" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_REPAIRS" >
+		<description>The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or one construct or object within 5 feet of it.</description>
+		<sheet action="Action" usage="3/Day">
+			<description>This ability restores 2d8 + {{proficiency}} hit points to itself or one construct or object within 5 ft. of it.</description>
+		</sheet>
+	</element>
+	<element name="Deflect Attack" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_DEFLECT_ATTACK" >
+		<description></description>
+		<sheet action="Reaction">
+			<description>The defender imposes disadvantage on the attack roll of one creatuure it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.</description>
+			<description level="15">The defender imposes disadvantage on the attack roll of one creatuure it can see that is within 5 feet of it the attacker also takes 1d4 + {{artificer int mod:base}} force damage, provided the attack roll is against a creature other than the defender.</description>
+		</sheet>
+	</element>
+	
+	<element name="Steel Defender" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_CLASS_FEATURE_STEEL_DEFENDER_SPELLCASTING">
+		<compendium display="false" />
+		<spellcasting name="Artificer" ability="Arti Int Mod" allowReplace="true" >
+			<list known="true">Artificer</list>
+		</spellcasting>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Cantrip (Runic Engravings)" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" requirements="ID_B126_DEFENDER_UPGRADES_RUNIC_ENGRAVINGS"/>
+			<select type="Spell" name="Cantrip (Greater Runic Engravings)" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" requirements="ID_B126_DEFENDER_UPGRADES_GREATER_RUNIC_ENGRAVINGS"/>
+			<select type="Spell" name="Spark of Intellect (Artificer)" supports="$(spellcasting:list), 1" level="16" number="2" spellcasting="Artificer" requirements="ID_B126_DEFENDER_UPGRADES_SPARK_OF_INTELLECT" />
+			<select type="Spell" name="Spark of Intellect (Artificer)" supports="$(spellcasting:list), 2" level="16" number="1" spellcasting="Artificer" requirements="ID_B126_DEFENDER_UPGRADES_SPARK_OF_INTELLECT" />
+			<select type="Spell" name="Spark of Intellect (Artificer)" supports="$(spellcasting:list), 3" level="16" number="1" spellcasting="Artificer" requirements="ID_B126_DEFENDER_UPGRADES_SPARK_OF_INTELLECT" />
+			<stat name="Arti Int Mod" value="artificer int mod:base" />
+			<stat name="Arti Int Mod" value="proficiency" />
+		</rules>
+	</element>
+	
+	<!-- artificer intelligence modifier selection -->
+	<element name="Artificer Int Mod" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_INT_MOD" >
+		<compendium display="false" />
+		<description>Use the selector to input the Intelligence Modifier of your Artificer.</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Artificer Intelligence Modifier" supports="Artificer Int Mod" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 1" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_1" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="1" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 2" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_2" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="2" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 3" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_3" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="3" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 4" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_4" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="4" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 5" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_5" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="5" />
+		</rules>
+	</element>
+	<element name="Artificer Int Mod 6" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARTIFICER_INT_MOD_6" >
+		<compendium display="false" />
+		<supports>Artificer Int Mod</supports>
+		<sheet display="false"/>
+		<rules>
+			<stat name="artificer int mod:base" value="6" />
+		</rules>
+	</element>
+	
+	<!-- Artificer Proficiency bonus fix -->
+	<element name="Artificer Prof Bonus Fix" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS">
+		<compendium display="false" />
+		<description>Use this selection to correct your proficiency bonus so that it matches your artificer. This will only be used if you multiclass with your artificer.</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Artificer Proficiency Bonus" supports="Artificer Prof Bonus" optional="true" />
+		</rules>
+	</element>
+	<element name="Artificer Prof Bonus +1" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS_1" >
+		<compendium display="false" />
+		<supports>Artificer Prof Bonus</supports>
+		<description>Use this selection to add 1 to the defender's proficiency bonus to match your artificer proficiency bonus.</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="1" />
+		</rules>
+	</element>
+	<element name="Artificer Prof Bonus +2" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS_2" >
+		<compendium display="false" />
+		<supports>Artificer Prof Bonus</supports>
+		<description>Use this selection to add 2 to the defender's proficiency bonus to match your artificer proficiency bonus.</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="2" />
+		</rules>
+	</element>
+	<element name="Artificer Prof Bonus +3" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS_3" >
+		<compendium display="false" />
+		<supports>Artificer Prof Bonus</supports>
+		<description>Use this selection to add 3 to the defender's proficiency bonus to match your artificer proficiency bonus.</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="3" />
+		</rules>
+	</element>
+	<element name="Artificer Prof Bonus +4" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_RACIAL_TRAIT_STEEL_DEFENDER_ARTIFICER_PROF_BONUS_4" >
+		<compendium display="false" />
+		<supports>Artificer Prof Bonus</supports>
+		<description>Use this selection to add 4 to the defender's proficiency bonus to match your artificer proficiency bonus.</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="4" />
+		</rules>
+	</element>
+	
+	<!-- upgrade template -->
+	<!--<element name="" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_" >
+		<supports>Defender Upgrades</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em></em></p>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>-->
+	
+	<!-- upgrades -->
+	<element name="Advanced Materials" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_ADVANCED_MATERIALS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:13]</requirements>
+		<prerequisite>13th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 13th-level artificer</em></p>
+			<p>By utilizing rare ore in upgrading the steel defender’s armor, it gains resistance against bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Your tinkering with new armor materials has bourne fruit your defender is now resistant to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+	<element name="Arcane Conduit" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_ARCANE_CONDUIT" >
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_ARCANE_LINK</requirements>
+		<prerequisite>Arcane Link</prerequisite>
+		<description>
+			<p>You install conduits for arcane energy into your steel defender. When you cast a spell with a range of touch, your defender can deliver the spell as if it had cast the spell if it is within 100ft. of you it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.</p>
+			<p>This mechanism is uniquely calibrated to you. If another creature uses the mechanism, they receive no information.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you cast a spell with a range of touch, your defender can deliver the spell as if it had cast the spell if it is within 100ft. of you it must use its reaction to deliver the spell when you cast it.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Link" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_ARCANE_LINK" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You develop an arcane link with your steel defender’s sensors. As an action, you can don or doff a special mechanism which allows you to see through your defender’s eyes and hear what it hears while it is within 100 feet of you. During this time, you gain the benefits of any special senses the defender has, and you are blind and deaf with regard to your own senses.</p>
+			<p>This mechanism is uniquely calibrated to you. If another creature uses the mechanism, they receive no information.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can don or doff your mechanism to use your defender's senses as if they were your own. While using this mechanism you are blind and deaf to your own senses. No other creatures are able to use the mechanism.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Shielding" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_ARCANE_SHIELDING" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:16]</requirements>
+		<prerequisite>16th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 16th-level artificer</em></p>
+			<p>You install a device which can generate a bubble of arcane energy. As a reaction the steel defender can activate the shield. While the shield is active the defender gains resistance to all damage for 1 minute. </p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>As a reaction the steel defender can activate their shield. While the shield is active the defender gains resistance to all damage for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Sensors" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_ARCANE_SENSORS" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>Utilizing an array of magical sensors of your own design, you enable your steel defender to detect threats with greater ease. The defender gains advantage on Wisdom (Perception) checks.</p>
+		</description>
+		<sheet>
+			<description>The defender gains advantage on Wisdom (Perception) checks.</description>
+		</sheet>
+	</element>
+	<element name="Charge Attack" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>By upgrading the steel defender to be more nimble at high speeds, it gains the ability to attack while dashing. When the defender uses its action to dash, it can make a single Force-Empowered Rend attack or shove a creature as part of that dash.</p>
+			<p>If the defender moves at least 10 feet in a straight line immediately before taking this action, either its proficiency bonus to its Force-Empowered Rend damage is doubled, (if it makes an attack and hits) or it pushes the target up to 10 feet away from it (if it succeeds on the shove).</p>
+		</description>
+		<sheet>
+			<description>When the defender uses its action to dash, it can make a single Force-Empowered Rend attack or shove a creature as part of that dash. If it moves at least 10 feet in a straight line immediately before taking this action, either the proficiency bonus for its Force-Empowered Rend damage is doubled, or it pushes the target up to 10 feet away from it.</description>
+		</sheet>
+	</element>
+	<element name="Cloaking Mechanism" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_CLOAKING_MECHANISM" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level artificer</em></p>
+			<p>Through a series of enhancements, magical and mechanical, you create an advanced stealth system. As an action, the steel defender can become invisible. The invisibility ends after one hour, or if the defender attacks or casts a spell.</p>
+			<p>Once your defender uses this feature, you must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action, the defender can become invisible. The invisibility ends after one hour, or if the defender attacks or casts a spell.</description>
+		</sheet>
+	</element>
+	<element name="Clockwork Brain" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_STEEL_DEFENDER_UPGRADES_CLOCKWORK_BRAIN" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p>You design a clockwork brain and install it into your steel defender. The defender gains an intelligence score of 6, and allows it to utilize items imbued with your infusions with the exception of weapons and arcane foci. It gains the ability to speak the languages that you know.</p>
+		</description>
+		<sheet>
+			<description>The defender gains an intelligence score of 6, and allows it to utilize items imbued with your infusion with the exception of weapons and arcane foci. It gains the ability to speak the languages that you know.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="2"/>
+		</rules>
+	</element>
+	<element name="Defensive Array" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_DEFENSIVE_ARRAY" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>By upgrading the steel defender's protective plates and shielding, you allow it to defend itself more effectively. The defender can now use shields and always has a shield available.</p>
+		</description>
+		<sheet>
+			<description>By upgrading the steel defender's protective plates and shielding, you allow it to defend itself more effectively. The defender can now use shields and always has a shield available.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_EXTRA_ATTACK" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level artificer</em></p>
+			<p>Faster moving appendages allow the steel defender to attack rapidly. The defender can make two Force-Empowered Rend attacks whenever it takes that action on its turn.</p>
+		</description>
+		<sheet>
+			<description>The defender can make two Force-Empowered Rend attacks whenever it takes the attack action on its turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Flame Spout" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FLAME_SPOUT" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:7],!ID_B126_DEFENDER_UPGRADES_OVERLOAD</requirements>
+		<prerequisite>7th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 7th-level artificer</em></p>
+			<p>The steel defender is upgraded with a flame weapon. As an action, the defender can send out a blast of fire. Each creature in a 5 ft wide 30 ft line starting from the defender extending in a direction of your choice must make a Dexterity saving throw against you spell save DC. A target takes 5d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+			<p>This damage increases to 6d8 at 13th level and 7d10 at 17th level.</p>
+			<p>Once your defender uses this feature, you must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Sort Rest">
+			<description>The defender sends out a blast of fire. This attack does {{flame-spout:die-count}}d{{flame-spout:die-size}} fire damage in a 5 by 30 ft. line (dex. save) DC {{flame-spout:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="flame-spout:dc" value="8" />
+			<stat name="flame-spout:dc" value="proficiency" />
+			<stat name="flame-spout:dc" value="artificer int mod:base" />
+			<stat name="flame-spout:die-size" value="6" bonus="dice" />
+			<stat name="flame-spout:die-count" value="5" level="7" />
+			<stat name="flame-spout:die-size" value="2" level="13" />
+			<stat name="flame-spout:die-count" value="1" level="13" />
+			<stat name="flame-spout:die-size" value="2" level="17" />
+			<stat name="flame-spout:die-count" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Flexible Plates" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FLEXIBLE_PLATES" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You reinforce the steel defender's joints and exposed areas. The defender’s AC becomes 16 (natural armor).</p>
+		</description>
+		<sheet>
+			<description>You reinforce the steel defender's joints and exposed areas. The defender’s AC becomes 16 (natural armor).</description>
+		</sheet>
+		<rules>
+			<stat name="ac:calculation" value="1" bonus="bonus" /> 
+		</rules>
+	</element>
+	<element name="Grapple" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_GRAPPLE" >
+		<supports>Defender Upgrades</supports>
+		<requirements>!ID_B126_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_HOOKS</requirements>
+		<description>
+			<p>You upgrade the body of your steel defender, outfitting them with hooks, clamps, or another appropriate addition. When the defender attacks a target with their Force-Empowered Rend, the defender can use its reaction to attempt to grapple the target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When the defender attacks a target with their Force-Empowered Rend, the defender can use its reaction to attempt to grapple the target.</description>
+		</sheet>
+	</element>
+	<element name="Greater Runic Engravings" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_GREATER_RUNIC_ENGRAVINGS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:10],ID_B126_DEFENDER_UPGRADES_RUNIC_ENGRAVINGS</requirements>
+		<prerequisite>10th-level artificer, Runic Engravings</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level artificer</em></p>
+			<p>By inscribing more powerful arcane runes onto your steel defender, it is able to utilize more spellcasting abilities. The defender learns a cantrip of your choice from the artificer spell list. It uses your spellcasting ability.</p>
+		</description>
+		<sheet>
+			<description>The defender learns a cantrip of your choice from the artificer spell list. It has a spellcasting modifier of {{Arti Int Mod}}.</description>
+		</sheet>
+	</element>
+	<element name="Hair Trigger Springs" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_HAIR_TRIGGER_SPRINGS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p>By honing your steel defender’s reaction times, it becomes able to avoid damage with lightning reflexes. When forced to make a dexterity saving throw to avoid taking damage, the defender takes half damage on a failed save, and no damage on a success.</p>
+		</description>
+		<sheet>
+			<description>When the defender is forced to make a dexterity saving throw to avoid taking damage, it instead take no damage if it succeed on the saving throw, and only half damage if it fails.</description>
+		</sheet>
+	</element>
+	<element name="High Tension Springs" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_HIGH_TENSION_SPRINGS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level artificer</em></p>
+			<p>Utilizing springs made of a superior alloy, you increase the steel defender’s movement speed. Your defender's base land speed increases by 10 ft. If the defender has other movement types, their speed also increases by 10 ft.</p>
+		</description>
+		<sheet>
+			<description>Your defender's base movement speed(s) increase by 10 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]||[innate speed:climb:misc:1]" />
+			<stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]||[innate speed:fly:misc:1]" />
+			<stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]||[innate speed:swim:misc:1]" />
+			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]||[innate speed:burrow:misc:1]" />
+		</rules>
+	</element>
+	
+	<element name="Improved Repertoire" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_IMPROVED_REPERTOIRE" >
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_STEEL_DEFENDER_UPGRADES_CLOCKWORK_BRAIN</requirements>
+		<prerequisite>Clockwork Brain</prerequisite>
+		<description>
+			<p>You make modifications to the steel defender that allow it to perform certain tasks more effectively. The defender gains proficiency in a skill of your choice. You can select this upgrade multiple times.</p>
+		</description>
+		<sheet>
+			<description>The defender gains proficiency in a skill of your choice.</description>
+		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Improved Repertoire" supports="Skill" />
+		</rules>
+	</element>
+	
+	<element name="Larger Chassis" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LARGER_CHASSIS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p>You upgrade the chassis of your steel defender to create a larger, more powerful frame. The size of your defender increases to large.</p>
+			<p>Additionally, the defender’s hit die becomes d10 and its constitution and strength scores increase to 16, however it's dexterity  score decreases to 10. Your Force-Empowered Rend now deals 2d8 + PB force damage on a hit. Hit points are recalculated when this upgrade is taken as follows: 2 + your intelligence modifier + six times your artificer level.</p>
+			<p>As an action, the defender can temporarily reduce to the size of medium as its internal parts and multiple joints compress on itself. It can then return to its large size without any action, or after 10 minutes. Remaining compressed for more than 10 minutes causes the defender to suffer 1d6 fire damage at the start of each of its turns, as its power generator begins to overheat due to the lack of space.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, the defender can temporarily reduce to the size of medium it can without the use of an action, or after 10 minutes. If compressed longer than 10 minutes it takes 1d6 fire damage at the start of each of its turns. The size of your defender increases to large. Your hit die now increses to {{level}}d10. Your Force-Empowered rend now deals 2d8 + {{proficiency}} force damage on a hit. Your new hit point maximum is {{vital-hp}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_LARGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_DOUBLED" />
+			<stat name="strength" value="2" />
+			<stat name="dexterity" value="-2" />
+			<stat name="constitution" value="2"/>
+			<stat name="dam:die-count" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Locomotive Adaptation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You attach fins, webbing, grappling hooks, burrowing claws, or other appropriate locomotive aids. The steel defender gains a swim speed equal to its highest speed, a climb speed equal to its highest speed, or a burrowing speed equal to half its highest speed. You can select this upgrade multiple times.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Locomotion Upgrade" supports="Locomotion Upgrade" number="1" />
+		</rules>
+	</element>
+	<element name="Locomotive Adaptation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_2" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION</requirements>
+		<description>
+			<p>You attach fins, webbing, grappling hooks, burrowing claws, or other appropriate locomotive aids. The steel defender gains a swim speed equal to its highest speed, a climb speed equal to its highest speed, or a burrowing speed equal to half its highest speed. You can select this upgrade multiple times.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Locomotion Upgrade" supports="Locomotion Upgrade" number="1" />
+		</rules>
+	</element>
+	<element name="Locomotive Adaptation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_3" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_2</requirements>
+		<description>
+			<p>You attach fins, webbing, grappling hooks, burrowing claws, or other appropriate locomotive aids. The steel defender gains a swim speed equal to its highest speed, a climb speed equal to its highest speed, or a burrowing speed equal to half its highest speed. You can select this upgrade multiple times.</p>
+		</description>
+		<sheet>
+			<description>"Installed locomotion addons:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Locomotion Upgrade" supports="Locomotion Upgrade" number="1" />
+		</rules>
+	</element>
+	<element name="Fins" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_FINS" >
+		<supports>Locomotion Upgrade</supports>
+		<description>
+			<p>Installation of fins that assist with swimming. With this upgrade your swimming speed is 40 ft.</p>
+		</description>
+		<sheet>
+			<p>With this upgrade your swimming speed is 40 ft.</p>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim:misc" value="40" />
+		</rules>
+	</element>
+	<element name="Hooks" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_HOOKS" >
+		<supports>Locomotion Upgrade</supports>
+		<requirements>!ID_B126_DEFENDER_UPGRADES_GRAPPLE</requirements>
+		<description>
+			<p>Installation of grapling hooks that assist with climbing. With this upgrade your climbing speed is 40 ft.</p>
+		</description>
+		<sheet>
+			<p>With this upgrade your climbing speed is 40 ft.</p>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb:misc" value="40" />
+		</rules>
+	</element>
+	<element name="Claws" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LOCOMOTIVE_ADAPTATION_CLAWS" >
+		<supports>Locomotion Upgrade</supports>
+		<description>
+			<p>Installation of digging claws that assist with burrowing. With this upgrade your burrowing speed is 20 ft.</p>
+		</description>
+		<sheet>
+			<p>With this upgrade your burrowing speed is 20 ft.</p>
+		</sheet>
+		<rules>
+			<stat name="innate speed:burrow:misc" value="20" />
+		</rules>
+	</element>
+	
+	<element name="Longer Reach" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_LONGER_REACH" >
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_LARGER_CHASSIS</requirements>
+		<prerequisite>Larger Chassis</prerequisite>
+		<description>
+			<p><em>Prerequisites: Larger Chassis</em></p>
+			<p>You increase the reach of your steel defender’s melee attack, by adding tentacles, lengthening arms, or another appropriate modification. The defender's range for Force-Empowered Rend increases by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>Increases the range for Force-Empowered rend by 5 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="FER:reach" value="5" />
+		</rules>
+	</element>
+	
+	<element name="Magically Warded" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_MAGICALLY_WARDED" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:13]</requirements>
+		<prerequisite>13th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 13th-level artificer</em></p>
+			<p>You provide strong antimagic enchantments for your steel defender. The defender has advantage on saving throws against spells.</p>
+		</description>
+		<sheet>
+			<description>The defender has advantage on saving throws against spells.</description>
+		</sheet>
+	</element>
+	
+	<element name="Nimble Flight Control" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_NIMBLE_FLIGHT_CONTROL" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:13]</requirements>
+		<prerequisite>13th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 13th-level artificer</em></p>
+			<p>You attach wings, propellers, or propulsion to your steel defender, enabling it to fly. It gains a fly speed equal to 20 feet. Additionally, it does not provoke opportunity attacks while flying.</p>
+		</description>
+		<sheet>
+			<description>It gains a fly speed equal to 20 feet. Additionally, it does not provoke opportunity attacks while flying.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly:misc" value="20" />
+		</rules>
+	</element>
+	
+	<element name="Overdrive" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_OVERDRIVE" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:16]</requirements>
+		<prerequisite>16th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 16th-level artificer</em></p>
+			<p>You develop a system which allows your steel defender to generate a surge of energy for a short flurry of activity. As an action, the defender may double its speed until the end of its turn. The defender may then make a single Force-Empowered Rend attack against each creature it can reach during its turn. It has advantage on attack rolls, and opportunity attacks have disadvantage against it.</p>
+			<p>Once your defender uses this feature, you must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action, the defender may double its speed until the end of its turn. The defender may then make a single Force-Empowered Rend attack against each creature it can reach during its turn. It has advantage on attack rolls, and opportunity attacks have disadvantage against it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Overload" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_OVERLOAD" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6],!ID_B126_DEFENDER_UPGRADES_FLAME_SPOUT</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>The steel defender is upgraded with an energy discharge weapon. As an action, the defender can release a blast of acid, cold, fire, lightning, poison, or thunder energy from its body. Each creature within a 20 ft cone must make a Dexterity saving throw against your spell save DC. A target takes 5d10 damage of the given element on a failed save, or half as much damage on a successful one.</p>
+			<p>This damage increases to 6d10 at 13th level and 7d10 at 17th level.</p>
+			<p>Once your defender uses this feature, you must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet action="Action" usage="1/Sort Rest">
+			<description>Release a blast of acid, cold, fire, lightning, poison, or thunder energy. This attack does {{overload:die-count}}d{{overload:die-size}} of the desired elemental damage in a 20 ft. cone (dex. save) DC {{overload:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="overload:dc" value="8" />
+			<stat name="overload:dc" value="proficiency" />
+			<stat name="overload:dc" value="artificer int mod:base" />
+			<stat name="overload:die-size" value="10" bonus="dice" />
+			<stat name="overload:die-count" value="5" level="6" />
+			<stat name="overload:die-count" value="1" level="13" />
+			<stat name="overload:die-count" value="1" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Powerful Build" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_POWERFUL_BUILD" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You strengthen the lifting and pulling capabilities of your steel defender. The defender counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>The defender counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	
+	<element name="Precision Instruments" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_PRECISION_INSTUMENTS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>!ID_B126_DEFENDER_UPGRADES_LARGER_CHASSIS</requirements>
+		<description>
+			<p>You graft fine tools onto your steel defender allowing it to adeptly perform specific tasks. The defender gains two tool proficiencies of your choice, and it always has those tools available.</p>
+		</description>
+		<sheet>
+			<description>The defender gains two tool proficiencies of your choice, and it always has those tools available.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Precision Instruments" supports="Tool" number="2" />
+		</rules>
+	</element>
+	
+	<element name="Relentless" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_RELENTLESS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>A variety of backup systems are installed into your steel defender. If the defender takes damage that would reduce it to 0 hit points, it instead is reduced to 1.</p>
+			<p>Once your defender uses this feature, you must finish a long rest before it can use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If the defender takes damage that would reduce it to 0 hit points, it instead is reduced to 1.</description>
+		</sheet>
+	</element>
+	
+	<element name="Reserve Power" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_RESERVE_POWER" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You install a node for conducting magical energy, enchanted to spontaneously repair your steel defender. Whenever the defender uses its Repair ability, you can expend a spell slot to restore an additional 2d8 hit points to it.</p>
+			<p>When you expend a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+		</description>
+		<sheet>
+			<description>Whenever the defender uses its Repair ability, you can expend a spell slot to restore an additional 2d8 hit points to it, the healing increases by 1d8 for each slot level above 1st.</description>
+		</sheet>
+	</element>
+	
+	<element name="Riding Harness" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_RIDING_HARNESS" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You design and craft a special saddle or harness to aid in using the steel defender as a mount. When an attack targets a creature that is using the defender as a mount, your defender can force the attack to target itself instead. This saddle or harness functions as an exotic saddle.</p>
+		</description>
+		<sheet>
+			<description>When an attack targets a creature that is using the defender as a mount, your defender can force the attack to target itself instead.</description>
+		</sheet>
+	</element>
+	
+	<element name="Runic Engravings" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_RUNIC_ENGRAVINGS" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p>By inscribing arcane runes onto your steel defender, it is able to utilize some spellcasting abilities. The defender learns a cantrip of your choice from the artificer spell list. It uses your spell attack modifier to hit. The defender can cast this cantrip without any verbal, somatic, or material components. You can select this upgrade multiple times.</p>
+		</description>
+		<sheet>
+			<description>The defender learns a cantrip of your choice from the artificer spell list. It has a spellcasting modifier of {{Arti Int Mod}}.</description>
+		</sheet>
+	</element>
+	
+	<element name="Smoke Screen" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_SMOKE_SCREEN" >
+		<supports>Defender Upgrades</supports>
+		<description>
+			<p>You attach a mechanism capable of creating a 20-foot-radius sphere of thick grey smoke centered on a point within 120 feet. The sphere spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+			<p>Once your defender uses this feature, you must finish a short or long rest before it can use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>As a bonus action you create a 20-foot-radius sphere of thick grey smoke centered on a point within 120 feet. It lasts for 1 minute or until a wind of moderate or greater speed disperses it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Spark of Intellect" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_SPARK_OF_INTELLECT" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:17],ID_B126_STEEL_DEFENDER_UPGRADES_CLOCKWORK_BRAIN</requirements>
+		<prerequisite>17th-level artificer, Clockwork Brain</prerequisite>
+		<description>
+			<p><em>Prerequisites: 17th level Artificer, Clockwork Brain Upgrade</em></p>
+			<p>Through an inexplicable breakthrough in the design of the clockwork brain, your steel defender gains an Intelligence score of 13.</p>
+			<p>Choose two level 1 spells, a single level 2 spell, and a single level 3 spell from the artificer spell list. The defender can spontaneously cast each of those spells once per long rest, without providing material components. It uses your spellcasting ability.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>The defender can spontaneously cast each of those spells once per long rest, without providing material components. It has a spellcasting modifier of {{Arti Int Mod}}.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="7" />
+		</rules>
+	</element>
+	
+	<element name="Upgraded Sensor Array" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_SENSOR_ARRAY" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:9],ID_B126_STEEL_DEFENDER_UPGRADES_ARCANE_SENSORS</requirements>
+		<prerequisite>9th-level artificer, Arcane Sensors</prerequisite>
+		<description>
+			<p><em>Prerequisites: 9th-level artificer, Arcane Sensors</em></p>
+			<p>You work to advance the sensor modules on your steel defender. The defender gains blindsight out to a range of 30 feet.</p>
+			<p>In addition, the defender can make a perception check to search for hidden enemies as a reaction instead of an action.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>The defender gains blindsight out to a range of 30 feet. You can make a perception check to search for hidden enemies as a reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+	
+	
+	<!-- upgraded build -->
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION" >
+		<supports>Defender Upgrades</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_2" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_UPGRADED_FOUNDATION</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation 2nd" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_3" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_2</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation 3rd" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_4" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_3</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation 4th" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_5" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_4</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation 5th" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	<element name="Upgraded Foundation" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_6" >
+		<compendium display="false" />
+		<supports>Defender Upgrades</supports>
+		<requirements>ID_B126_DEFENDER_UPGRADES_UPGRADED_FOUNDATION_5</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisites: 6th-level artificer</em></p>
+			<p>You improve upon the foundation of your steel defender's build. Choose one ability score from Strength, Dexterity, Constitution, or Wisdom. The defender's score for the chosen ability increases 2, up to a maximum of 20. You can take this upgrade multiple times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Upgraded Foundation 6th" supports="Upgraded Foundation" number="1" />
+		</rules>
+	</element>
+	
+	<!-- upgraded build strength increases -->
+	<element name="Strength" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FOUNDATION_STRENGTH" >
+		<compendium display="false" />
+		<supports>Upgraded Foundation</supports>
+		<description>
+			<p>This upgrade improves the power delivery systems to the joints and increses their power output. This ability score cannot be increased above 20 in this way.</p>
+		</description>
+		<sheet>
+			<p>With this upgrade the defender’s strength score increases by 2.</p>
+		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" />
+		</rules>
+	</element>
+		
+	<!-- upgraded build dexterity increases -->
+	<element name="Dexterity" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FOUNDATION_DEXTERITY" >
+		<compendium display="false" />
+		<supports>Upgraded Foundation</supports>
+		<description>
+			<p>This upgrade improves the power efficency of joints, decreses their weight, and power usage. This ability score cannot be increased above 20 in this way</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<p>With this upgrade the defender’s dexterity score increases by 2.</p>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="2" />
+		</rules>
+	</element>
+		
+	<!-- upgraded build constitution increases -->
+	<element name="Constitution" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FOUNDATION_CONSTITUTION" >
+		<compendium display="false" />
+		<supports>Upgraded Foundation</supports>
+		<description>
+			<p>This upgrade improves the power plant to run more efficiently and the core mechanisms to be stronger. This ability score cannot be increased above 20 in this way</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<p>With this upgrade the defender’s constitution score increases by 2.</p>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>
+	
+	<!-- upgraded build wisdom increases -->
+	<element name="Wisdom" type="Class Feature" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_DEFENDER_UPGRADES_FOUNDATION_WISDOM" >
+		<compendium display="false" />
+		<supports>Upgraded Foundation</supports>
+		<description>
+			<p>This upgrade improves the power delivery systems to the joints and increses their power output. This ability score cannot be increased above 20 in this way</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<p>With this upgrade the defender’s wisdom score increases by 2.</p>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="2" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="Spells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw/Spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Time Dilation" type="Spell" source="Atelsi's Secrets of The Dragon's Maw" id="ID_OBC_ASDM_SPELL_TIME_DILATION">
+        <supports>Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Chaotic currents of time rip through a 20-foot-sphere. Each creature in the sphere on the turn when you cast the spell must make a Constitution saving throw. On a failed save, a creature takes 2d8 force damage, and its speed is halved until the end of the next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.</p>
+            <p class="indent">Until the start of your next turn, any creature outside the sphere attempting to pick up an object in the sphere that isn’t being worn or carried must make a successful Strength check against your spell save DC to pick up or move that object.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">force,dunamancy,cronourgy</set>
+            <set name="level">1</set>
+            <set name="school" addition="Dunamancy">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 round</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
