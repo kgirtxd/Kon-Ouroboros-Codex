@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="Option-Attunement-Equals-Prof.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/Option-Attunement-Equals-Prof.xml" />
+		</update>
+	</info>
+
+	<element name="Attunement = Proficiency" type="Option" source="Internal" id="ID_INTERNAL_OPTION_ATTUNEMENT">
+		<description>
+			<p>Alternate attunement rules where max attuneed items is equal to proficiency bonus.</p>
+		</description>
+		<setters>
+			<set name="short">Attunement max equal proficiency.</set>
+		</setters>
+		<rules>
+			<stat name="attunement:max" value="-3" />
+			<stat name="attunement:max" value="proficiency"/>
+		</rules>
+	</element>
+</elements>
