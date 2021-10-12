@@ -2,13 +2,16 @@
 <index>
 	<info>
 		<name>Ouroboros Codex</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Ouroboros-Codex.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex.index" />
 		</update>
 	</info>
 	<files>
 		<!--AMPS-->
 		<file name="vandersnitch-guide-to-races-and-cultures.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures.index" />
+
+		<!--Basic126-->
+		<file name="atelsis-secrets-of-the-dragons-maw.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/atelsis-secrets-of-the-dragons-maw.index" />
 
 		<!--Konard-->
 		<file name="festers-list-of-monsters-and-races.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races.index" />
