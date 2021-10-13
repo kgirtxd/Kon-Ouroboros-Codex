@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sidekicks</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sidekicks.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/sidekicks.xml" />
 		</update>
 	</info>
@@ -1848,7 +1848,7 @@
 		</rules>
 	</element>
 
-	<element name="Charge" type="Racial Trait" source="source" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_GIANT_ELK_CHARGE">
+	<element name="Charge" type="Racial Trait" source="Monster Manual" id="ID_WOTC_MM_RACIAL_TRAIT_SIDEKICK_GIANT_ELK_CHARGE">
 		<description>
 			<p>If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
 		</description>

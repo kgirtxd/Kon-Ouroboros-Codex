@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -159,7 +159,7 @@
 		</setters>
 	</element>
 
-	<element name="Eyes of Darkvision" type="Magic Item" source="source" id="ID_OBC_CP_MAGIC_ITEM_EYES_OF_DARKVISION">
+	<element name="Eyes of Darkvision" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_EYES_OF_DARKVISION">
 		<description>
 			<p>These crystal lenses fit into an enchanted copper eyeglass lens. While wearing them you have darkvision out to 50 ft. and your vision in daylight is reduced to 30 ft. In conditions of clear visibility, you can make out details of creatures and objects 45 ft. away in darkness. </p>
 		</description>
