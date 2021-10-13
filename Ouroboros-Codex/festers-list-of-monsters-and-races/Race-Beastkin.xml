@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.0.1">
+		<update version="0.0.0.2">
 			<file name="Race-Beastkin.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Beastkin.xml" />
 		</update>
 	</info>
