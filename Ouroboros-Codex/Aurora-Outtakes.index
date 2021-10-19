@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>Konard's Aurora Integrations</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Aurora-Outtakes.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes.index" />
 		</update>
 	</info>
 	<files>
 		<file name="background-custom.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/background-custom.xml" />
+		<file name="better-metamagic-adept.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/better-metamagic-adept.xml" />
 		<file name="Internals.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/Internals.xml" />
 		<file name="rules.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/rules.xml" />
 		<file name="sidekicks.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/sidekicks.xml" />
