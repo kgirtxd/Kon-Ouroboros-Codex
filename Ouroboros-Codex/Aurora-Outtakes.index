@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Konard's Aurora Integrations</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Aurora-Outtakes.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes.index" />
 		</update>
 	</info>
