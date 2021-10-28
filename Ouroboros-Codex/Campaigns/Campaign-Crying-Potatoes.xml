@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name></name>
-		<update version="0.0.3">
+		<name>Crying Potatoes Campaign Assets</name>
+		<update version="0.0.4">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -159,7 +159,7 @@
 		</setters>
 	</element>
 
-	<element name="Eyes of Darkvision" type="Magic Item" source="source" id="ID_OBC_CP_MAGIC_ITEM_EYES_OF_DARKVISION">
+	<element name="Eyes of Darkvision" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_EYES_OF_DARKVISION">
 		<description>
 			<p>These crystal lenses fit into an enchanted copper eyeglass lens. While wearing them you have darkvision out to 50 ft. and your vision in daylight is reduced to 30 ft. In conditions of clear visibility, you can make out details of creatures and objects 45 ft. away in darkness. </p>
 		</description>
@@ -414,6 +414,280 @@
 			<set name="materialComponent"></set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+	<!--Church of Kira-->
+	<element name="Turbulent Freedom" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM">
+		<description>
+			<p>You possess a precious gift coveted not just by mortals but by the gods themselves. As a follower of Kira, you can gain abilities known only by the most loyal. </p>
+			<p class="indent"><strong><em>Kira’s Piety.</em></strong> Your divotion improves as your piety score increases. You gain the following traits when you reach the specified piety score.</p>
+			<h4>Kira’s Acolyte</h4>
+			<p><em>Piety 3+ Kira trait</em></p>
+			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<h4>Kira’s Speaker</h4>
+			<p><em>Piety 10+ Kira trait</em></p>
+			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<h4>Kira’s Viceroy</h4>
+			<p><em>Piety 25+ Kira trait</em></p>
+			<p>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</p>
+			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can’t do so again until you finish a long rest.</p>
+			<h4>Champion of Turbulent Freedom</h4>
+			<p><em>Piety 50+ Kira trait</em></p>
+			<p>You can increase your Charisma or Wisdom score by 2 and also increase your maximum for that score by 2.</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Supernatural Gift</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
+		</rules>
+	</element>
+
+	<element name="Kira Traits" type="Grants" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_GRANTS_KIRA_TRAITS">
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY" />
+		</rules>
+	</element>
+
+	<element name="Kira’s Piety" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE" />
+			</div>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER" />
+			</div>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY" />
+			</div>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Kira’s Piety" supports="Kira Piety Value" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
+		</rules>
+	</element>
+
+	<element name="Kira’s Acolyte" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p><em>Piety 3+ Kira trait</em></p>
+			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="{{kiraacolyte:usage}}/Long Rest">
+			<description>You can cast chaotic bolt with this trait. Hit {{kiraacolyte:hit}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_GGTR_SPELL_CHAOS_BOLT" />
+			<stat name="kiraacolyte:usage" value="1" bonus="base" />
+			<stat name="kiraacolyte:usage" value="charisma:modifier" bonus="base" />
+			<stat name="kiraacolyte:hit" value="proficiency" />
+			<stat name="kiraacolyte:hit" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Kira’s Speaker" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p><em>Piety 10+ Kira trait</em></p>
+			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast suggestion with this trait, requiring no material components. DC {{kiraspeaker:dc}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" />
+			<stat name="kiraspeaker:dc" value="8" />
+			<stat name="kiraspeaker:dc" value="proficiency" />
+			<stat name="kiraspeaker:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Kira’s Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p><em>Piety 25+ Kira trait</em></p>
+			<p>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</p>
+			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY2" />
+		</rules>
+	</element>
+
+	<element name="Kira’s Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY2">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<compendium display="false" />
+		<description />
+		<sheet usage="1/Long Rest">
+			<description>When you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Champion of Turbulent Freedom" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p><em>Piety 50+ Kira trait</em></p>
+			<p>You can increase your Charisma or Wisdom score by 2 and also increase your maximum for that score by 2.</p>
+		</description>
+		<sheet display="false">
+			<description>You can increase your Charisma or Wisdom score by 2 and also increase your maximum for that score by 2.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase, Champion of Turbulent Freedom" supports="ID_OBC_CP_RACIAL_TRAIT_ORACLE_KIRA_CHARISMA|ID_OBC_CP_RACIAL_TRAIT_ORACLE_KIRA_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_ORACLE_KIRA_CHARISMA">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p>You can increase your Charisma score by 2, as well as increasing your maximum for the chosen score by 2.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description>You can increase your Charisma score by 2, as well as increasing your maximum for the chosen score by 2.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="2" alt="Champion of Turbulent Freedom" />
+			<stat name="charisma:max" value="2" alt="Champion of Turbulent Freedom" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_ORACLE_KIRA_WISDOM">
+		<compendium display="false" />
+		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
+		<description>
+			<p>You can increase your Wisdom score by 2, as well as increasing your maximum for the chosen score by 2.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description>You can increase your Wisdom score by 2, as well as increasing your maximum for the chosen score by 2.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="2" alt="Champion of Turbulent Freedom" />
+			<stat name="wisdom:max" value="2" alt="Champion of Turbulent Freedom" />
+		</rules>
+	</element>
+
+	<element name="Piety 3+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3">
+		<compendium display="false" />
+		<supports>Kira Piety Value</supports>
+		<description>
+			<p>Your piety is 3+.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 10+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10">
+		<compendium display="false" />
+		<supports>Kira Piety Value</supports>
+		<description>
+			<p>Your piety is 10+.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 25+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25">
+		<compendium display="false" />
+		<supports>Kira Piety Value</supports>
+		<description>
+			<p>Your piety is 25+.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 50+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50">
+		<compendium display="false" />
+		<supports>Kira Piety Value</supports>
+		<description>
+			<p>Your piety is 50+.</p>
+			<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM" />
+			</div>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="The Chaos Orb (Complete)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_COMPLETE">
+		<description>
+			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
+			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+		</description>
+		<setters>
+			<set name="keywords">kira</set>
+			<set name="category">Treasure</set>
+			<set name="cost">Priceless</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="The Chaos Orb (Orb)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_ORB">
+		<description>
+			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
+			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+		</description>
+		<setters>
+			<set name="keywords">kira</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">Priceless</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="The Chaos Orb (Halo)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_HALO">
+		<description>
+			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
+			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+		</description>
+		<setters>
+			<set name="keywords">kira</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">Priceless</set>
+			<set name="valuable">true</set>
+		</setters>
+	</element>
+
+	<element name="The Chaos Orb (Key)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_KEY">
+		<description>
+			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
+			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+		</description>
+		<setters>
+			<set name="keywords">kira</set>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">Priceless</set>
+			<set name="valuable">true</set>
 		</setters>
 	</element>
 </elements>

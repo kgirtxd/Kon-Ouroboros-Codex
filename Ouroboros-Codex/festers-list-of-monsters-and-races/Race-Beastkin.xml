@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.0.1">
+		<update version="0.0.0.2">
 			<file name="Race-Beastkin.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Beastkin.xml" />
 		</update>
 	</info>
@@ -98,7 +98,7 @@
 		</rules>
 	</element>
 
-	<element name="Tough Skin" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN">
+	<element name="Tough Skin" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN">
 		<description>
 			<p>You gain +1 AC and resistance to cold.</p>
 		</description>
@@ -127,7 +127,7 @@
 		</rules>
 	</element>
 
-	<element name="Overlooked" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED">
+	<element name="Overlooked" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED">
 		<description>
 			<p>Lapines are fast and it is hard to take them seriously in a fight, opponents who would get an attack of opportunity against them must pass a dc 12 wisdom save or be unable to make the attack. This means they do not lose the reaction but cannot make said action against the Lapine.</p>
 		</description>
@@ -152,7 +152,7 @@
 		</rules>
 	</element>
 
-	<element name="Good Climber" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER">
+	<element name="Good Climber" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER">
 		<description>
 			<p>You gain a climbing speed equal to your walking speed as long as you are not wearing medium or heavy armor nor a shield. Otherwise you have a climbing speed of 10.</p>
 		</description>
@@ -180,7 +180,7 @@
 		</rules>
 	</element>
 
-	<element name="Carrion Eater" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER">
+	<element name="Carrion Eater" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER">
 		<description>
 			<p>You gain immunity to the poisoned and diseased conditions.</p>
 		</description>
