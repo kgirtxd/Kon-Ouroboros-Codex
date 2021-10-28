@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats</description>
 		<author>Konard</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Feats.xml" />
 		</update>
 	</info>
@@ -27,4 +27,15 @@
 		</sheet>
 	</element>
 
+	<element name="Eldritch Insight" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p>Select one eldritch invocation with the prerequisite of eldritch blast. This invocation applies to more cantrips as described by the invocation.</p>
+			<p class="indent">You can change the invocation granted by this feature when you level up.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Eldritch Insight" supports="Eldritch Insight" />
+		</rules>
+	</element>
 </elements>

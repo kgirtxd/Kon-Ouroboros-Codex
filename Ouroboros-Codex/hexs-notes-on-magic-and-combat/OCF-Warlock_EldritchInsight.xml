@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Insight</name>
+		<description></description>
+		<author>Konard</author>
+		<update version="0.0.1">
+			<file name="OCF-Warlock-EldritchInsight.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Warlock-EldritchInsight.xml" />
+		</update>
+	</info>
+
+	<element name="Warlock, LV01: Eldritch Insight" type="Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_ITEM_OCF_WARLOCK_ELDRITCH_INSIGHT">
+		<compendium display="false" />
+		<description>
+			<p>Makes the eldritch invocations referencing <i>Eldritch Blast</i> effect more cantrips.</p>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">OCF, Druid, first level, 2nd level, spellcasting</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT" requirements="[level:warlock:1]"/>
+		</rules>
+	</element>
+
+	<element name="Eldritch Insight" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p>Invocation with the prerequisite of eldritch blast now apply to more cantrips as described by the invocation.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Agonizing Blast" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_AGONIZING_BLAST">
+		<supports>Eldritch Insight, Eldritch Invocation</supports>
+		<prerequisite>Eldritch Insight</prerequisite>
+		<requirements>ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT</requirements>
+		<description>
+			<p>When you cast a damage dealing cantrip, add your Charisma modifier to the damage it deals on a hit.</p>
+		</description>
+		<compendium display="false" />
+		<sheet>
+			<description>When you cast a damaging cantrip, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Eldritch Spear" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_SPEAR">
+		<supports>Eldritch Insight, Eldritch Invocation</supports>
+		<prerequisite>Eldritch Insight</prerequisite>
+		<requirements>ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT</requirements>
+		<description>
+			<p>All cantrips with a range greater that self or touch have their range increased by 2.5x.</p>
+		</description>
+		<compendium display="false" />
+		<sheet>
+			<description>All cantrips with a range greater than self or touch have their range increased by 2.5x</description>
+		</sheet>
+	</element>
+
+	<element name="Repelling Blast" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_REPELLING_BLAST">
+		<supports>Eldritch Insight, Eldritch Invocation</supports>
+		<prerequisite>Eldritch Insight</prerequisite>
+		<requirements>ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT</requirements>
+		<description>
+			<p>When you hit a creature with a damage dealing cantrip, you can push the creature up to 10 feet away from you in a straight line.</p>
+		</description>
+		<compendium display="false" />
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Grasp of Hadar" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_GRASP_OF_HADAR">
+		<supports>Eldritch Insight, Eldritch Invocation</supports>
+		<prerequisite>Eldritch Insight</prerequisite>
+		<requirements>ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT</requirements>
+		<description>
+			<p>Once on each of your turns when you hit a creature with your cantrip with an attack roll, you can move that creature in a straight line 10 feet closer to you.</p>
+		</description>
+		<compendium display="false" />
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with your attack cantrip, you can move that creature in a straight line 10 feet closer to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Lance of Lethargy" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_LANCE_OF_LETHARGY">
+		<supports>Eldritch Insight, Eldritch Invocation</supports>
+		<prerequisite>Eldritch Insight</prerequisite>
+		<requirements>ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT</requirements>
+		<description>
+			<p>Once on each of your turns when you hit a creature with your attack cantrip, you can reduce that creature’s speed by 10 feet until the end of your next turn.</p>
+		</description>
+		<compendium display="false" />
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with your cantrip with an attack roll, you can reduce that creature’s speed by 10 feet until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+
+	<!--Official Overrides-->
+	<element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST, !(ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT)</requirements>
+		<description>
+			<p><em>Prerequisite: eldritch blast cantrip</em></p>
+			<p>When you cast <em>eldritch blast</em>, add your Charisma modifier to the damage it deals on a hit.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you cast eldritch blast, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_Eldritch_Spear">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST, !(ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT)</requirements>
+		<description>
+			<p><em>Prerequisite: eldritch blast cantrip</em></p>
+			<p>When you cast <em>eldritch blast</em>, its range is 300 feet.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you cast eldritch blast, its range is 300 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Repelling Blast" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST, !(ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT)</requirements>
+		<description>
+			<p><em>Prerequisite: eldritch blast cantrip</em></p>
+			<p>When you hit a creature with <em>eldritch blast</em>, you can push the creature up to 10 feet away from you in a straight line.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.</description>
+		</sheet>
+	</element>
+
+	<element name="Grasp of Hadar" type="Class Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_GRASP_OF_HADAR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST, !(ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT)</requirements>
+		<description>
+			<p class="flavor">Prerequisite: eldritch blast cantrip</p>
+			<p>Once on each of your turns when you hit a creature with your eldritch blast, you can move that creature in a straight line 10 feet closer to you.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with your eldritch blast, you can move that creature in a straight line 10 feet closer to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Lance of Lethargy" type="Class Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_LANCE_OF_LETHARGY">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST, !(ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT||ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT)</requirements>
+		<description>
+			<p class="flavor">Prerequisite: eldritch blast cantrip</p>
+			<p>Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature’s speed by 10 feet until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature’s speed by 10 feet until the end of your next turn.</description>
+		</sheet>
+	</element>
+</elements>
