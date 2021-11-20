@@ -4,7 +4,7 @@
 		<name>Eldritch Insight</name>
 		<description></description>
 		<author>Konard</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="OCF-Warlock-EldritchInsight.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Warlock-EldritchInsight.xml" />
 		</update>
 	</info>
@@ -25,12 +25,11 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Feat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT" requirements="[level:warlock:1]"/>
+			<grant type="Class Feature" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT" requirements="[level:warlock:1]"/>
 		</rules>
 	</element>
 
-	<element name="Eldritch Insight" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT">
-		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+	<element name="Eldritch Insight" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_CLASS_FEATURE_ELDRITCH_INSIGHT">
 		<description>
 			<p>Invocation with the prerequisite of eldritch blast now apply to more cantrips as described by the invocation.</p>
 		</description>

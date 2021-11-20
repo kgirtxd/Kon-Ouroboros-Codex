@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats</description>
 		<author>Konard</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Feats.xml" />
 		</update>
 	</info>
@@ -28,6 +28,7 @@
 	</element>
 
 	<element name="Eldritch Insight" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_FEAT_ELDRITCH_INSIGHT">
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
 		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
 		<description>
 			<p>Select one eldritch invocation with the prerequisite of eldritch blast. This invocation applies to more cantrips as described by the invocation.</p>
@@ -36,6 +37,77 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Eldritch Insight" supports="Eldritch Insight" />
+		</rules>
+	</element>
+
+
+
+	<!--Fixed Official Feats-->
+	<element name="Eldritch Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_ELDRITCH_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>Studying occult lore, you have unlocked eldritch power within yourself: you learn one Eldritch Invocation option of your choice from the warlock class. If the invocation has a prerequisite of any kind, you can choose that invocation only if you’re a warlock who meets the prerequisite.</p>
+			<p class="indent">Whenever you gain a level, you can replace the invocation with another one from the warlock class.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation, Eldritch Adept" supports="Eldritch Invocation" requirements="ID_WOTC_PHB_CLASS_WARLOCK||ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+			<select type="Class Feature" name="Eldritch Invocation, Eldritch Adept" supports="Eldritch Adept" requirements="!(ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK)"/>
+		</rules>
+	</element>
+
+	<element name="Metamagic Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_METAMAGIC_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>You’ve learned how to exert your will on your spells to alter how they function:</p>
+			<ul>
+				<li>You learn two Metamagic options of your choice from the sorcerer’s class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.</li>
+				<li>You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 2 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic, Metamagic Adept" supports="Metamagic" number="2" />
+			<stat name="sorcery-points" value="2" />
+		</rules>
+	</element>
+
+	<element name="Eldritch Adept" type="Feat" source="Unearthed Arcana: Feats (2020)" id="ID_WOTC_UA20200713_FEAT_ELDRITCH_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>Studying occult lore, you have unlocked eldritch power within yourself: you learn one Eldritch Invocation option of your choice from the warlock class. If the invocation has a prerequisite, you can choose that invocation only if you’re a warlock and only if you meet the prerequisite.</p>
+			<p class="indent">Whenever you gain a level, you can replace the invocation with another one from the warlock class.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation, Eldritch Adept" supports="Eldritch Invocation" />
+		</rules>
+	</element>
+
+	<element name="Metamagic Adept" type="Feat" source="Unearthed Arcana: Feats (2020)" id="ID_WOTC_UA20200713_FEAT_METAMAGIC_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>You’ve learned how to exert your will on your spells to alter how they function. You gain the following benefits:</p>
+			<ul>
+				<li>You learn two Metamagic options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you gain a level, you can replace one of your Metamagic options with another one from the sorcerer class.</li>
+				<li>You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 2 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic, Metamagic Adept" supports="Metamagic" number="2" />
+			<stat name="sorcery-points" value="2" />
 		</rules>
 	</element>
 </elements>

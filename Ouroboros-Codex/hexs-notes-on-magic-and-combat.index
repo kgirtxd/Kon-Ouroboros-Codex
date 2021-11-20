@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Hex's Notes on Magic and Combat</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="hexs-notes-on-magic-and-combat.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat.index" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 		<file name="OCF-Druid-WildfireSpells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Druid-WildfireSpells.xml" />
 		<file name="OCF-Sorcerer-DivineSoul-ClericExtendedSpellList.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Sorcerer-DivineSoul-ClericExtendedSpellList.xml" />
 		<file name="OCF-Sorcerer-OriginSpells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Sorcerer-OriginSpells.xml" />
-		<file name="OCF-Warlock-EldritchInsight.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Warlock_EldritchInsight.xml" />
+		<file name="OCF-Warlock-EldritchInsight.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-Warlock-EldritchInsight.xml" />
 
 		<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/source.xml" />
 		<file name="Spells.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Spells.xml" />

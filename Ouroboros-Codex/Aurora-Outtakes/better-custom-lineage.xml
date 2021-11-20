@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Better Custom Lineage</name>
+		<update version="0.0.1">
+			<file name="better-custom-lineage.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/better-custom-lineage.xml" />
+		</update>
+	</info>
+
+	<element name="Custom Lineage (Revised)" type="Race" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE_REVISED">
+		<description>
+			<p><i>An improved version of custom lineage that allows for a cleaner character sheet.</i></p>
+			<p class="flavor">Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:</p>
+			<p>
+				<span class="feature">Creature Type.</span>You are a humanoid. You determine your appearance and whether you resemble any of your kin.<br />
+				<span class="feature">Size.</span>You are Small or Medium (your choice).<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2.<br />
+				<span class="feature">Feat.</span> You gain one feat of your choice for which you qualify.<br />
+				<span class="feature">Variable Trait.</span>You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size" supports="Custom Lineage Size" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Ability Score Increase 2" />
+			<select type="Feat" name="Feat (Custom Lineage)" />
+			<select type="Racial Trait" name="Variable Trait" supports="Custom Lineage Variable Trait" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Custom Lineage)" supports="Standard||Exotic" />
+			<select type="Sub Race" name="Lineage" supports="Custom Lineage" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Dragonborn" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_DRAGONBORN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Dragonborn.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN"/>
+		</rules>
+	</element>
+	<element name="Dwarf" type="Sub Race" source="Player's Handbook" id="ID_SRD_RACE_VARIANT_LINEAGE_DWARF">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Dwarf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DWARF"/>
+		</rules>
+	</element>
+	<element name="Elf" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_ELF">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Elf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF"/>
+		</rules>
+	</element>
+	<element name="Elf (Dark)" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_ELF_DARK">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" alt="Dark Elf" />
+		<description>
+			<p>Your character's lineage is Elf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DARK_ELF"/>
+		</rules>
+	</element>
+	<element name="Elf (High)" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_ELF_HIGH">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" alt="High Elf" />
+		<description>
+			<p>Your character's lineage is Elf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HIGH_ELF"/>
+		</rules>
+	</element>
+	<element name="Elf (Wood)" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_ELF_WOOD">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" alt="Wood Elf" />
+		<description>
+			<p>Your character's lineage is Elf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_WOOD_ELF"/>
+		</rules>
+	</element>
+	<element name="Gnome" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_GNOME">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Gnome.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_GNOME"/>
+		</rules>
+	</element>
+	<element name="Half-Elf" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_HALFELF">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Half-Elf.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HALF_ELF"/>
+		</rules>
+	</element>
+	<element name="Halfling" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_HALFLING">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Halfling.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HALFLING"/>
+		</rules>
+	</element>
+	<element name="Half-Orc" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_HALFORC">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Half-Orc.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HALF_ORC"/>
+		</rules>
+	</element>
+	<element name="Human" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_HUMAN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Human.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN"/>
+		</rules>
+	</element>
+	<element name="Tiefling" type="Sub Race" source="Player's Handbook" id="ID_RACE_VARIANT_LINEAGE_TIEFLING">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Tiefling.</p>
+		</description>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_TIEFLING"/>
+		</rules>
+	</element>
+	<element name="Verdan" type="Sub Race" source="Acquisitions Incorporated" id="ID_WOTC_ACQINC_RACE_VARIANT_LINEAGE_VERDAN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Verdan.</p>
+		</description>
+	</element>
+	<element name="Changeling" type="Sub Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_VARIANT_LINEAGE_CHANGELING">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Changeling.</p>
+		</description>
+	</element>
+	<element name="Kalashtar" type="Sub Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_VARIANT_LINEAGE_KALASHTAR">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Kalashtar.</p>
+		</description>
+	</element>
+	<element name="Orc" type="Sub Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_VARIANT_LINEAGE_ORC">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Orc.</p>
+		</description>
+	</element>
+	<element name="Shifter" type="Sub Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_VARIANT_LINEAGE_SHIFTER">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Shifter.</p>
+		</description>
+	</element>
+	<element name="Warforged" type="Sub Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_VARIANT_LINEAGE_WARFORGED">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Warforged.</p>
+		</description>
+	</element>
+	<element name="Locathah" type="Sub Race" source="Locathah Rising" id="ID_WOTC_LR_RACE_VARIANT_LINEAGE_LOCATHAH">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Locathah.</p>
+		</description>
+	</element>
+	<element name="Grung" type="Sub Race" source="One Grung Above" id="ID_WOTC_OGA_RACE_VARIANT_LINEAGE_GRUNG">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Grung.</p>
+		</description>
+	</element>
+	<element name="Centaur" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_CENTAUR">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Centaur.</p>
+		</description>
+	</element>
+	<element name="Goblin" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_GOBLIN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Goblin.</p>
+		</description>
+	</element>
+	<element name="Loxodon" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_LOXODON">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Loxodon.</p>
+		</description>
+	</element>
+	<element name="Minotaur" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_Minotaur">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Minotaur.</p>
+		</description>
+	</element>
+	<element name="Simic Hybrid" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_SIMIC_HYBRID">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Simic Hybrid.</p>
+		</description>
+	</element>
+	<element name="Vedalken" type="Sub Race" source="Guildmasters' Guide to Ravnica" id="ID_WOTC_GGTR_RACE_VARIANT_LINEAGE_VEDALKEN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Vedalken.</p>
+		</description>
+	</element>
+	<element name="Gith" type="Sub Race" source="Mordenkainen's Tome of Foes" id="ID_WOTC_MTOF_RACE_VARIANT_LINEAGE_GITH">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Gith.</p>
+		</description>
+	</element>
+	<element name="Leonin" type="Sub Race" source="Mythic Odysseys of Theros" id="ID_WOTC_MOOT_RACE_VARIANT_LINEAGE_LEONIN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Leonin.</p>
+		</description>
+	</element>
+	<element name="Satyr" type="Sub Race" source="Mythic Odysseys of Theros" id="ID_WOTC_MOOT_RACE_VARIANT_LINEAGE_SATYR">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Satyr.</p>
+		</description>
+	</element>
+	<element name="Aarakocra" type="Sub Race" source="Princes of the Apocalypse" id="ID_WOTC_POTA_RACE_VARIANT_LINEAGE_AARAKOCRA">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Aarakocra.</p>
+		</description>
+	</element>
+	<element name="Genasi" type="Sub Race" source="Princes of the Apocalypse" id="ID_WOTC_POTA_RACE_VARIANT_LINEAGE_GENASI">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Genasi.</p>
+		</description>
+	</element>
+	<element name="Tortle" type="Sub Race" source="The Tortle Package" id="ID_WOTC_TOA_RACE_VARIANT_LINEAGE_TORTLE">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Tortle.</p>
+		</description>
+	</element>
+	<element name="Bugbear" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_BUGBEAR">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Bugbear.</p>
+		</description>
+	</element>
+	<element name="Goblin" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_GOBLIN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Goblin.</p>
+		</description>
+	</element>
+	<element name="Hobgoblin" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_HOBGOBLIN">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Hobgoblin.</p>
+		</description>
+	</element>
+	<element name="Kobold" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_KOBOLD">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Kobold.</p>
+		</description>
+	</element>
+	<element name="Orc" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_ORC">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Orc.</p>
+		</description>
+	</element>
+	<element name="Yuan-Ti Pureblood" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_YUANTI_PUREBLOOD">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Yuan-Ti Pureblood.</p>
+		</description>
+	</element>
+	<element name="Aasimar" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_AASIMAR">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Aasimar.</p>
+		</description>
+	</element>
+	<element name="Firbolg" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_FIRBOLG">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Firbolg.</p>
+		</description>
+	</element>
+	<element name="Goliath" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_GOLIATH">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Goliath.</p>
+		</description>
+	</element>
+	<element name="Kenku" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_KENKU">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Kenku.</p>
+		</description>
+	</element>
+	<element name="Lizardfolk" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_LIZARDFOLK">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Lizardfolk.</p>
+		</description>
+	</element>
+	<element name="Tabaxi" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_TAXBAXI">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Tabaxi.</p>
+		</description>
+	</element>
+	<element name="Triton" type="Sub Race" source="Volo's Guide to Monsters" id="ID_WOTC_VGTM_RACE_VARIANT_LINEAGE_TRITON">
+		<compendium display="false" />
+		<supports>Custom Lineage</supports>
+		<sheet display="false" />
+		<description>
+			<p>Your character's lineage is Triton.</p>
+		</description>
+	</element>
+</elements>
