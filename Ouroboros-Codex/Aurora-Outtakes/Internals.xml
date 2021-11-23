@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Internals.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/Internals.xml" />
 		</update>
 	</info>
@@ -55,6 +55,67 @@
 	<element name="Immunity (Stunned Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_STUNNED">
 		<supports>Immunity</supports>
 	</element>
+
+	<!-- Spellcasting Grants -->
+	<element name="Spellcasting Feature" type="Grants" source="Internal" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING" />
+	<element name="Pact Magic Feature" type="Grants" source="Internal" id="ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC" />
+
+	<append id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_SPELLCASTING"/>
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC">
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC"/>
+		</rules>
+	</append>
+	
 </elements>
 	<!--By definition there are no resistances for conditions
 	<element name="Resistance (Blinded Condition)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMPAIRMENT_RESISTANCE_BLINDED">

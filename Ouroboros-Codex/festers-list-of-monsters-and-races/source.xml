@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/source.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 			<set name="abbreviation">FLMR</set>
 			<set name="url"></set>
 			<set name="image"></set>
-			<set name="author" abbreviation="KON" url="https://github.com/Ouroboros-dnd/Codex">Konard</set>
+			<set name="author" abbreviation="KON" url="https://github.com/Ouroboros-dnd/Codex">~Konard~</set>
 			<set name="homebrew">true</set>
 			<set name="release">20211001</set>
 			<set name="information">Ouroboros Codex Supplement</set>

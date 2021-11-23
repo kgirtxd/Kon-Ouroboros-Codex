@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 			<set name="abbreviation">CP</set>
 			<set name="url">https://github.com/kgirtxd/5eHomeBrew/tree/master/Konard/Campaigns</set>
 			<set name="image">https://gchs.org/wp-content/uploads/Image-Coming-Soon-Placeholder.png</set>
-			<set name="author" abbreviation="OC">Ouroboros Crew</set>
+			<set name="author" abbreviation="CP">~The Violet Rabbit~</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
