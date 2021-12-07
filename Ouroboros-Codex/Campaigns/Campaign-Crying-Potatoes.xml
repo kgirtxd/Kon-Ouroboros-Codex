@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -243,6 +243,32 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Chalice of Nysos" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_CHALICE_OF_NYSOS">
+		<description>
+			<p><strong>Bottomless Wine.</strong> By itself the Chalice functions as a decanter of endless wine. It will always be at least half full of fine wine and weighs 2 pounds. You can use an action to slosh the wine and speak one of three command words.</p>
+			<ul>
+				<li>"Stream" produces 1 gallon of fine wine.</li>
+				<li>"Fountain" produces 5 gallons of fine wine.</li>
+				<li>"Geyser" Produces 30 gallons of fine wine that gushes forth in a tower 30 feet long and 1 foot wide. As a bonus action while holding the chalice, you can aim the geyser at a creature you san see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone upon which they must make a DC 15 Constitution saving throw or become drunken for 1 hour (see below).</li>
+			</ul>
+			<p><strong>Drunkenness.</strong>The target gains disadvantage on all Dexterity saving throws and on skill checks related to the dexterity attribute. They further lose 10 movement per round for the duration of the effect and are unable to concentrate on spells for longer than 1 round. However, they gain advantage on Strength checks and saving throws, and on attacks made using their strength modifier.</p>
+			<p><strong>Potion Concentration.</strong>If a potion is mixed with the wine in the chalice its effects will become concentrated by the divine powers of the chalice. If the potion is drunken from the chalice one of the following effects can happen according to the DM's discretion:</p>
+			<ul>
+				<li>The duration of the potion is doubled.</li>
+				<li>The damage of a poison is doubled on a failed save.</li>
+			</ul>
+			<p class="indent">It you drink the potion from the chalice you must succeed on a DC 15 Constitution saving throw or become drunken (see above). The Chalice no longer holds the effect of the potion stored in it once either one creature drinks from the chalice, or one of the command words are used on the chalice. Using a command word resets the chalice so only fine wine is produced by its bottomless wine effect.</p>
+			<p class="indent">If a potion is instead poured out of the Chalice instead of drank, then the chalice will produce 5 vials of the concentrated potions before running out and resetting itself to fine wine. You cannot add concentrated health potions to the chalace.</p>
+			<p class="indent">If you use the Bottomless Wine command words while a potion is in the chalice, the contents will revert to wine before the command activates. Thus wasting the stored potion.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
 		</setters>
 	</element>
 
