@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-	<element name="Kandra" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_KANDRA">
+	<element name="Kandra" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACE_KANDRA">
 		<description>
 			<p>There is a race of creatures that people whisper of. Sinister and unseen. They say not to travel alone at night for these creatures will catch you and steal your face. They walk among us wearing the faces of those we know and love. How would you feel to know the friendly baker down the street was actually a faceless creature of nightmares?</p>
 			<p class="indent">What these legends really speak of is the race of the kandras. Kandras are something like Ooze given sentience. They take the bones of other creatures and form bodies around said bones. Creating muscle, ligament, and organs from their Ooze like bodies. In order to accurately replicate a form a kandra typically must eat the corpse attached to the bones. Despite popular belief, Kandras do not usually kill people themselves. They are a scavenger race and the bones they use are typically collected from already dead corpses or animals.</p>
@@ -39,17 +39,17 @@
 			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_OOZE" />
 			<stat name="innate speed" value="20" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Vision" id="ID_OBC_FLMC_VISION_KANDRA_BLINDSIGHT" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_HOLD_BREATH" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_AMORPHOUS" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_UNNATURAL_BEING" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_INSIDIOUS_IMPOSTOR" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_STOLEN_FORM" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING" />
+			<grant type="Vision" id="ID_OBC_FLMR_VISION_KANDRA_BLINDSIGHT" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_HOLD_BREATH" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_AMORPHOUS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_UNNATURAL_BEING" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_INSIDIOUS_IMPOSTOR" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_STOLEN_FORM" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING" />
 		</rules>
 	</element>
 
-	<element name="Blindsight" type="Vision" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_VISION_KANDRA_BLINDSIGHT">
+	<element name="Blindsight" type="Vision" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_VISION_KANDRA_BLINDSIGHT">
 		<description>
 			<p>You have blindsight out to 30ft. If the form you are replicating has eyes, you gain the vision of the new form and your natural blindsight is reduced by 15ft.</p>
 		</description>
@@ -61,7 +61,7 @@
 		</rules>
 	</element>
 
-	<element name="Hold Breath" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_HOLD_BREATH">
+	<element name="Hold Breath" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_HOLD_BREATH">
 		<description>
 			<p>You can hold your breath for 1 hour. </p>
 		</description>
@@ -70,7 +70,7 @@
 		</sheet>
 	</element>
 
-	<element name="Amorphous" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_AMORPHOUS">
+	<element name="Amorphous" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_AMORPHOUS">
 		<description>
 			<p>While in your ooze form you can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing.  You may also extend a pseudopod up to 6 inches wide and 5ft long in order to manipulate doors and containers or make unarmed attacks.  The pseudopod cannot carry more than 10 pounds.</p>
 		</description>
@@ -79,7 +79,7 @@
 		</sheet>
 	</element>
 
-	<element name="Unnatural Being" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_UNNATURAL_BEING">
+	<element name="Unnatural Being" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_UNNATURAL_BEING">
 		<description>
 			<p>You are vulnerable to acid damage.  You have resistance to poison damage, and you have advantage on saving throws against being poisoned.  </p>
 		</description>
@@ -92,7 +92,7 @@
 		</rules>
 	</element>
 
-	<element name="Insidious Impostor" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_INSIDIOUS_IMPOSTOR">
+	<element name="Insidious Impostor" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_INSIDIOUS_IMPOSTOR">
 		<description>
 			<p>You gain proficiency in the Deception skill as well as an advantage on Charisma(Deception) and Charisma(Performance) checks when trying to pass yourself off as a different person. In addition, you can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 10 minutes.</p>
 		</description>
@@ -104,7 +104,7 @@
 		</rules>
 	</element>
 
-	<element name="Stolen Form" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_STOLEN_FORM">
+	<element name="Stolen Form" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_STOLEN_FORM">
 		<description>
 			<p>You may spend a long rest digesting and replicating a beast or humanoid corpse of small or medium size. The body formed has your ability scores but completely resembles the person it was. You have the base speeds of whatever you are imitating (this includes all flying, swimming, and burrow speeds that form should have). If you are replicating a non-humanoid you take their strength and dexterity scores (though the stolen scores cannot exceed your base scores). If the form you are replicating has eyes, you gain the vision of the new form and your natural blindsight is reduced by 15ft.  If the bones you are using are bones you have used before you may instead recreate the body over a short rest.  You cannot create hair and therefor a hairless cadaver leads to a bald form, and an extra hairy one, costs more time to digest in order to put each hair in its appropriate position. The additional time is up to the DM’s discretion but cannot exceed 1 short rest.</p>
 		</description>
@@ -113,7 +113,7 @@
 		</sheet>
 	</element>
 
-	<element name="Blessing" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING">
+	<element name="Blessing" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING">
 		<description>
 			<p>Pick a blessing upon creation. A blessing consists of two metal spikes of a type depending on the type of blessing. You can survive with only one spike, but you will lose the blessing’s bonus as well has half of your INT, WIS, and CHA scores. It is possible to replace your blessing over a short rest with another taken from your fallen brethren, but you can only benefit from one at a time.</p>
 		</description>
@@ -125,7 +125,7 @@
 		</rules>
 	</element>
 
-	<element name="Blessing of Awareness" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING_OF_AWARENESS">
+	<element name="Blessing of Awareness" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING_OF_AWARENESS">
 		<supports>Kandra Blessing</supports>
 		<description>
 			<p>You gain expertise in perception. You have an advantage on Perception or Investigation rolls to discover hidden doors and traps.</p>
@@ -139,7 +139,7 @@
 		</rules>
 	</element>
 
-	<element name="Blessing of Potency" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING_OF_POTENCY">
+	<element name="Blessing of Potency" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING_OF_POTENCY">
 		<supports>Kandra Blessing</supports>
 		<description>
 			<p>You gain advantage on strength-based ability checks and saving throws. You also count as one size larger when determining carrying capacity and the weight you can push, drag, or lift.</p>
@@ -152,7 +152,7 @@
 		</rules>
 	</element>
 
-	<element name="Blessing of Presence" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING_OF_PRESENCE">
+	<element name="Blessing of Presence" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING_OF_PRESENCE">
 		<supports>Kandra Blessing</supports>
 		<description>
 			<p>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell or task when you take damage.  In addition you can accurately recall anything you've seen or heard within the past month.</p>
@@ -162,7 +162,7 @@
 		</sheet>
 	</element>
 
-	<element name="Blessing of Stability" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BLESSING_OF_STABILITY">
+	<element name="Blessing of Stability" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BLESSING_OF_STABILITY">
 		<supports>Kandra Blessing</supports>
 		<description>
 			<p>You gain proficiency on Wisdom saving throws. You have advantage on all wisdom saving throws.</p>

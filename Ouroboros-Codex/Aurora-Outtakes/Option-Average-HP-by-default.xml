@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
+	<info>
 		<name></name>
 		<update version="0.0.1">
 			<file name="Option-Average-HP-by-default.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/Option-Average-HP-by-default.xml" />
 		</update>
 	</info>
 
-    <element name="Average Hit Points" type="Option" source="Internal" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP">
-        <description>
-            <p>The character is awarded the average amount of hit points based on their hit dice.</p>
-        </description>
-        <setters>
-            <set name="default">true</set>
-            <set name="short">The character is awarded the average amount of hit points based on their hit dice.</set>
-        </setters>
-        <sheet display="false">
-            <description>The character is awarded the average amount of hit points based on their hit dice instead of random rolled (or manually edited) hit points.</description>
-        </sheet>
-    </element>
+	<element name="Average Hit Points" type="Option" source="Internal" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP">
+		<description>
+			<p>The character is awarded the average amount of hit points based on their hit dice.</p>
+		</description>
+		<setters>
+			<set name="default">true</set>
+			<set name="short">The character is awarded the average amount of hit points based on their hit dice.</set>
+		</setters>
+		<sheet display="false">
+			<description>The character is awarded the average amount of hit points based on their hit dice instead of random rolled (or manually edited) hit points.</description>
+		</sheet>
+	</element>
 </elements>

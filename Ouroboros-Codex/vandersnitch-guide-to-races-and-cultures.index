@@ -2,12 +2,24 @@
 <index>
 	<info>
 		<name>The Vandersnitch Guide to Races and Cultures</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="vandersnitch-guide-to-races-and-cultures.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/source.xml" />
-		<file name="race-primordial-touched.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/race-primordial-touched.xml" />
+
+		<!--Archetypes-->
+		<file name="Cleric-ChaosDomain.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Cleric-ChaosDomain.xml" />
+		<file name="Cleric-ProtectionDomain.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Cleric-ProtectionDomain.xml" />
+		<file name="Warlock-Primordial.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Warlock-Primordial.xml" />
+
+		<!--Races-->
+		<file name="Race-Elf-Subraces.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Elf-Subraces.xml" />
+		<file name="Race-Kender.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Kender.xml" />
+		<file name="Race-Nadar.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Nadar.xml" />
+
+		<!--Old Files-->
+		<obsolete name="race-primordial-touched.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/race-primordial-touched.xml" />
 	</files>
 </index>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Race-Elf-Subraces.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Elf-Subraces.xml" />
+		</update>
+	</info>
+	
+	<!--Moon Elf-->
+	<element name="Moon Elf" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_MOON_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>As a moon elf, you have the strongest connection to the weave out of any other lineage. You're lineage is known to be reclusive and difficult to find, but when found are not unkind and will often tend to wounded or famished travelers before hiding once more in your forests. Among other lineages, moon elves are considered royalty, with life spans reaching 1000 years and having the closest connections to the fey magics. </p>
+			<p class="indent">More suited to temperate and chilled environments, moon elves typically sport alabaster skin, sometimes tinged blue with hair of silver-white, black, or frosted blue, though various shades of blond, brown, and red are not uncommon. Their eyes are blue or green flecked with gold. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1</p>
+			<p class="indent"><strong><em>Innate Spellcasting.</em></strong> You know the cantrip Mind Sliver. You can also can cast Comprehend Languages an unlimited times using this feature. Starting at 3rd level you can cast Blur* using this ability, but once you've done so, you can't cast it again using this trait until you finish a long rest. Intelligence is your spellcasting ability for these spells. </p>
+			<p class="indent"><strong><em>Strong Mind.</em></strong> You have advantage on Wisdom saving throws. </p>
+			<p class="indent"><strong><em>Extra Languages.</em></strong> You can speak, read, and write sylvan. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_MOON_ELF_INNATE_SPELLCASTING" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_STRONG_MIND" />
+		</rules>
+	</element>
+
+	<element name="Innate Spellcasting" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_MOON_ELF_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the cantrip Mind Sliver. You can also can cast Comprehend Languages an unlimited times using this feature. Starting at 3rd level you can cast Blur* using this ability, but once you've done so, you can't cast it again using this trait until you finish a long rest. Intelligence is your spellcasting ability for these spells. </p>
+		</description>
+		<sheet>
+			<description>You know the cantrip Mind Sliver. You can also can cast Comprehend Languages an unlimited times using this feature. Intelligence is your spellcasting ability for these spells. </description>
+			<description level="3">You know the cantrip Mind Sliver. You can also can cast Comprehend Languages an unlimited times using this feature. You can cast Blur using this ability, but once you've done so, you can't cast it again using this trait until you finish a long rest. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" />
+		</rules>
+	</element>
+
+	<element name="Strong Mind" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_STRONG_MIND">
+		<description>
+			<p>You have advantage on Wisdom saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom saving throws.</description>
+		</sheet>
+	</element>
+
+	<!--Sun Elf-->
+	<element name="Sun Elf" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_SUN_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>As a sun elf, you have a strong balance between the mastery of magic and the mastery of body though have difficulty in excelling in one path or the other. As such you are seen as nobility among the other lineages of elves. Members of this lineage, tend to be haughty and reclusive, believing themselves to non-elves, and even other certain lineages. </p>
+			<p class="indent">More suited to heated environments, the sun elves have bronze skin and hair of copper, black, or golden blond. Thier eyes are often gold, silver, or black. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Weapon Training.</em></strong> You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
+			<p class="indent"><strong><em>Cantrip.</em></strong> You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</p>
+			<p class="indent"><strong><em>Extra Languages.</em></strong> You can speak, read, and write, one extra language of your choice. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_SUN_ELF_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_SUN_ELF_CANTRIP" />
+			<select type="Language" name="Language (Sun Elf)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+	<element name="Weapon Training" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_SUN_ELF_WEAPON_TRAINING">
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Sun Elf Weapon Training)" number="2" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Sun Elf Weapon Training)" number="2" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Cantrip" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_SUN_ELF_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it. </p>
+		</description>
+		<sheet>
+			<description>Intelligence is your spellcasting ability for your wizard cantrip. </description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (Sun Elf)" supports="Wizard, 0" />
+		</rules>
+	</element>
+
+	<!--Twilight Elf-->
+	<element name="Twilight Elf" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_TWILIGHT_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>Having been forced into exile or made into slaves by the sun and moon elves of Arune, the Twilight elves have become embittered against all surface races and as such have adapted to life underground. As a twilight elf you have great mastery over physical endeavors. While not treated kindly by the other elven lineages, twilight elves possess the tenacity and rugedness to keep fighting for thier goals dispite any obsticals in thier way.</p>
+			<p class="indent">Twilight elves come in two varieties. Those raised above ground, and those accustomed to underground living. This distinction can usually be made by the hue of thier skin where underground elves tend to have a lighter ebony skin with more blue tints showing. Those above ground have much darker tints, and the blue hues are typically not visible. Thier hair tends to be black or white, though red or copper hues are not uncommon. Eyes tend to be blue, red, or violet in color. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your intelligence score increases by 1. </p>
+			<p class="indent"><strong><em>Weapon Training.</em></strong>  You have proficiency with the rapier, shortsword, scimitar, and hand crossbow. </p>
+			<p class="indent"><strong><em>Innate Spellcasting.</em></strong> You know the dancing lights cantrip and can cast it at will. Starting from the 3rd level, you can cast faerie fire spell once using this trait. At 5th level, you can cast darkness once per use of this trait. </p>
+			<p class="indent"><strong><em>Extra Languages.</em></strong> You can speak, read, and write Undercommon. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Race Variant" name="Underground Life" supports="VGRC Twilight Elf" optional="true" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_TWILIGHT_ELF_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_TWILIGHT_ELF_INNATE_SPELLCASTING" />
+		</rules>
+	</element>
+
+	<element name="Weapon Training" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_TWILIGHT_ELF_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with rapiers, shortswords, and hand crossbows.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with rapiers, shortswords, and hand crossbows.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Weapon Training)" number="4" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Innate Spellcasting" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_TWILIGHT_ELF_INNATE_SPELLCASTING">
+		<description>
+			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+		</rules>
+	</element>
+
+	<element name="Underground Twilight Elf" type="Race Variant" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_VARIANT_RACE_UNDERGROUND_TWILIGHT_ELF">
+		<supports>VGRC Twilight Elf</supports>
+		<description>
+			<p>Some twilight elves have lived underground all or most of thier lives. This has come at a cost and benifit to their vision. If you wish to play such an elf you gain Superior Darkvision and Sunlight Sensitivity. </p>
+			<p class="indent"><strong><em>Superior Darkvision.</em></strong> Your darkvision has a radius of 120 feet.</p>
+			<p class="indent"><strong><em>Sunlight Sensitivity.</em></strong> You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
+		</rules>
+	</element>
+
+	<!--Wild Elf -->
+	<element name="Wild Elf" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_WILD_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native wildernesses. This lineage of elves tends to be the most widespread in both location and temperment. Some clans will hide away from non-elven races in their homelands, and others will actively mingle with non-elvin settlements. </p>
+			<p class="indent">Wild elvin skin tends to be copperish to deep bronze in hue. Thier hair tends towards browns and greens but is occasionally copper colored. Thier eyes tend toward green, brown, or hazel. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your intelligence score increases by 1. </p>
+			<p class="indent"><strong><em>Weapon Training.</em></strong>  You have proficiency with the longsword, shortsword, shortbow, and longbow</p>
+			<p class="indent"><strong><em>Fleet of Foot.</em></strong> Your base walking speed increases to 35 feet.</p>
+			<p class="indent"><strong><em>Mask of the Wild.</em></strong> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_WILD_ELF_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACE_WILD_ELF_FLEET_OF_FOOT" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACE_WILD_ELF_MASK_OF_THE_WILD" />
+		</rules>
+	</element>
+
+	<element name="Weapon Training" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_WILD_ELF_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Wild Elf Weapon Training)" number="2" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Wild Elf Weapon Training)" number="2" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Fleet of Foot" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACE_WILD_ELF_FLEET_OF_FOOT">
+		<description>
+			<p>Your base walking speed increases to 35 feet.</p>
+		</description>
+		<sheet display="false">
+			<description>Your speed increases to 35 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="35" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Mask of the Wild" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACE_WILD_ELF_MASK_OF_THE_WILD">
+		<description>
+			<p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to hide even when you are only lightly obscured.</description>
+		</sheet>
+	</element>
+
+	<!--Winged Elf-->
+	<element name="Winged Elf" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_WINGED_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>No one is exactly sure how your lineage came about, though most scholars will doggedly blaim the fey tendency to co-mingle with any race that catches thier fancy. As a winged elf, you have a keen eye for detail and the gift of flight. This lineage of elves is the rarest of Arune and are only found in a select few mountain rages of the world in sky cities. They are not fond of outsiders and will actively sabotage attempts for outsiders to enter thier cities unless the outsiders have proper connections inside to prevent this hostility. </p>
+			<p class="indent">Winged elves tend to have anywhere from alabaster to bronze skin, hair tends to be brown, blond, or black, though sliver and white are not uncommon. Eyes tend to be black, brown, blue, or amber. All winged elves sport a single pair of large wings and tend to be much lighter weight than the other lineages. Wings tend to be tawny browns, slate greys, or pale whites. The nobility of the winged elves tends to decorate their wings with small bits of painted wood, glass, or metal. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1. </p>
+			<p class="indent"><strong><em>Weapon Training.</em></strong>  You have proficiency with handaxes, spears, longbows, and halberds. </p>
+			<p class="indent"><strong><em>Flight.</em></strong> You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Extra Languages.</em></strong> You can speak, read, and write in one additional language of your choice. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_WINGED_ELF_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_WINGED_ELF_FLIGHT" />
+		</rules>
+	</element>
+
+	<element name="Weapon Training" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_WINGED_ELF_WEAPON_TRAINING">
+		<description>
+			<p> You have proficiency with handaxes, spears, longbows, and halberds.</p>
+		</description>
+		<sheet>
+			<description> You have proficiency with handaxes, spears, longbows, and halberds.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Winged Elf Weapon Training)" number="2" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Winged Elf Weapon Training)" number="2" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_WINGED_ELF_FLIGHT">
+		<description>
+			<p>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+</elements>

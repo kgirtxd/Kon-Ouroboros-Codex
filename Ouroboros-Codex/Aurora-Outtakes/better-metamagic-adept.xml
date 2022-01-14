@@ -2,29 +2,20 @@
 <elements>
 	<info>
 		<name>Better Metamagic Adept</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="better-metamagic-adept.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/better-metamagic-adept.xml" />
 		</update>
 	</info>
 
-	<element name="Metamagic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
-		<description>
-			<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
-			<p class="indent">You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
-		</description>
-		<sheet>
-			<description>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</description>
-		</sheet>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
 		<rules>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="3" number="2"/>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="10"/>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="17"/>
-			<select type="Class Feature" name="Metamagic, Metamagic Adept" supports="Metamagic" number="2" requirements="ID_WOTC_TCOE_FEAT_METAMAGIC_ADEPT" />
+			<select type="Class Feature" name="Metamagic, Metamagic Adept^" supports="Metamagic" number="2" requirements="ID_WOTC_TCOE_FEAT_BETTER_METAMAGIC_ADEPT" />
 		</rules>
-	</element>
+	</append>
 
-	<element name="Metamagic Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_METAMAGIC_ADEPT">
+	<element name="Metamagic Adept^" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_BETTER_METAMAGIC_ADEPT">
 		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
 		<description>
 			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
 			<p>You’ve learned how to exert your will on your spells to alter how they function:</p>
@@ -32,8 +23,9 @@
 				<li>You learn two Metamagic options of your choice from the sorcerer’s class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.</li>
 				<li>You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
 			</ul>
+			<p><em><strong>Note:</strong> This version of the feat will make the metamagic options appear with the rest of the ones granted by the sorcerer class</em></p>
 		</description>
-		<sheet>
+		<sheet alt="Metamagic Adept">
 			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 2 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
 		</sheet>
 		<rules>

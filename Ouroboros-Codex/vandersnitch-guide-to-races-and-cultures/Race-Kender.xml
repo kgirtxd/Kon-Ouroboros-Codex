@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kender Race</name>
+		<update version="0.0.1">
+			<file name="Race-Kender.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Kender.xml" />
+		</update>
+	</info>
+
+	<element name="Kender" type="Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACE_KENDER">
+		<description>
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>Kender are humanoids that resemble halflings at a young age, with youthful features. However, they are taller and thinner. Most kender place their hair in a topknot, which is a source of racial pride. They rarely grow more than 4 feet tall. As they age, they gain a wizened look, which, coupled with their pointed ears, can make them look more elven in appearance. However, their skin tones are notably darker than most elves ranging from Toffee to Expresso Brown. </p>
+			<h4>HISTORY</h4>
+			<p>Kenders are one of the ancestor races in the world of Arune, and attribute thier origins from the God of Chaos, Kira. Kender have built a reputation to be a race of fey children who never grew out of the inquisitive stage of their lives that all children possess. Their incessant need to know the whys and hows of the world combined with their vulnerability to boredom has earned them infamy as trouble makers. Because of their curiosity and inability to control it, they often will wander without fear leaving thier clan at their "age of adventure" to explore nd learn more of the world. Unfortunately, this fearless curiousity and thier propensity for unconcious kleptomania results in frequent tragedy and distrust from neighboring races.</p>
+			<h4>SOCIETY</h4>
+			<p>People say it is a miracle any kender exist anymore due to their self-destructive nature. Due to thier child-like curiosity and lack of fear, its frequently thought that settlements run by them would be equal to a village run entirely by small children. Fortunately, this is not the case. While Kenders tend to be unable to form large organized groups by themselves, they are able to form small clans run by 3 or 5 elders. Any larger of a settlement requires the mixing of other, mroe level-headed races such as their cousins, the halflings.</p>
+			<p class="indent">A frequent misconception is that kenders can only be found in advenuring groups. While kenders will typically only be found in groups of 2 or 3 outside of a clan, this is soley a safety mechanism to assist them in returning to the clan to living long enough to set of thier own clan elsewhere once they have grown old enough and wise enough to lead a new generation of explorers and adventurers. Unfortunately, ver few kenders reach this wizened age, as thier propensity for adventure and lack of fear leads many to an early death or a life of imprisonment</p>
+			<p class="indent">People find them generally annoying, as they are prone to stealing even from people they consider allies.</p>
+			<h4>PERSONALITY</h4>
+			<p>Kender have no concept of ownership, and tend to "borrow" objects, which they never return. They do so sometimes out of necessity, and sometimes for fun. To a kender, there is nothing morally wrong about this, because the concept of ownership is nonexistent. They also have little sense of danger, being numb to it when they are curious. The exception to this are afflicted by curses or that have lived trough severe trauma. Regardless, kender are best characterized by their tendency to behave like children. Telling them not to do something will make them prone to commit it. Their boredom can push them to do awful things that can endanger everyone around them as well as themselves. </p>
+			<h4>KENDER NAMES</h4>
+			<p>
+				<span class="feature">Male Names:</span>Lockpick, Shoehorn, Earwig, Tasslehoff <br/>
+				<span class="feature">Female Names:</span> Dagger, Bearchase, Dawnbreak <br/>
+				<span class="feature">Clan Names:</span> Burrfoot, Quickstep, Haversack
+			</p>
+			<h4>Kender Traits</h4>
+			<p>Your chaotic blood manifests in a variety of traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong>  Your Dexterity increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Kenders have an unknown lifespan, due to the likelyhood of dying young from curiosity. The oldest known kender was rumored to have lived over a thousand years, but there is nothing to confirm this rumor.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Due to their cultural view on borrowing, most kender are a variation of chaotic.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Kenders average about 3 feet tall and weigh about 40 pounds, rarely going over 4 feet. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to the darkness of twilight, you have superior vision in the dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Taunting Nature.</em></strong> Kender are skilled at exploiting the psychological weaknesses of others. You know the <i>vicious mockery</i> cantrip. Charisma is your spellcasting ability for this spell. </p>
+			<p class="indent"><strong><em>Kleptomaniac.</em></strong> You just happen to "acquire" things which are not yours. You have expertise in the sleight of hand skill.</p>
+			<p class="indent"><strong><em>Fearless.</em></strong> You are immune to being frightened.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write in Common, Kender, and your choice of elvish, halfling, orcish, or sylvan</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kender)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_OBC_VGRC_LANGUAGE_KENDER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Kender)" supports="Custom Race Language||Kender Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Kender)" supports="ID_LANGUAGE_ELVISH|ID_LANGUAGE_HALFLING|ID_LANGUAGE_ORC|ID_LANGUAGE_SYLVAN" />
+
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_TAUNTING_NATURE" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_KLEPTOMANIAC" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_FEARLESS" />
+		</rules>
+	</element>
+
+	<element name="Kender" type="Language" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_LANGUAGE_KENDER">
+		<supports>Standard, Kender Language</supports>
+		<description>
+			<p>Typically spoken by kender.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Kender</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
+	<element name="Taunting Nature" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_TAUNTING_NATURE">
+		<description>
+			<p>Kender are skilled at exploiting the psychological weaknesses of others. You know the <i>vicious mockery</i> cantrip. Charisma is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the <i>vicious mockery</i> cantrip. Charisma is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+		</rules>
+	</element>
+
+	<element name="Kleptomaniac" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_KLEPTOMANIAC">
+		<description>name
+			<p>You just happen to "acquire" things which are not yours. You have expertise in the sleight of hand skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	
+	<element name="Fearless" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_KENDER_FEARLESS">
+		<description>
+			<p>You are immune to being frightened.</p>
+		</description>
+		<sheet>
+			<description>You are immune to being frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_FRIGHTENED" />
+		</rules>
+	</element>
+</elements>

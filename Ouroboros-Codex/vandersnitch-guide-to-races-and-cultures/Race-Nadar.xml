@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Race-Nadar.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Race-Nadar.xml" />
+		</update>
+	</info>
+
+	<element name="Nadar" type="Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACE_NADAR">
+		<description>
+			<p>Deep in the lost ruins of Arune there are a people who's blood has been permanently altered by the effects of magical wars long gone. While exceedingly rare, those that do happen across these people will find a fairly content lot, who's highest aspirations tend toward revealing secrets long past and have an uncanny knack for knowing exactly when someone of another plane is speaking to them. </p>
+			<h4>HEART OF THE ELEMENTS</h4>
+			<p>The Nadar are derived from unions between elemental-touched fey and someone of a humanoid race. They tend to have the thin builds of their fey ancestors and eyes reflecting the elemental plane their blood is touched by. Because of this connection, nadar can take on temporary effects when under high stress such as small flames flickering in their hair, water dripping from their clothes without them becoming wet, a small wind circling around them, or the sounds of a distant earthquake following their footfalls. Eyes tend toward blue/green, amber, brown, and grey/silver, depending on their bloodline. </p>
+			<h4>BORN FROM WAR BUT LIVE FOR CHANGE</h4>
+			<p>Long ago before the fey and the elves got along there was a war between the two races. Fey, with their deep rooted connection to the outer planes, took to making pacts with ancient primordials of the elemental planes for assistance. Now, many years later, the union of outer planar and material planar blood has caused the creation of the nadar. </p>
+			<p class="indent">Those of this bloodline are usually found in the deepest forests and untouched wanders of nature where only the fey and some elves dare to live. Their connection to the elemental planes tends to give the primordial touched, chaotic natures and a desire to stay in locations close to the homeland of the original Primordial that began their lineage. </p>
+			<p class="indent">In cities the nadar have difficulty staying with one job for too long. They typically take up interests in artisan crafts where they are free to craft what their hearts' desire and make excellent adventurers where they make their homes on the road looking for lost ruins and dungeons to delve. </p>
+			<h4>Nadar Traits</h4>
+			<p>You nadar character has certain characteristics that are common with all other Nadar.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Primordial Touched age at the same rate as humans but live a few decades longer. </p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The primordial touched tend toward a neutral standpoint in either morality or law. However many Primordial Touched are swayed to pick a side in one of the two sides by the societies they live in. </p>
+			<p class="indent"><strong><em>Size.</em></strong>  Primordial Touched are about the same size and build as elves. Your size is Medium. </p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+			<p class="indent"><strong><em>Primordial Resistances.</em></strong> You have resistance to poison damage.</p>
+			<p class="indent"><strong><em>Legacy of Nature.</em></strong> You know the druidcraft cantrip. Once you reach 3rd level, you can cast fog cloud spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the Flame blade spell once per day. </p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Primordial. </p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Four major subraces of nadar are found in the world of Arune: adharnadar, uir-nadar, aile-nadar , and uisge-nadar. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Nadar)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Sub Race" name="Nadar Subrace" supports="Nadar" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Nadar)" number="2" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_NADAR_PRIMORDIAL_RESISTANCES" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_NADAR_LEGACY_OF_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Primordial Resistances" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_NADAR_PRIMORDIAL_RESISTANCES">
+		<description>
+			<p>You have resistance to poison damage. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Legacy of Nature" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_NADAR_LEGACY_OF_NATURE">
+		<description>
+			<p>You know the druidcraft cantrip. Once you reach 3rd level, you can cast fog cloud spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the Flame blade spell once per day. </p>
+		</description>
+		<sheet>
+			<description>You know the druidcraft cantrip.</description>
+			<description level="3">You know the druidcraft cantrip. You can cast fog cloud spell as a 2nd-level spell once per day.</description>
+			<description level="5">You know the druidcraft cantrip.  You can cast fog cloud spell as a 2nd-level spell and flame blade once per day.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<!--
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_BLADE" level="5" />
+			-->
+		</rules>
+	</element>
+
+	<element name="Adhar-Nadar" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_ADHAR_NADAR">
+		<supports>Nadar</supports>
+		<description>
+			<p>As an adhar-nadar, your bloodline stems from a union between a humanoid and an fey touched by the primordial plane of air. Tending to be as fickle as the wind, you moods are known to shift from steady to excitable with little effort from those around you.</p>
+			<p class="indent">Adhar-nadar tend to have pale skin with grey eyes and hair. A faint breeze accompanies them wherever they go, tousling thier hair and clothes with a strength reflective of thier mood. A few Adhar-nadar have swirling silvery lines marked on thier pale skin reflecting the elemental winds they came from. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_ADHAR_ELEMENTAL_FORM" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_THE_WIND" />
+		</rules>
+	</element>
+
+	<element name="Elemental Form" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_ADHAR_ELEMENTAL_FORM">
+		<description>
+			<p>You can move through a space as narrow as 1 inch wide without squeezing. And you can move through a space occupied by a creature as if it were normal terrain.</p>
+		</description>
+		<sheet>
+			<description>You can move through a space as narrow as 1 inch wide without squeezing. And you can move through a space occupied by a creature as if it were normal terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Becoming the Wind" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_THE_WIND">
+		<description>
+			<p>You can cast invisibility once with this trait requiring no components. You regain the ability to cast this way when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" >
+			<description>You can cast invisibility once with this trait requiring no components.</description>
+		</sheet>
+	</element>
+
+	<element name="Uir-Nadar" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_UIR_NADAR">
+		<supports>Nadar</supports>
+		<description>
+			<p>As an Uir-nadar, your bloodline stems from a union between a humanoid and an fey touched by the primordial plane of earth. Tending to be steadfast in all things, you are slow to change your course once you've come to a decision. Uir-nadar tend to have dark skin with black eyes and hair. A faint rumbling can be heard them whenever they speak. A few uir-nadar have dark lines sharply marking thier skin similar to cracks seen in stone formations.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_UIR_ELEMENTAL_FORM" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_STONE" />
+		</rules>
+	</element>
+
+	<element name="Elemental Form" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_UIR_ELEMENTAL_FORM">
+		<description>
+			<p>You can burrow through nonmagical, unworked earth and stone without disturbing the material you move through. Your speed while using this ability is 20 ft.</p>
+		</description>
+		<sheet>
+			<description> You can burrow through nonmagical, unworked earth and stone without disturbing the material you move through. Your speed while using this ability is 20 ft. </description>
+		</sheet>
+	</element>
+
+	<element name="Becoming Stone" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_STONE">
+		<description>
+			<p>You can cast stoneskin once with this trait requiring no components. You regain the ability to cast this way when you finish a long rest. </p>
+		</description>
+		<sheet usage="1/Long Rest" >
+			<description>You can cast stoneskin once with this trait requiring no components.</description>
+		</sheet>
+	</element>
+
+	<element name="Aile-Nadar" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_AILE_NADAR">
+		<supports>Nadar</supports>
+		<description>
+			<p>As an aile-nadar, your bloodline stems from a union between a humanoid and an fey touched by the primordial plane of fire. Tending to be as passionate as the flames in your bloodline, it tends to be unwise to try and prevent you from acheiving your goals, but very much possible to distract you with a new passion to chase. </p>
+			<p class="indent">Aile-nadar tend to have tanned skin with amber or gold eyes and copper or red hair. The faint crackling ofa hearthfire can be heard whenever they speak, and they always seem to emit a comforting warmth to those nearby. A few aile-nadar have golden marking moving over thier skin in patterns similair to the flames and embers of a lively fire. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_AILE_ELEMENTAL_FORM" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Elemental Form" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_AILE_ELEMENTAL_FORM">
+		<description>
+			<p>At will, you can shed bright light in a 30 feet radius and dimlight in an additional 30 feet around you.</p>
+		</description>
+		<sheet>
+			<description>At will, you can shed bright light in a 30 feet radius and dimlight in an additional 30 feet around you.</description>
+		</sheet>
+	</element>
+
+	<element name="Becoming Fire" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_FIRE">
+		<description>
+			<p>If a creature within 5 feet of you makes a touch attack or grapples you, you can use your reaction to deal 3(1d6) fire damage to that creature. This ability recharges on a short or long rest. </p>
+		</description>
+		<sheet usage="1/Short or Long Rest">
+			<description>If a creature within 5 feet of you makes a touch attack or grapples you, you can use your reaction to deal 3(1d6) fire damage to that creature. This ability recharges on a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Uisge-Nadar" type="Sub Race" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_SUB_RACE_UISGE_NADAR">
+		<supports>Nadar</supports>
+		<description>
+			<p>As an uisge-nadar, your bloodline stems from a union between a humanoid and an fey touched by the primordial plane of water. Tending towards a calm temperment, uisage-nadar are known for thier near-boundless paitence, and their unrelenting rage when driven past the limit of thier nerves. Uisge-nadar tend to have tanned skin of varying shades of brown. Thier eyes and hair, like the others of thier kin, reflect thier element in ranging from the deepest blues to the palest greens. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_UISGE_ELEMENTAL_FORM" />
+			<grant type="Racial Trait" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Elemental Form" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_UISGE_ELEMENTAL_FORM">
+		<description>
+			<p>You can move through a space as narrow as 1 inch wide without squeezing. And you can move through a space occupied by a creature as if it were normal terrain.</p>
+		</description>
+		<sheet>
+			<description>You can move through a space as narrow as 1 inch wide without squeezing. And you can move through a space occupied by a creature as if it were normal terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Becoming Fire" type="Racial Trait" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_RACIAL_TRAIT_BECOMING_FIRE">
+		<description>
+			<p>If a creature within 5 feet of you makes a touch attack or grapples you, you can use your reaction to deal 3(1d6) fire damage to that creature. This ability recharges on a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short or Long Rest">
+			<description>If a creature within 5 feet of you makes a touch attack or grapples you, you can use your reaction to deal 3(1d6) fire damage to that creature.</description>
+		</sheet>
+	</element>
+</elements>
