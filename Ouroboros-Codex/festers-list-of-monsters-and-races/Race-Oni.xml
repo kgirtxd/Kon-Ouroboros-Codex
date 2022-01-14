@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-	<element name="Oni" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_ONI">
+	<element name="Oni" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACE_ONI">
 		<description>
 			<p>Oni dominate the land with their tremendous power and extreme stalking and fighting abilities. The face of a devil, the build of an ogre, and the mind of a fae, these creatures are truly the deadliest warriors. No one is capable of out thinking or defeating an oni without many years of training.</p>
 			<h4>Masters of the Fight</h4>
@@ -38,23 +38,23 @@
 			<grant type="Language" id="ID_LANGUAGE_INFERNAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Language" id="ID_LANGUAGE_GIANT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="3"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_ONI_WEAPON_TRAINING" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_SAVAGE_ATTACKS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_ONI_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_SAVAGE_ATTACKS" />
 			<select type="Sub Race" name="Oni Subrace" supports="Oni" />
 		</rules>
 	</element>
 
-	<element name="Oni Weapon Training" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_ONI_WEAPON_TRAINING">
+	<element name="Oni Weapon Training" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_ONI_WEAPON_TRAINING">
 		<description>
 			<p>You are proficient in the Kanabo.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_OBC_FLMC_PROFICIENCY_WEAPON_KANABO" />
+			<grant type="Proficiency" id="ID_OBC_FLMR_PROFICIENCY_WEAPON_KANABO" />
 		</rules>
 	</element>
 
-	<element name="Savage Attacks" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_SAVAGE_ATTACKS">
+	<element name="Savage Attacks" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_SAVAGE_ATTACKS">
 		<description>
 			<p>Once per turn when you roll damage far a melee weapon attack, you can reroll the weapon's damage die and use either total.</p>
 		</description>
@@ -64,7 +64,7 @@
 	</element>
 
 	<!--Subraces-->
-	<element name="Red Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_RED_ONI">
+	<element name="Red Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_RED_ONI">
 		<supports>Oni</supports>
 		<description>
 			<p>Oni which have descended from the Ancient Red Oni gain the following traits.</p>
@@ -74,11 +74,11 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_BRUTAL_INSTINCTS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_BRUTAL_INSTINCTS" />
 		</rules>
 	</element>
 
-	<element name="Brutal Instincts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_BRUTAL_INSTINCTS">
+	<element name="Brutal Instincts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_BRUTAL_INSTINCTS">
 		<description>
 			<p>When an enemy’s melee attack fails to beat your AC, you can use your reaction to make a single melee attack against the attacker with your current weapon.  You may use this trait a number of times equal to your DEX modifier (minimum of one).  The uses for this trait are renewed after a long rest.</p>
 		</description>
@@ -91,7 +91,7 @@
 		</rules>
 	</element>
 
-	<element name="White Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_WHITE_ONI">
+	<element name="White Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_WHITE_ONI">
 		<supports>Oni</supports>
 		<description>
 			<p>Oni which have descended from the Ancient White Oni gain the following traits.</p>
@@ -101,11 +101,11 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TRICKSTER" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_TRICKSTER" />
 		</rules>
 	</element>
 
-	<element name="Trickster" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_TRICKSTER">
+	<element name="Trickster" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_TRICKSTER">
 		<description>
 			<p>You know the minor illusion cantrip. You can cast Disguise Self once per day.</p>
 		</description>
@@ -118,7 +118,7 @@
 		</rules>
 	</element>
 
-	<element name="Blue Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_BLUE_ONI">
+	<element name="Blue Oni" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_BLUE_ONI">
 		<supports>Oni</supports>
 		<description>
 			<p>Oni which have descended from the Ancient Blue Oni gain the following traits.</p>
@@ -128,11 +128,11 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_FIENDISH_SKIN" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_FIENDISH_SKIN" />
 		</rules>
 	</element>
 
-	<element name="Fiendish Skin" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_FIENDISH_SKIN">
+	<element name="Fiendish Skin" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_FIENDISH_SKIN">
 		<description>
 			<p>When you take damage, you can use your reaction to a roll a d12 + Constitution modifier and reduce the damage by the total.  After you use this trait, you can’t use it again until you finish a short or long rest.</p>
 		</description>
@@ -142,7 +142,7 @@
 	</element>
 
 	<!--Oni Weapon-->
-	<element name="Kanabo" type="Weapon" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_WEAPON_KANABO">
+	<element name="Kanabo" type="Weapon" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_WEAPON_KANABO">
 		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
 		<description>
 			<p></p>
@@ -153,11 +153,11 @@
 			<set name="weight" lb="8">8 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="damage" type="bludgeoning">1d12</set>
-			<set name="proficiency">ID_OBC_FLMC_PROFICIENCY_WEAPON_KANABO</set>
+			<set name="proficiency">ID_OBC_FLMR_PROFICIENCY_WEAPON_KANABO</set>
 		</setters>
 	</element>
 
-	<element name="Weapon Proficiency (Kanabo)" type="Proficiency" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_PROFICIENCY_WEAPON_KANABO">
-		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CLUBS, ID_OBC_FLMC_WEAPON_KANABO</supports>
+	<element name="Weapon Proficiency (Kanabo)" type="Proficiency" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_PROFICIENCY_WEAPON_KANABO">
+		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CLUBS, ID_OBC_FLMR_WEAPON_KANABO</supports>
 	</element>
 </elements>

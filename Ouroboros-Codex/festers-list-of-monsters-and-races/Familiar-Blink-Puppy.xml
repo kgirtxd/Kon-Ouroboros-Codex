@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-	<element name="Blink Puppy" type="Companion" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_BLINK_PUPPY">
+	<element name="Blink Puppy" type="Companion" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_BLINK_PUPPY">
 		<supports>Familiar, Variant Familiar</supports>
 		<description>
 			<p>Blink dog pups are young canines with golden brown fur and long pointed ears. Playful and compassionate, these intelligent pups imprint strongly on their caretakers, developing tremendous loyalty and attachment to those who treat them well and care for them in their early years. Pack hunters by nature, blink dogs are highly communal, and pups do best in small tight-knit packs even when those packs are adoptive. Bright and curious, blink dog pups quickly develop a great love for life and respect for all living things.</p>
@@ -31,8 +31,8 @@
 			<set name="size">Tiny</set>
 			<set name="alignment">chaotic goodest boi</set>
 			<set name="challenge">1/4</set>
-			<set name="traits">ID_OBC_FLMC_COMPANION_TRAIT_BLINK_PUPPY_KEEN_HEARING_AND_SMELL, ID_OBC_FLMC_COMPANION_TRAIT_BLINK_PUPPY_BLINK</set>
-			<set name="actions">ID_OBC_FLMC_COMPANION_ACTION_BLINK_PUPPY_BITE, ID_OBC_FLMC_COMPANION_ACTION_BLINK_PUPPY_TELEPORT</set>
+			<set name="traits">ID_OBC_FLMR_COMPANION_TRAIT_BLINK_PUPPY_KEEN_HEARING_AND_SMELL, ID_OBC_FLMR_COMPANION_TRAIT_BLINK_PUPPY_BLINK</set>
+			<set name="actions">ID_OBC_FLMR_COMPANION_ACTION_BLINK_PUPPY_BITE, ID_OBC_FLMR_COMPANION_ACTION_BLINK_PUPPY_TELEPORT</set>
 		</setters>
 		<rules>
 			<stat name="companion:ac" value="13" />
@@ -42,7 +42,7 @@
 		</rules>
 	</element>
 
-	<element name="Keen Hearing and Smell" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_BLINK_PUPPY_KEEN_HEARING_AND_SMELL">
+	<element name="Keen Hearing and Smell" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_BLINK_PUPPY_KEEN_HEARING_AND_SMELL">
 		<description>
 			<p>The blink dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
 		</description>
@@ -51,7 +51,7 @@
 		</sheet>
 	</element>
 
-	<element name="Blink" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_BLINK_PUPPY_BLINK">
+	<element name="Blink" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_BLINK_PUPPY_BLINK">
 		<description>
 			<p>As a bonus action the blink dog pup magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see.</p>
 		</description>
@@ -60,7 +60,7 @@
 		</sheet>
 	</element>
 
-	<element name="Bite" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_ACTION_BLINK_PUPPY_BITE">
+	<element name="Bite" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_ACTION_BLINK_PUPPY_BITE">
 		<description>
 			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
 		</description>
@@ -69,7 +69,7 @@
 		</sheet>
 	</element>
 
-	<element name="Teleport (Recharge 4-6)" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_ACTION_BLINK_PUPPY_TELEPORT">
+	<element name="Teleport (Recharge 4-6)" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_ACTION_BLINK_PUPPY_TELEPORT">
 		<description>
 			<p>The blink dog pup magically teleports, along with a Medium or smaller willing creature within 5 feet and any equipment they are wearing or carrying, up to 40 feet to unoccupied spaces it can see within 5 feet of each other.</p>
 		</description>

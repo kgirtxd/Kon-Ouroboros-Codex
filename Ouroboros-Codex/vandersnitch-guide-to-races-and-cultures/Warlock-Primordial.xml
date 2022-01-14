@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Warlock-Primordial.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Warlock-Primordial.xml" />
+		</update>
+	</info>
+
+	<element name="The Primordial" type="Archetype" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_WARLOCK_THE_PRIMORDIAL">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>You're patron imbues you with a primordial connection to the elemental planes of existence gifting resistance against poison and advantage on rolls against poisonous effects both mundane and magical. </p>
+			<p class="indent">You've made a pact with an ancient being of the four elemental planes of existence. This being's whims are unknowable to all but themselves as they do not strive toward exclusively good, evil, lawful, or chaotic ends. Such beings typically desire the preservation of raw, unchanged natural areas akin to their own planes. The primordial is of a class of elementals powerful enough to forge pacts through their ancient power, having grown so large that they have blurred the egdes of thier original planes and have taken on aspects of each of the elemental planes. </p>
+			<div element="ID_OBC_VGRC_ARCHETYPE_THE_PRIMORDIAL_EXPANDED_SPELL_LIST" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_STRENGTH_OF_THE_TERRAN" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_AURANS_DANCE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_GIFT_OF_THE_AQUAN" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_IGNANS_TOUCH" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_THE_PRIMORDIAL_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_STRENGTH_OF_THE_TERRAN" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_AURANS_DANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_GIFT_OF_THE_AQUAN" level="10" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_IGNANS_TOUCH" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_THE_PRIMORDIAL_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Fathomless feature</em></p>
+			<p>The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">Fathomless Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>create or destroy water, thunderwave</em></td></tr>
+				<tr><td>2nd</td><td><em>continual flame, flaming sphere</em></td></tr>
+				<tr><td>3rd</td><td><em>meld into stone, wind wall</em></td></tr>
+				<tr><td>4th</td><td><em>conjure minor elementals, ice storm</em></td></tr>
+				<tr><td>5th</td><td><em>conjure elemental, wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_CREATE_OR_DESTROY_WATER</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<extend>ID_PHB_SPELL_CONTINUAL_FLAME</extend>
+			<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_PHB_SPELL_MELD_INTO_STONE</extend>
+			<extend>ID_PHB_SPELL_WIND_WALL</extend>
+			<extend>ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_PHB_SPELL_CONJURE_ELEMENTAL</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_STONE</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Strength Of The Terran" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_STRENGTH_OF_THE_TERRAN">
+		<description>
+			<p>At 1st level you are gifted the strength to slam into your enemies with elemental force. Any melee weapon attack you perform gains 2d4 bludgeoning damage. You may only use this feature a number of times equal to your charisma modifier per long rest.</p>
+		</description>
+		<sheet usage="{{strength of the terran:usage}}/Long Rest">
+			<description>Any melee weapon attack you perform gains 2d4 bludgeoning damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strength of the terran:usage" value="1" bonus="base" />
+			<stat name="strength of the terran:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Auran's Dance" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_AURANS_DANCE">
+		<description>
+			<p>Starting at 6th level you are able to channel the energy of the plane of air and gain the ability to cast <em>invisibility</em> once per long rest. This does not count toward your spells known and will not consume a spell slot to use the first time. You are able to use this ability again in exchange for a spell slot of 2nd-level or higher. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast invisibility with this feature. You can also cast this spell using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Gift Of The Aquan" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_GIFT_OF_THE_AQUAN">
+		<description>
+			<p>Starting at 10th level you're body begins to synchronize with the water planes. Temporarily taking on a watery form you are able to get into places only the smallest creature can reasonably reach. Once per long rest, you are able to pass through a 1 inch diameter hole without squeezing. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can temporarily become water and are able to pass through a 1 inch diameter hole without squeezing.</description>
+		</sheet>
+	</element>
+
+	<element name="Ignan's Touch" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_THE_PRIMORDIAL_IGNANS_TOUCH">
+		<description>
+			<p>Starting at 14th level, you're skin becomes warm as a lit hearth in the winter. Due to your connection with the material plane, you are able to control the level of heat that can be felt coming from you. You gain resistance to fire damage. </p>
+			<p class="indent">At the start of the round a grapple was initiated or an object was picked up by you, if the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the flames, the target takes 1d10 fire damage at the start of each of its turns. You may use this ability three times per day.</p>
+		</description>
+		<sheet usage="3/Day">
+			<description>At the start of the round a grapple was initiated or an object was picked up by you, if the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the flames, the target takes 1d10 fire damage at the start of each of its turns.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+</elements>

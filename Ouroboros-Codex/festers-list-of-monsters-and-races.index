@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Fester's List of Monsters and Races</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="festers-list-of-monsters-and-races.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races.index" />
 		</update>
 	</info>
@@ -11,6 +11,7 @@
 		<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Feats.xml" />
 		<file name="Familiar-Blink-Puppy.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Familiar-Blink-Puppy.xml" />
 		<file name="Familiar-Displacer-Kitten.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Familiar-Displacer-Kitten.xml" />
+		<file name="Race-AncientElf.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-AncientElf.xml" />
 		<file name="Race-Beastkin.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Beastkin.xml" />
 		<file name="Race-Kandra.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Kandra.xml" />
 		<file name="Race-Oni.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-Oni.xml" />

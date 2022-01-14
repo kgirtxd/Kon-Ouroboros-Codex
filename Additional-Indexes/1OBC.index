@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="1OBC.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Additional-Indexes/1OBC.index" />
+		</update>
+	</info>
+	<files>
+		<file name="Aurora-Legacy.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Additional-Indexes/Aurora-Legacy.index" />
+		<file name="Ouroboros-Codex.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex.index" />
+	</files>
+</index>

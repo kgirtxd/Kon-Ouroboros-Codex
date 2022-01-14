@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-	<element name="Beastkin" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_BEASTKIN">
+	<element name="Beastkin" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACE_BEASTKIN">
 		<description>
 			<p></p>
 			<h4>HEADING</h4>
@@ -37,15 +37,15 @@
 			<select type="Language" name="Language, Beastkin" supports="Standard||Exotic" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Vision" id="ID_OBC_FLMC_VISION_BEAST_SENSE" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_VISION_ANIMAL_INSTINCTS" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_SPEAK_WITH_BEASTS" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TIRELESS" />
+			<grant type="Vision" id="ID_OBC_FLMR_VISION_BEAST_SENSE" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_VISION_ANIMAL_INSTINCTS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_SPEAK_WITH_BEASTS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_TIRELESS" />
 			<select type="Sub Race" name="Beaskin Species" supports="Beastkin" />
 		</rules>
 	</element>
 
-	<element name="Beast Sense" type="Vision" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_VISION_BEAST_SENSE">
+	<element name="Beast Sense" type="Vision" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_VISION_BEAST_SENSE">
 		<description>
 			<p>You can detect the location of all living creatures within 30ft as if you can see them. </p>
 		</description>
@@ -54,7 +54,7 @@
 		</sheet>
 	</element>
 
-	<element name="Animal Instincts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_VISION_ANIMAL_INSTINCTS">
+	<element name="Animal Instincts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_VISION_ANIMAL_INSTINCTS">
 		<description>
 			<p>You gain proficiency in 2 of Perception, Animal Handling, Survival, Nature, or Insight. </p>
 		</description>
@@ -65,7 +65,7 @@
 		</rules>
 	</element>
 
-	<element name="Speak with Beasts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_SPEAK_WITH_BEASTS">
+	<element name="Speak with Beasts" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_SPEAK_WITH_BEASTS">
 		<description>
 			<p>You can communicate with neutral and friendly animals using sounds and gestures. Animals can only handle basic concepts and are not under your control.</p>
 		</description>
@@ -74,7 +74,7 @@
 		</sheet>
 	</element>
 
-	<element name="Tireless" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_TIRELESS">
+	<element name="Tireless" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_TIRELESS">
 		<description>
 			<p>You have the energy of a beast within you.  You require little sleep, and you are always generally aware of what goes on around you when you do sleep. When asleep you get to roll perception to detect attacks and you only need to sleep 4 hours a night.</p>
 		</description>
@@ -85,7 +85,7 @@
 
 	<!--Subraces-->
 	<!--Bearkin-->
-	<element name="Bearkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_BEARKIN">
+	<element name="Bearkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_BEARKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -94,11 +94,11 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_TOUGH_SKIN" />
 		</rules>
 	</element>
 
-	<element name="Tough Skin" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_TOUGH_SKIN">
+	<element name="Tough Skin" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_TOUGH_SKIN">
 		<description>
 			<p>You gain +1 AC and resistance to cold.</p>
 		</description>
@@ -112,7 +112,7 @@
 	</element>
 
 	<!--Bunnykin-->
-	<element name="Bunnykin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_BUNNYKIN">
+	<element name="Bunnykin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_BUNNYKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -123,11 +123,11 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="innate speed" value="5" bonus="bonus" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_OVERLOOKED" />
 		</rules>
 	</element>
 
-	<element name="Overlooked" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_OVERLOOKED">
+	<element name="Overlooked" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_OVERLOOKED">
 		<description>
 			<p>Lapines are fast and it is hard to take them seriously in a fight, opponents who would get an attack of opportunity against them must pass a dc 12 wisdom save or be unable to make the attack. This means they do not lose the reaction but cannot make said action against the Lapine.</p>
 		</description>
@@ -137,7 +137,7 @@
 	</element>
 
 	<!--Catkin-->
-	<element name="Catkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_CATKIN">
+	<element name="Catkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_CATKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -148,11 +148,11 @@
 		<rules>
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<stat name="darkvision:range" value="90" bonus="base" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_GOOD_CLIMBER" />
 		</rules>
 	</element>
 
-	<element name="Good Climber" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_GOOD_CLIMBER">
+	<element name="Good Climber" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_GOOD_CLIMBER">
 		<description>
 			<p>You gain a climbing speed equal to your walking speed as long as you are not wearing medium or heavy armor nor a shield. Otherwise you have a climbing speed of 10.</p>
 		</description>
@@ -164,7 +164,7 @@
 	</element>
 
 	<!--Foxkin-->
-	<element name="Foxkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_FOXKIN">
+	<element name="Foxkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_FOXKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -176,11 +176,11 @@
 		<rules>
 			<stat name="innate speed" value="5" bonus="bonus" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_CARRION_EATER" />
 		</rules>
 	</element>
 
-	<element name="Carrion Eater" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_CARRION_EATER">
+	<element name="Carrion Eater" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_CARRION_EATER">
 		<description>
 			<p>You gain immunity to the poisoned and diseased conditions.</p>
 		</description>
@@ -192,7 +192,7 @@
 	</element>	
 
 	<!--Squirrelkin-->
-	<element name="Squirrelkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_SQUIRRELKIN">
+	<element name="Squirrelkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_SQUIRRELKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -200,11 +200,11 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_DANGER_SENSE" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_DANGER_SENSE" />
 		</rules>
 	</element>
 
-	<element name="Danger Sense" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_DANGER_SENSE">
+	<element name="Danger Sense" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_DANGER_SENSE">
 		<description>
 			<p>Your tail gives you insight into danger. When faced with an enemy or situation that is dangerous to you, your tail will stiffen based on how deadly the situation.</p>
 		</description>
@@ -214,7 +214,7 @@
 	</element>
 
 	<!--Wolfkin-->
-	<element name="Wolfkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_SUB_RACE_WOLFKIN">
+	<element name="Wolfkin" type="Sub Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_SUB_RACE_WOLFKIN">
 		<supports>Beastkin</supports>
 		<description>
 			<p>HERE</p>
@@ -223,12 +223,12 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_AMBUSH_PREDATOR" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_PACK_TACTICS" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_AMBUSH_PREDATOR" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_PACK_TACTICS" />
 		</rules>
 	</element>
 
-	<element name="Ambush Predator" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_AMBUSH_PREDATOR">
+	<element name="Ambush Predator" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_AMBUSH_PREDATOR">
 		<description>
 			<p>You add your proficiency bonus to your initiative rolls.</p>
 		</description>
@@ -240,7 +240,7 @@
 		</rules>
 	</element>
 
-	<element name="Pack Tactics" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACIAL_TRAIT_PACK_TACTICS">
+	<element name="Pack Tactics" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_PACK_TACTICS">
 		<description>
 			<p>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
 		</description>

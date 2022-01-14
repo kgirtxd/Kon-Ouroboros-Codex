@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Chaos Domain</name>
+		<update version="0.0.1">
+			<file name="Cleric-ChaosDomain.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Cleric-ChaosDomain.xml" />
+		</update>
+	</info>
+
+	<element name="Chaos Domin" type="Archetype" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_CHAOS_DOMIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Gods whose portfolios include the Chaos domain govern freedom, rebellion, and self expression. They include gods of storms and natural disasters, some elemental gods, gods of fae, artistic expression, and rebellion from unfavorable governments. In some pantheons, a god of this domain are ancient but generally quiet, preferring to mingle in the affairs of mortals only enough to bring the winds of change. Chaos gods send their clerics to inspire righteous fury in the common folk, either to encourage those people to bring about a great change or to encourage them to offer sacrifices to ward off an unforseen disaster. </p>
+			<p class="indent"></p>
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMAIN_SPELLS" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_BLESSING_OF_CHAOS" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CHAOS_SURGE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CD_DESTRUCTIVE_GLEE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FORCEFUL_STRIKE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_DIVINE_STRIKE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FAEBORN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_BLESSING_OF_CHAOS" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CHAOS_SURGE" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CD_DESTRUCTIVE_GLEE" level="2" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FORCEFUL_STRIKE" level="6" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FAEBORN" level="17" />
+		</rules>
+	</element>
+
+	<element name="Chaos Domain Spells" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMAIN_SPELLS">
+		<description>
+			<h5>Chaos Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>charm person, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>crown of madness, phantasmal force</em></td></tr>
+				<tr><td>5th</td><td><em>bestow curse, remove curse</em></td></tr>
+				<tr><td>7th</td><td><em>confusion, conjure minor elementals</em></td></tr> 
+				<tr><td>9th</td><td><em>mislead, rary's telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	
+	<element name="Blessing of Chaos" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_BLESSING_OF_CHAOS">
+		<description>
+			<p>At 1st level, you gain the choice of learning either <i>eldritch blast</i> or <i>viscious mockery</i> cantrip if you do not already know them. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Blessing of Chaos" supports="ID_PHB_SPELL_VICIOUS_MOCKERY|ID_PHB_SPELL_ELDRITCH_BLAST" spellcasting="Cleric" />
+		</rules>
+	</element>
+
+	<element name="Chaos Surge" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CHAOS_SURGE">
+		<description>
+			<p>At 1st level, you confuse and disorient attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Wisdom saving throw. The Creature takes 2d8 Psycic or Force damage on a failed saving throw and is stunned until the end of its next turn. On a successful save, the target only takes half of the rolled damage, and is not stunned.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{chaos surge:usage}}/Long Rest">
+			<description>When a creature within 5 feet of you that you can see hits you with an attack, you can cause the creature to make a Wisdom save DC{{cleric:spellcasting:dc}}. The Creature takes 2d8 Psycic or Force damage on a failed saving throw and is stunned until the end of its next turn. On a successful save, the target only takes half damage, and is not stunned.</description>
+		</sheet>
+		<rules>
+			<stat name="chaos surge:usage" value="1" bonus="base" />
+			<stat name="chaos surge:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Destructive Glee" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_CD_DESTRUCTIVE_GLEE">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to wield the power of the chaos with unchecked ferocity.</p>
+			<p class="indent">When you roll psychic or force damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</p>
+		</description>
+		<sheet alt="Destructive Glee" usage="Channel Divinity">
+			<description>When you roll psychic or force damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</description>
+		</sheet>
+	</element>
+
+	<element name="Forceful Strike" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FORCEFUL_STRIKE">
+		<description>
+			<p>At 6th level, when you deal force damage to a Large or smaller creature, you can also push it up to 10 feet away from you.</p>
+		</description>
+		<sheet>
+			<description>When you deal force damage to a Large or smaller creature, you can also push it up to 10 feet away from you.</description>
+		</sheet>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. When you reach 14th level, the extra damage increases to 2d8. </p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target.</description>
+			<description level = "14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 psychic damage to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Faeborn" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_CHAOS_DOMIN_FAEBORN">
+		<description>
+			<p>At 17th level, you have a flying speed equal to your current walking speed whenever you are not prone. </p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to your current walking speed whenever you are not prone.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Chaos Domain Origin Spells" type="Class Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_OCF_CLASS_FEATURE_CHAOS_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Chaos Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>charm person, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>crown of madness, phantasmal force</em></td></tr>
+				<tr><td>5th</td><td><em>bestow curse, remove curse</em></td></tr>
+				<tr><td>7th</td><td><em>confusion, conjure minor elementals</em></td></tr> 
+				<tr><td>9th</td><td><em>mislead, rary's telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain access to the spells of the Chaos Domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+</elements>

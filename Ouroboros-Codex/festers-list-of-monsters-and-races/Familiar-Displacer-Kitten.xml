@@ -8,7 +8,7 @@
 			<file name="Familiar-Displacer-Kitten.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Familiar-Displacer-Kitten.xml" />
 		</update>
 	</info>
-	<element name="Displacer Kitten" type="Companion" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_DISPLACER_KITTEN">
+	<element name="Displacer Kitten" type="Companion" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_DISPLACER_KITTEN">
 		<supports>Familiar, Variant Familiar</supports>
 		<description>
 			<p>Playful, mischievous, and deceptively ferocious, these baby displacer beasts roam freely through the Feywild with their kin. Even in their youth, displacer kittens are trained to hunt with their pride, seeking out and claiming juvenile pegasi and blinkpuppies as their prey.</p>
@@ -31,8 +31,8 @@
 			<set name="size">Tiny</set>
 			<set name="alignment">chaotic <s>adorable</s> evil</set>
 			<set name="challenge">1/2</set>
-			<set name="traits">ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_MAGIC_RESISTANCE,ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_AVOIDANCE,ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_DISPLACEMENT,ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_KEEN_SMELL,ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_SHIFTING_STEP</set>
-			<set name="actions">ID_OBC_FLMC_COMPANION_ACTION_DISPLACER_KITTEN_TENTACLES</set>
+			<set name="traits">ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_MAGIC_RESISTANCE,ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_AVOIDANCE,ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_DISPLACEMENT,ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_KEEN_SMELL,ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_SHIFTING_STEP</set>
+			<set name="actions">ID_OBC_FLMR_COMPANION_ACTION_DISPLACER_KITTEN_TENTACLES</set>
 		</setters>
 		<rules>
 			<stat name="companion:ac" value="13" />
@@ -44,7 +44,7 @@
 		</rules>
 	</element>
 
-	<element name="Magic Resistance" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_MAGIC_RESISTANCE">
+	<element name="Magic Resistance" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_MAGIC_RESISTANCE">
 		<description>
 			<p>The displacer kitten has advantage on saving throws against spells and other magical effects.</p>
 		</description>
@@ -53,7 +53,7 @@
 		</sheet>
 	</element>
 
-	<element name="Avoidance" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_AVOIDANCE">
+	<element name="Avoidance" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_AVOIDANCE">
 		<description>
 			<p>If the displacer kitten is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</p>
 		</description>
@@ -62,7 +62,7 @@
 		</sheet>
 	</element>
 
-	<element name="Displacement" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_DISPLACEMENT">
+	<element name="Displacement" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_DISPLACEMENT">
 		<description>
 			<p>The displacer kitten projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. While this trait is active, it is also considered lightly obscured. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer kitten is incapacitated or has a speed of 0.</p>
 		</description>
@@ -71,7 +71,7 @@
 		</sheet>
 	</element>
 
-	<element name="Keen Smell" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_KEEN_SMELL">
+	<element name="Keen Smell" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_KEEN_SMELL">
 		<description>
 			<p>The displacer kitten has advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
@@ -80,7 +80,7 @@
 		</sheet>
 	</element>
 
-	<element name="Shifting Step" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_TRAIT_DISPLACER_KITTEN_SHIFTING_STEP">
+	<element name="Shifting Step" type="Companion Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_TRAIT_DISPLACER_KITTEN_SHIFTING_STEP">
 		<description>
 			<p>When an attack misses the displacer kitten while its Displacement trait is active, it can immediately move up to 5 feet (no action required). This movement doesn’t provoke opportunity attacks.</p>
 		</description>
@@ -89,7 +89,7 @@
 		</sheet>
 	</element>
 
-	<element name="Tentacles" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_COMPANION_ACTION_DISPLACER_KITTEN_TENTACLES">
+	<element name="Tentacles" type="Companion Action" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_COMPANION_ACTION_DISPLACER_KITTEN_TENTACLES">
 		<description>
 			<p>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.</p>
 		</description>

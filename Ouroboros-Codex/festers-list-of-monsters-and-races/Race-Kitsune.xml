@@ -10,7 +10,7 @@
 	<!--WIP-->
 	<!--
 
-	<element name="Kitsune" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMC_RACE_KITSUNE">
+	<element name="Kitsune" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACE_KITSUNE">
 		<description>
 			<p>HERE.</p>
 			<p>
@@ -33,13 +33,13 @@
 			<stat name="innate speed" value="35" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_FOXFIRE" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_TAILED_BEAST" />
-			<grant type="Racial Trait" id="ID_OBC_FLMC_RACIAL_TRAIT_SHAPESHIFT" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_FOXFIRE" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_TAILED_BEAST" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_SHAPESHIFT" />
 		</rules>
 	</element>
 
-	<element name="Foxfire" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_FOXFIRE">
+	<element name="Foxfire" type="Racial Trait" source="source" id="ID_OBC_FLMR_RACIAL_TRAIT_FOXFIRE">
 		<description>
 			<p>Due to your connection with magic and the fey ancestry, you are able to cast dancing lights at will. Your spellcasting ability for this spell is Charisma, and the dancing lights will always appear as a blue flame.</p>
 		</description>
@@ -51,7 +51,7 @@
 		</rules>
 	</element>
 
-	<element name="Tailed Beast" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_TAILED_BEAST">
+	<element name="Tailed Beast" type="Racial Trait" source="source" id="ID_OBC_FLMR_RACIAL_TRAIT_TAILED_BEAST">
 		<description>
 			<p>All kitsune have at least 1 tail. As kitsune grow in power so too do the number of tails. You gain a tail at levels 3, 5, 8, 11, 13, 15, 18, and 20.</p>
 		</description>
@@ -71,7 +71,7 @@
 		</rules>
 	</element>
 
-	<element name="Masked Form" type="Racial Trait" source="source" id="ID_OBC_FLMC_RACIAL_TRAIT_SHAPESHIFT">
+	<element name="Masked Form" type="Racial Trait" source="source" id="ID_OBC_FLMR_RACIAL_TRAIT_SHAPESHIFT">
 		<description>
 			<p>As an action, you can assume the appearance of a specific human form of the same sex. This form is the same every time the ability is used. If someone wants to see your kitsune form, they must actively succeed on an Investigation or Perception check with a DC 10 + your Deception Modifier.</p>
 		</description>

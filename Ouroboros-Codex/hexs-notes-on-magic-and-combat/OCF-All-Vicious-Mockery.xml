@@ -4,98 +4,18 @@
 		<name>Vicious Mockery for all Classes</name>
 		<description></description>
 		<author>Konard</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="OCF-All-Vicious-Mockery.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/OCF-All-Vicious-Mockery.xml" />
 		</update>
 	</info>
 
-	<element name="Vicious Mockery Option - Arcane Trickster" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ARCANE_TRICKSTER">
+	<element name="Vicious Mockery Option - All" type="Class Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY">
 		<description>
 			<p>All spellcasters now have the option to take Vcious Mockery.</p>
 		</description>
 		<sheet display="false" />
 		<compendium display="false" />
-		<spellcasting name="Arcane Trickster" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Artificer" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ARTIFICER">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Artificer" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Cleric" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_CLERIC">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Cleric" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Druid" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_DRUID">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Druid" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Eldritch Knight" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ELDRITCH_KNIGHT">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Eldritch Knight" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Ranger" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_RANGER">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Ranger" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Sorcerer" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_SORCERER">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Sorcerer" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-	<element name="Vicious Mockery Option - Warlock" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_WARLOCK">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Warlock" extend="true">
-			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
-		</spellcasting>
-	</element>
-		<element name="Vicious Mockery Option - Wizard" type="Archetype Feature" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_WIZARD">
-		<description>
-			<p>All spellcasters now have the option to take Vcious Mockery.</p>
-		</description>
-		<sheet display="false" />
-		<compendium display="false" />
-		<spellcasting name="Wizard" extend="true">
+		<spellcasting all="true" extend="true">
 			<extend>ID_PHB_SPELL_VICIOUS_MOCKERY</extend>
 		</spellcasting>
 	</element>
@@ -106,25 +26,17 @@
 			<p>All spellcasters should be able to magically insult.</p>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ARTIFICER" />
+				<div element="ID_PHB_SPELL_VICIOUS_MOCKERY" />
 			</div>
 		</description>
 		<setters>
 			<set name="category">Optional Class Features</set>
-			<set name="keywords">OCF, Artificer, Cleric, Druid, Ranger, Sorcerer, Warlock, Wizard, first level, 2nd level, spellcasting</set>
+			<set name="keywords">OCF, Artificer, Cleric, Druid, Ranger, Sorcerer, Warlock, Wizard, first level, 1st level, spellcasting</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ARCANE_TRICKSTER" requirements="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ARTIFICER" requirements="ID_WOTC_ERLW_CLASS_ARTIFICER" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_CLERIC" requirements="ID_WOTC_PHB_CLASS_CLERIC" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_DRUID" requirements="ID_WOTC_PHB_CLASS_DRUID" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_ELDRITCH_KNIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_RANGER" requirements="ID_WOTC_PHB_CLASS_RANGER" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_SORCERER" requirements="ID_WOTC_PHB_CLASS_SORCERER" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_WARLOCK" requirements="ID_WOTC_PHB_CLASS_WARLOCK" />
-			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY_WIZARD" requirements="ID_WOTC_PHB_CLASS_WIZARD" />
+			<grant type="Class Feature" id="ID_OBC_HNMC_OCF_VICIOUS_MOCKERY" />
 		</rules>
 	</element>
 </elements>

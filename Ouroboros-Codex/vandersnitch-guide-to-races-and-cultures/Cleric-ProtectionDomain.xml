@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cleric-ProtectionDomain.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/vandersnitch-guide-to-races-and-cultures/Cleric-ProtectionDomain.xml" />
+		</update>
+	</info>
+
+	<element name="Protection Domain" type="Archetype" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_PROTECTION_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p></p>
+			<p class="indent"></p>
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_SPELLS" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_HARDENED_BODY" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_QUICK_REFLEXES" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_CHANNEL_DIVINITY_DEFLECTION" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_PROTECTION" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_ARMOR_OF_THE_GODS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_HARDENED_BODY" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_QUICK_REFLEXES" level="1" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_CHANNEL_DIVINITY_DEFLECTION" level="2" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_PROTECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_ARMOR_OF_THE_GODS" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Protection Domain Spells" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_SPELLS">
+		<description>
+			<h5>Protection Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>armor of agathys, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>fortune's favor, healing spirit</em></td></tr>
+				<tr><td>5th</td><td><em>leomund's tiny hut, protection from energy</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, stoneskin</em></td></tr> 
+				<tr><td>9th</td><td><em>antilife shell, holy weapon</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_FORTUNES_FAVOR" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Hardened Body" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_HARDENED_BODY">
+		<description>
+			<p>At 1st level, you gain the cantrip Blade Ward, if you do not have it already.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLADE_WARD" spellcasting="Cleric" />
+		</rules>
+	</element>
+
+	<element name="Quick Reflexes" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_QUICK_REFLEXES">
+		<description>
+			<p>At 1st level, you become quick to block or deflect attacks away from your vital areas. When a creature within 5 feet of you that you can see hits you with a nonmagical attack, you can use your reaction to cause the creature to make a Dexterity saving throw. You take no damage from that attack failed saving throw or half of the damage on a successful save.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest. </p>
+		</description>
+		<sheet action="Reaction" usage="{{quick reflexes:usage}}/Long Rest">
+			<description>When a creature within 5 feet of you that you can see hits you with a nonmagical attack, you can use your reaction to cause the creature to make a Dexterity saving throw DC {{cleric:spellcasting:dc}}. You take no damage from that attack on a failed save or half of the damage on a successful save.</description>
+		</sheet>
+		<rules>
+			<stat name="quick reflexes:usage" value="1" bonus="base" />
+			<stat name="quick reflexes:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Deflection" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_CHANNEL_DIVINITY_DEFLECTION">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to call on the power of divine strength to sheild you and your allies.</p>
+			<p class="indent">When you or someone you can see within 30 feet of you takes slashing, blugeoning, or peircing damage from a physical attack, you can use your Channel Divinity to have your attacker take the damage instead. </p>
+		</description>
+		<sheet alt="Deflection" action="Channel Divinity">
+			<description>When you or someone you can see within 30 feet of you takes slashing, blugeoning, or peircing damage from a physical attack, you can use your Channel Divinity to have your attacker take the damage instead.</description>
+		</sheet>
+	</element>
+	
+	<element name="Divine Protection" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_PROTECTION">
+		<description>
+			<p>At 6th level, you gain the ability to infuse your armor with divine energy. Once per round when you take damage from an attack, you can use your reaction to increase your AC by your Wisdom modifier until the end of the turn. </p>
+		</description>
+		<sheet action="Reaction" usage="1/Round" >
+			<description>When you take damage from an attack, you can increase your AC by {{wisdom:modifier}} until the end of the turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target.</description>
+		</sheet>
+	</element>
+
+	<element name="Armor Of The Gods" type="Archetype Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_ARCHETYPE_FEATURE_PROTECTION_DOMAIN_ARMOR_OF_THE_GODS">
+		<description>
+			<p>At 17th level, you gain resistance to bludgeoning, slashing, and peircing damage from nonmagical attacks. Moreover, you are able use your bonus action to give allies within 30 feet of you these resistances for a number of rounds equal to your wisdom modifier.</p>
+			<p class="indent">This ability recharges after a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest" >
+			<description>You can give allies within 30 feet of you resistance to bludgeoning, slashing, and peircing damage from nonmagical attacks for {{wisdom:modifier}} rounds.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+
+	<element name="Protection Domain Origin Spells" type="Class Feature" source="The Vandersnitch Guide to Races and Cultures" id="ID_OBC_VGRC_OCF_CLASS_FEATURE_PROTECTION_DOMAIN">
+		<supports>Divine Origin</supports>
+		<description>
+			<h5>Protection Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>armor of agathys, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>fortune's favor, healing spirit</em></td></tr>
+				<tr><td>5th</td><td><em>leomund's tiny hut, protection from energy</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, stoneskin</em></td></tr> 
+				<tr><td>9th</td><td><em>antilife shell, holy weapon</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_FORTUNES_FAVOR" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" level="9" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	
+</elements>
