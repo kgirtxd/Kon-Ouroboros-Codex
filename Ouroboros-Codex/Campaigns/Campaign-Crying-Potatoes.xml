@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -143,7 +143,7 @@
 	<element name="Wand of Darkness" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_WAND_OF_DARKNESS">
 		<description>
 			<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the <em>darkness</em> spell from it.</p>
-			<p class="indent">The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+			<p class="indent">The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
 			<div class="reference">
 				<div element="ID_PHB_SPELL_DARKNESS" />
 			</div>
@@ -272,6 +272,28 @@
 		</setters>
 	</element>
 
+	<element name="Compass of Knowledge" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_COMPASS_OF_KNOWLEDGE">
+		<description>
+			<p>This item appears to be a decorative compass with decorative silver banding on its edges. On the banding in primordial script is the phrase "Let he who ask, open the door." While attuned to this item you may ask it a single question a day that fills the following criteria:</p>
+			<ul>
+				<li style="margin-left:1em">The question must start with "Where is..." or "What is..."</li>
+				<li style="margin-left:1em">The question cannot be answered by a "yes" or "no"</li>
+				<li style="margin-left:1em">The answer to the question must exist on the same world and plane that you are on</li>
+				<li style="margin-left:1em">The question cannot be phased in such a way as to directly learn the location of a person, creature, or item</li>
+			</ul>
+			<p class="indent">In the event that the question fill the above requirements, the needle will swivel to point in the direction of the nearest source of knowledge that can be used to either answer the question or point you on the correct path of learning more about the subject matter. In the event that the question does not meet the requirements of the compass, the needle point will fall limp and not point anywhere in particular. The only exception to this is if the knowledge is not located on the same world or plane as it, then it will begin to swivel slowly in a continual circle until asked a new question.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">misc</set>
+		</setters>
+	</element>
+
 	<!--Spells-->
 	<element name="Barricade" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_BARRICADE">
 		<supports>Wizard</supports>
@@ -319,7 +341,7 @@
 	<element name="Grim Scythe" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_GRIM_SCYTHE">
 		<supports>DMSG_GRIM_Grave_Warden, Warlock, Wizard</supports>
 		<description>
-			<p>For the duration, a spectral blade forms on the end of a quarterstaff you touch. While this blade lasts, you use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon. The staff retains the damage die and bonusus of the quarterstaff used.  The weapon also becomes magical if it isn’t already and deals necrotic damage instead of bludgeoning. The spell ends if you cast it again or if you let go of the weapon.</p>
+			<p>For the duration, a spectral blade forms on the end of a quarterstaff you touch. While this blade lasts, you use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon. The staff retains the damage die and bonusus of the quarterstaff used.  The weapon also becomes magical if it isn't already and deals necrotic damage instead of bludgeoning. The spell ends if you cast it again or if you let go of the weapon.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -362,7 +384,7 @@
 	<element name="Starry Rod" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_STARRY_ROD">
 		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in cosmic energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 radiant damage, and the spell ends.</p>
+			<p>You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in cosmic energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 radiant damage, and the spell ends.</p>
 			<p class="indent"><strong><em>At Higher Levels.</em></strong> At 5th level, the melee attack deals an extra 1d8 radiant damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
 		</description>
 		<setters>
@@ -382,7 +404,7 @@
         <supports>Wizard, Spell Saving Throw</supports>
         <description>
             <p>Chaotic currents of time rip through a 20-foot-sphere. Each creature in the sphere on the turn when you cast the spell must make a Constitution saving throw. On a failed save, a creature takes 2d8 force damage, and its speed is halved until the end of the next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.</p>
-            <p class="indent">Until the start of your next turn, any creature outside the sphere attempting to pick up an object in the sphere that isn’t being worn or carried must make a successful Strength check against your spell save DC to pick up or move that object.</p>
+            <p class="indent">Until the start of your next turn, any creature outside the sphere attempting to pick up an object in the sphere that isn't being worn or carried must make a successful Strength check against your spell save DC to pick up or move that object.</p>
             <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
         </description>
         <setters>
@@ -448,17 +470,17 @@
 	<element name="Turbulent Freedom" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM">
 		<description>
 			<p>You possess a precious gift coveted not just by mortals but by the gods themselves. As a follower of Kira, you can gain abilities known only by the most loyal. </p>
-			<p class="indent"><strong><em>Kira’s Piety.</em></strong> Your divotion improves as your piety score increases. You gain the following traits when you reach the specified piety score.</p>
-			<h4>Kira’s Acolyte</h4>
+			<p class="indent"><strong><em>Kira's Piety.</em></strong> Your devotion improves as your piety score increases. You gain the following traits when you reach the specified piety score.</p>
+			<h4>Kira's Acolyte</h4>
 			<p><em>Piety 3+ Kira trait</em></p>
-			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
-			<h4>Kira’s Speaker</h4>
+			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira's blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<h4>Kira's Speaker</h4>
 			<p><em>Piety 10+ Kira trait</em></p>
-			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
-			<h4>Kira’s Viceroy</h4>
+			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<h4>Kira's Viceroy</h4>
 			<p><em>Piety 25+ Kira trait</em></p>
 			<p>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</p>
-			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can’t do so again until you finish a long rest.</p>
+			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can't do so again until you finish a long rest.</p>
 			<h4>Champion of Turbulent Freedom</h4>
 			<p><em>Piety 50+ Kira trait</em></p>
 			<p>You can increase your Charisma or Wisdom score by 2 and also increase your maximum for that score by 2.</p>
@@ -479,9 +501,8 @@
 		</rules>
 	</element>
 
-	<element name="Kira’s Piety" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY">
+	<element name="Kira's Piety" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<description>
 			<div class="reference">
 				<div element="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE" />
@@ -498,7 +519,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Racial Trait" name="Kira’s Piety" supports="Kira Piety Value" />
+			<select type="Racial Trait" name="Kira's Piety" supports="Kira Piety Value" requirements="ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM"/>
 			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
 			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
 			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY" requirements="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_50" />
@@ -506,12 +527,11 @@
 		</rules>
 	</element>
 
-	<element name="Kira’s Acolyte" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE">
+	<element name="Kira's Acolyte" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_ACOLYTE">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<description>
 			<p><em>Piety 3+ Kira trait</em></p>
-			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<p>As an acolyte of Kira, you have proven yourself accomplished at deception. You can call on Kira's blessing and cast <em>chaotic bolt</em> with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
 		</description>
 		<sheet usage="{{kiraacolyte:usage}}/Long Rest">
 			<description>You can cast chaotic bolt with this trait. Hit {{kiraacolyte:hit}}</description>
@@ -525,12 +545,11 @@
 		</rules>
 	</element>
 
-	<element name="Kira’s Speaker" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER">
+	<element name="Kira's Speaker" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_SPEAKER">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<description>
 			<p><em>Piety 10+ Kira trait</em></p>
-			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<p>You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
 		</description>
 		<sheet usage="1/Long Rest">
 			<description>You can cast suggestion with this trait, requiring no material components. DC {{kiraspeaker:dc}}</description>
@@ -543,13 +562,12 @@
 		</rules>
 	</element>
 
-	<element name="Kira’s Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY">
+	<element name="Kira's Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<description>
 			<p><em>Piety 25+ Kira trait</em></p>
 			<p>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</p>
-			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can’t do so again until you finish a long rest.</p>
+			<p class="indent">In addition, when you fail an Charisma check or Charisma saving throw, you can reroll the die, and you must use the new roll. Once you use this reroll, you can't do so again until you finish a long rest.</p>
 		</description>
 		<sheet>
 			<description>You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks.</description>
@@ -559,9 +577,8 @@
 		</rules>
 	</element>
 
-	<element name="Kira’s Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY2">
+	<element name="Kira's Viceroy" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_VICEROY2">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<compendium display="false" />
 		<description />
 		<sheet usage="1/Long Rest">
@@ -571,7 +588,6 @@
 
 	<element name="Champion of Turbulent Freedom" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_CHAMPION_OF_TURBULENT_FREEDOM">
 		<compendium display="false" />
-		<requirements>ID_OBC_CP_MAGIC_ITEM_GIFT_TURBULENT_FREEDOM</requirements>
 		<description>
 			<p><em>Piety 50+ Kira trait</em></p>
 			<p>You can increase your Charisma or Wisdom score by 2 and also increase your maximum for that score by 2.</p>
@@ -665,55 +681,454 @@
 		<sheet display="false" />
 	</element>
 
-	<element name="The Chaos Orb (Complete)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_COMPLETE">
+	<element name="Persuasion" type="Proficiency" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_PROFICIENCY_KIRA_PERSUASION">
+		<supports>Kira Chaos Orb</supports>
 		<description>
-			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
-			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+			<p>You gain proficiency in persuasion. If you already have proficiency it then becomes expertise.</p>
 		</description>
-		<setters>
-			<set name="keywords">kira</set>
-			<set name="category">Treasure</set>
-			<set name="cost">Priceless</set>
-			<set name="valuable">true</set>
-		</setters>
+		<compendium display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Deception" type="Proficiency" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_PROFICIENCY_KIRA_DECEPTION">
+		<supports>Kira Chaos Orb</supports>
+		<description>
+			<p>You gain proficiency in deception. If you already have proficiency it then becomes expertise.</p>
+		</description>
+		<compendium display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+		</rules>
+	</element>
+	<element name="Intimidation" type="Proficiency" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_PROFICIENCY_KIRA_INTIMIDATION">
+		<supports>Kira Chaos Orb</supports>
+		<description>
+			<p>You gain proficiency in intimidation. If you already have proficiency it then becomes expertise.</p>
+		</description>
+		<compendium display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Insight" type="Proficiency" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_PROFICIENCY_KIRA_INSIGHT">
+		<supports>Kira Chaos Orb</supports>
+		<description>
+			<p>You gain proficiency in insight. If you already have proficiency it then becomes expertise.</p>
+		</description>
+		<compendium display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INSIGHT" />
+		</rules>
 	</element>
 
-	<element name="The Chaos Orb (Orb)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_ORB">
+	<element name="Key of Chaos" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_KEY_OF_CHAOS">
 		<description>
-			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
-			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+			<p>As one of the oldest divines of Arune, Kira came from the weave into a world that only new life and death. With him, chaos was brought to the world in the form of sudden unpredictabilities in the everyday world. Some people, such as the natives of the Nailen jungles, embraced the every present change. Others, such as the voidist followers in Evelain, sought to remove his presence in thier everyday lives.</p>
+		 	<p class="indent">Galeno Lituld, of the Order Oblivion, took it upon himself to end the reign of the god of chaos once and for all. While the original texts portraying the battle have long since been expunged from arune's annals of history, it is still widely known, that the mortal soldier won, but at a great cost. The only renmants le of the divine are trapped within his artifact, waiting to be reborn into the world, and once more bring about the tides of chaos.</p>
+			<p class="indent">The Relics of Chaos can be found together in the form of a functioning orb of chaos, or in it's shattered form as the key, ring, and orb of chaos. The key appears as an rectangular curved peice of metal made of bronze with golden inlays. there are indents on the far edges that imply the item is ment to attach to something larger. The Ring of Chaos is bronze with spiraling golden enlays and a suspicious gap in on one side of the lattice work giving it the appearance of a torque. This ring somewhat exible, despite being made of metal and is commonly as a bracelet, armband or necklace depending on the size of the wearer. The Orb of Chaos is a perfect bronze sphere covered in archaic, swirling gold inlay script. Should the artifact be intact, a blocky tarus that changes it's axis of rotation at random spins about the ring.</p>
+			<p class="indent">When being used, the inlays of each peice of the artifact will grow with a so prismatic light. To attune to the key or ring of chaos, you must spend a short rest in meditation over the artifacts. In the event that you have the key on your person while trying to attune to the ring, these two artifacts will merge together to form a completed relic. The orb of Chaos is unable to be attuned to unless the full artifact is intact</p>
+			<p class="indent"><strong><em>Random Properties.</em></strong> The Ring of Chaos has the following random properties:</p>
+			<ul>
+				<li style="margin-left:1em">1 minor beneficial property</li>
+				<li style="margin-left:1em">1 minor detremental property</li>
+			</ul>
+			<p><strong><em>Follower of Chaos.</em></strong> While holding this item you're piety with the god Kira is set to a minimum of 3, allowing you to gain the ability to draw the attention of the free spirited god of chaos and manifest his power in the following ways:</p>
+			<p class="indent">• <strong>Kira's Acolyte.</strong> You can call on Kira's blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_ARTIFACT_TABLE" />
+			</div>
 		</description>
 		<setters>
-			<set name="keywords">kira</set>
-			<set name="category">Treasure</set>
-			<set name="cost" currency="gp">Priceless</set>
-			<set name="valuable">true</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">misc</set>
 		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3" />
+		</rules>
 	</element>
 
-	<element name="The Chaos Orb (Halo)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_HALO">
+	<element name="Ring of Chaos" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_RING_OF_CHAOS">
 		<description>
-			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
-			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+			<p>As one of the oldest divines of Arune, Kira came from the weave into a world that only new life and death. With him, chaos was brought to the world in the form of sudden unpredictabilities in the everyday world. Some people, such as the natives of the Nailen jungles, embraced the every present change. Others, such as the voidist followers in Evelain, sought to remove his presence in their everyday lives.</p>
+			<p class="indent">Galeno Lituld, of the Order Oblivion, took it upon himself to end the reign of the god of chaos once and for all. While the original texts portraying the battle have long since been expunged from Arune's annals of history, it is still widely.</p>
+			<p class="indent">The Relics of Chaos can be found together in the form of a functioning orb of chaos, or in it's shattered form as the key, ring, and orb of chaos. The key appears as an rectangular curved piece of metal made of bronze with golden inlays. there are indents on the far edges that imply the item is meant to attach to something larger. The Ring of Chaos is bronze with spiraling golden inlays and a suspicious gap in on one side of the lattice work giving it the appearance of a torque. This ring somewhat flexible, despite being made of metal and is commonly as a bracelet, armband or necklace depending on the size of the wearer. The Orb of Chaos is a perfect bronze sphere covered in archaic, swirling gold inlay script. Should the artifact be intact, a blocky tarus that changes it's axis of rotation at random spins about the ring.</p>
+			<p class="indent">When being used, the inlays of each piece of the artifact will grow with a soft prismatic light. To attune to the key or ring of chaos, you must spend a short rest in meditation over the artifacts. In the event that you have the key on your person while trying to attune to the ring, these two artifacts will merge together to form a completed relic. The orb of Chaos is unable to be attuned to unless the full artifact is intact.</p>
+			<p class="indent"><strong><em>Random Properties.</em></strong> The Ring of Chaos has the following random properties:</p>
+			<ul>
+				<li style="margin-left:1em">1 minor beneficial property</li>
+				<li style="margin-left:1em">1 minor detremental property</li>
+			</ul>
+			<p><strong><em>Properties of the Ring.</em></strong> Without the key, the ring bestows the following benefits:</p>
+			<p class="indent"><strong><em>Summon Tempest.</em></strong> As an action you can use the ring to summon a tempest horse to be your steed for 24 hours. Once this trait is used, it can be used again for 5 days. If you have a lawful alignment, the horse has a 50% chance to ignore your orders, including a command to return to the ring. If you attempt to mount the Tempest while it is ignoring your orders, she may attempt to attack you.</p>
+			<p class="indent"><strong><em>Gain Proficiency.</em></strong> While attuned to this item you gain proficiency with any two of the following skills; persuasion, deception, intimidation, or insight.</p>
+			<p class="indent"><strong><em>Follower of Chaos.</em></strong> While attuned to this item you're piety with the god Kira is set to a minimum of 10, allowing you to gain the ability to draw the attention of the free spirited god of chaos and manifest his power in the following ways:</p>
+			<ul>
+				<li style="margin-left:1em"><em>Kira’s Acolyte</em>. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell. </li>
+			</ul>
+			<p><strong><em>Properties of the Key Ring.</em></strong> If you attempt to attune to the ring while the key is on your character, the two artifacts will magically fuse together, forming a more complete taurus. The two pieces will not be able to be separated except by way of Mordekines Disjointment, DispelMagic, Wish, or Miracle. In addition to the two items becoming one artifact, they bestow the following effects:</p>
+			<p class="indent"><strong><em>Enhanced Proficiency.</em></strong> While attuned to the completed ring you gain proficiency with any two of the following skills; persuasion, deception, intimidation, or insight. If you're already proficient in these skills, your proficiency bonus is doubled for any check you make with it. This replaces the incomplete ring's <i>Gain Proficiency</i> feature.</p>
+			<p class="indent"><strong><em>Angered Spirit.</em></strong> You take 8d10 psychic damage when you become attuned to the artifact.</p>
+			<p class="indent"><strong><em>Follower of Chaos.</em></strong> While attuned to this item you're piety with the god Kira is set to a minimum of 10, allowing you to gain the ability to draw the attention of the free spirited god of chaos and manifest his power in the following ways:</p>
+			<ul>
+				<li style="margin-left:1em"><em>Kira’s Acolyte</em>. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell. </li>
+				<li style="margin-left:1em"><em>Kira’s Speaker</em>. You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell. </li>
+			</ul>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_ARTIFACT_TABLE" />
+			</div>
 		</description>
 		<setters>
-			<set name="keywords">kira</set>
-			<set name="category">Treasure</set>
-			<set name="cost" currency="gp">Priceless</set>
-			<set name="valuable">true</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="slot">misc</set>
 		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Incomplete Ring of Chaos)" number="2" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_OBC_CP_MAGIC_ITEM_KEY_OF_CHAOS" />
+			<select type="Proficiency" name="Skill Proficiency (Complete Ring of Chaos)" supports="Kira Chaos Orb" number="2" requirements="ID_OBC_CP_MAGIC_ITEM_KEY_OF_CHAOS" />
+			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10" requirements="ID_OBC_CP_MAGIC_ITEM_KEY_OF_CHAOS" />
+		</rules>
 	</element>
 
-	<element name="The Chaos Orb (Key)" type="Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_ITEM_CHAOS_ORB_KEY">
+	<element name="Orb of Chaos" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_ORB_OF_CHAOS">
 		<description>
-			<p>The chaos orb is an item that purphorose made for Kira that would allow the divine to store his dimension and carry it around when he graced the mortals with his visits. Instead of storing his entire godly domain, Kira used his powers to build a new dimension within the orb that would hold his vacation home and most prized offerings.</p>
-			<p class="indent"> The Orb has since been fractured into 3 distinct pieces; the orb, the halo, and the Key. Each individual piece does nothing in the hands of a standard mortal aside from allow them to hear the divine's will if he so chooses. But in the hands of one affected by a divine shard, the artifact will begin leeching it's power into the holder, slowly restoring the divine power to them.</p>
+			<p>As one of the oldest divines of Arune, Kira came from the weave into a world that only new life and death. With him, chaos was brought to the world in the form of sudden unpredictabilities in the everyday world. Some people, such as the natives of the Nailen jungles, embraced the every present change. Others, such as the voidist followers in Evelain, sought to remove his presence in their everyday lives. </p>
+			<p class="indent">Galeno Lituld, of the Order Oblivion, took it upon himself to end the reign of the god of chaos once and for all. While the original texts portraying the battle have long since been expunged from Arune's annals of history, it is still widely known, that the mortal soldier won, but at a great cost. The only remnants left of the divine are trapped within his artifact, waiting to be reborn into the world, and once more bring about the tides of chaos. </p>
+			<p class="indent">The Relics of Chaos can be found together in the form of a functioning orb of chaos, or in it's shattered form as the key, ring, and orb of chaos. The key appears as an rectangular curved piece of metal made of bronze with golden inlays. there are indents on the far edges that imply the item is meant to attach to something larger. The Ring of Chaos is bronze with spiraling golden inlays and a suspicious gap in on one side of the lattice work giving it the appearance of a torque. This ring somewhat flexible, despite being made of metal and is commonly as a bracelet, armband or necklace depending on the size of the wearer. The Orb of Chaos is a perfect bronze sphere covered in archaic, swirling gold inlay script. Should the artifact be intact, a blocky tarus that changes it's axis of rotation at random spins about the ring. </p>
+			<p class="indent">When being used, the inlays of each piece of the artifact will grow with a soft prismatic light. To attune to the key or ring of chaos, you must spend a short rest in meditation over the artifacts. In the event that you have the key on your person while trying to attune to the ring, these two artifacts will merge together to form a completed relic. The orb of Chaos is unable to be attuned to unless the full artifact is intact. </p>
+			<p class="indent"><strong><em>Properties of the Orb of Chaos.</em></strong> If you are attuned to the completed Orb of Chaos, you receive the following benefits and detriments: </p>
+			<p class="indent"><strong><em>Gain Proficiency.</em></strong> While You are attune to this item you gain proficiency with any two of the following skills; persuasion, deception, intimidation, or insight. If you're already proficient in that skill, your proficiency bonus is doubled for any check you make with that skill.</p>
+			<p class="indent"><strong><em>Smooth Talker.</em></strong> You gain advantage on Charisma (Persuasion) and Charisma (Deception) checks. In addition, when you fail a Charisma saving throw, you can reroll the die, but you must use the new roll. Once you use this reroll, you can't do so again using this ability until you finish a long rest. </p>
+			<p class="indent"><strong><em>Armor of Tempest.</em></strong> You have a +1 to your Armor Class. </p>
+			<p class="indent"><strong><em>Follower of Chaos.</em></strong> While attuned to this item you're piety with the god Kira is set to a minimum of 10, allowing you to gain the ability to draw the attention of the free spirited god of chaos and manifest his power in the following ways:</p>
+			<ul>
+				<li style="margin-left:1em"><em>Kira’s Acolyte</em>. You can call on Kira’s blessing and cast chaotic bolt with this trait. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell. </li>
+				<li style="margin-left:1em"><em>Kira’s Speaker</em>. You can cast suggestion with this trait, requiring no material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest. Charisma is your spellcasting ability for this spell. </li>
+			</ul>
+			<p class="indent"><strong><em>Chaotic Energy.</em></strong>  While you have this item attuned, the following additional effects occur: </p>
+			<ul>
+				<li style="margin-left:1em">Other creatures can't take a short or long rest within 300 feet of you. </li>
+				<li style="margin-left:1em">Your flaw is amplified in a way determined by the DM and is subject to change at each dawn. </li>
+			</ul>
+			<p class="indent"><strong><em>Destroying the Orb.</em></strong> A common rumor among scholars is that the artifact can sense when it is in danger and teleport itself somewhere else in the multiverse. However, if one were to bath the artifact in the blood of Arik, the divine of Law, it would shatter the artifact into three pieces; the orb, the ring, and the key. This renders the orb effectively magicless. To repair the damaged artifact, it requires attuning to all three items and performing the wish spell while inside of a temple of the Kira, the god of chaos. Alternatively, once the pieces are all rejoined, the artifact will naturally repair itself after 1d10x100 years. The pieces will retain their magic so long as chaos still exists in the multiverse</p>
 		</description>
 		<setters>
-			<set name="keywords">kira</set>
-			<set name="category">Treasure</set>
-			<set name="cost" currency="gp">Priceless</set>
-			<set name="valuable">true</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Orb Of Chaos)" supports="Kira Chaos Orb" />
+			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10" />
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+
+
+
+	<!--Church of Pharika-->
+	<element name="Pharika's Piety" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY">
+		<compendium display="false" />
+		<description>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_DEVOTEE" />
+			</div>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_AID" />
+			</div>
+			<!--<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_" />
+			</div>
+			<div class="reference">
+				<div element="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_" />
+			</div>-->
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!--<select type="Racial Trait" name="Pharika Piety" supports="Pharika Piety Value" requirements="ID_OBC_CP_MAGIC_ITEM_GIFT_"/>-->
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_DEVOTEE" requirements="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_3||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_50" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_AID" requirements="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_10||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_50" />
+			<!--<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_" requirements="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_25||ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_50" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_" requirements="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_50" />-->
+		</rules>
+	</element>
+
+	<element name="Pharika's Devotee" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_DEVOTEE">
+		<compendium display="false" />
+		<description>
+			<p><em>Piety 3+ Pharika trait</em></p>
+			<p>You can call on Pharika's blessing and cast <em>ray of sickness</em> with this trait. You can cast the spell in this way a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="{{pharikadevotee:usage}}/Long Rest">
+			<description>You can cast ray of sickness with this trait. Hit {{pharikadevotee:hit}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" />
+			<stat name="pharikadevotee:usage" value="1" bonus="base" />
+			<stat name="pharikadevotee:usage" value="wisdom:modifier" bonus="base" />
+			<stat name="pharikadevotee:hit" value="proficiency" />
+			<stat name="pharikadevotee:hit" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Pharika's Aid" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_AID">
+		<compendium display="false" />
+		<description>
+			<p><em>Piety 10+ Pharika trait</em></p>
+			<p>The wearer gains proficiency in medicine checks. If they already have proficiency, they then gain expertise.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in medicine checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" />
+		</rules>
+	</element>
+
+	<element name="Piety 3+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_3">
+		<compendium display="false" />
+		<supports>Pharika Piety Value</supports>
+		<description>
+			<p>Your piety is 3+.</p>
+			<!--<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_" />
+			</div>-->
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 10+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_10">
+		<compendium display="false" />
+		<supports>Pharika Piety Value</supports>
+		<description>
+			<p>Your piety is 10+.</p>
+			<!--<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_" />
+			</div>-->
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 25+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_25">
+		<compendium display="false" />
+		<supports>Pharika Piety Value</supports>
+		<description>
+			<p>Your piety is 25+.</p>
+			<!--<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_" />
+			</div>-->
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Piety 50+" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_50">
+		<compendium display="false" />
+		<supports>Pharika Piety Value</supports>
+		<description>
+			<p>Your piety is 50+.</p>
+			<!--<div class="reference">
+				<div element="ID_OBC_CP_MAGIC_ITEM_GIFT_" />
+			</div>-->
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Pharika's Vines" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_PHARIKAS_VINES">
+		<description>
+			<p>The vines of Pharika are made of golden wires, delicately braided and shaped to resemble twisted, leafy vines. When adorned, the armband will alter its size to the arm or forehead of the creature, allowing it to be worn as either an armband or circlet. when combined with Pharika's mortar and pestle, it will bind to the item making a complete artifact.</p>
+			<p class="indent">The mortar and pestle may be found either with or without their inlays, which are most commonly referred to as the Vines of Pharika. Both of the vines and the mortar and pestle share a single attunement slot, allowing 1 creature and up to 2 vine bearers to share the attunement with the mortar and pestle. Attunement breaks to the mortar and pestle each month. Attunement to the vines requires that they be removed from the mortar and pestle and worn on the wrists or arms. Attunement with the vines breaks as soon as the item is removed. </p>
+			<p><strong><em>Follower of Affliction.</em></strong> While attuned to this item you're piety with the goddess Pharika is set to a minimum of 10, allowing you to gain the ability to draw the attention of the goddess of affliction and manifest her power in the following ways:</p>
+			<p class="indent">• <strong>Pharika's Devotee.</strong> The wearer gains the ability to cast ray of sickness with this trait a number of times equal to their Wisdom modifier.</p>
+			<p class="indent">• <strong>Pharika's Aid.</strong> The wearer gains proficiency in medicine checks. If you're already proficient in it, your proficiency bonus is doubled for any check you make with it. This ability replaces Pharika's Votary as a piety gift. </p>
+			<p />
+			<p class="indent"><strong><em>Natural Immunities.</em></strong> You are immune to disease and poison.</p>
+			<p class="indent"><strong><em>Bestow Plague.</em></strong> Once per day, the wearer can touch a creature and bestow a contagious disease of the DM's choosing upon a target as an action.</p>
+			<p class="indent"><strong><em>Bestow Remedy.</em></strong> Once per day, the wearer can craft a potion of cure disease using either 1 charge of a healer's kit, 10gp worth of healing herbs, or named herbs the DM designates. </p>
+			<p class="indent"><strong><em>Pharika's Influence.</em></strong> Once attuned to the item, you will forget and be unable to remember the properties of the artifact according to the goddesses will. Should she so choose, she can even prevent you from attuning to cursed items that may interfere with her goals. This extends so far as the item may prevent you from holding telepathic conversations with those that oppose the goddess or seek to undermine her work.</p>
+			<p class="indent"><strong><em>Agent of Pharika.</em></strong> After using either the Bestow Plague or Bestow Remedy abilities of this artifact, there is a high chance that the essence of Pharika causes physical changes to make you appear more like one of her own children. These changes cannot be reversed save for a use of wish or miracle.</p>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Affect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Your eyes are morphed into those of a snake, and you form scales on your face.</td></tr>
+				<tr><td>2</td><td>You grow scales along your neck and shoulders.</td></tr>
+				<tr><td>3</td><td>You grow scales up your arms, and form small talons in place of nails.</td></tr>
+				<tr><td>4</td><td>The skin of your torso is replaced with the scaly hide of a serpent.</td></tr>
+				<tr><td>5</td><td>Your legs become covered in a scaly hide, and whatever your feet were, are now humanoid but with 4 toes each.</td></tr>
+				<tr><td>6</td><td>You lose your legs and in their place grow a long, snake like body. You movement speed does not change.</td></tr>
+				<tr><td>7</td><td>You gain the ability to cast animal friendship at will (snakes only) at will.</td></tr>
+				<tr><td>8</td><td>You gain the ability to cast fear 1/day, use your wisdom modifier for this spell.</td></tr>
+			</table>
+			<p class="indent"><strong><em>The Mortar, Pestle, and one vine of Pharika:</em></strong> While attuned to the mortar and pestle and one vine of Pharika you gain the properties of each of the items in addition to the following:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em">Perfect Potions. Your recipe list is expanded to include the following potions.</li>
+				<li style="margin-left:2em">• Potion of Superior Healing (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Heroism (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Invisibility (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Vitality (4 Charges)</li>
+				<p></p>
+				<li style="margin-left:1em">Spare the Dying (5 Charges). You're list of possible effects is expanded as stated below. </li>
+				<li style="margin-left:2em">• Cure petrification</li>
+				<li style="margin-left:2em">• Cure all ability damage </li>
+				<p></p>
+				<li style="margin-left:1em">Bringer of Suffering (5 Charges). You're list of possible effects is expanded as stated below. </li>
+				<li style="margin-left:2em">• Bestow a disease in where the person slowly becomes petrified over the course of 1 week.</li>
+				<li style="margin-left:2em">• Reduce 1d4 attributes randomly by 2 points.</li>
+			</ul>
+
+			<h5></h5>
+			<p class="indent"><strong><em>The Mortar, Pestle, and two vines of Pharika:</em></strong> While attuned to both vines of Pharika and the mortar and pestle, you gain the effects of each items in addition to the following:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em">Will of Pharika. With all of the pieces of this artifact attuned to you, you can the ability to cast one of the following spells: </li>
+				<li style="margin-left:2em">• Power Word Heal</li>
+				<li style="margin-left:2em">• Power Word Kill</li>
+				<li style="margin-left:1em">Once you cast a spell using this ability, you cannot use the ability again for 3 days</li>
+				<p></p>
+				<li style="margin-left:1em">Perfect Potions. Your recipe list is expanded to include the following potions. </li>
+				<li style="margin-left:2em">• Potion of Superior Healing (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Supreme healing (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Heroism (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Invisibility (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Longevity (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Vitality (4 Charges)</li>
+				<p></p>
+				<li style="margin-left:1em">Spare the Dying (5 Charges). You're list of possible effects is expanded as listed below. In addition to this, your potion can take on up to 2 listed effect simultaneously.</li>
+				<li style="margin-left:2em">• Remove all diseases of a natural or supernatural type </li>
+				<li style="margin-left:2em">• Cure petrification</li>
+				<li style="margin-left:2em">• Reduce 1d4 attributes randomly by 2 points</li>
+				<p></p>
+				<li style="margin-left:1em">Bringer of Suffering (5 Charges). You're list of possible effects is expanded as listed below. In addition to this, your potion can take on up to 2 listed effect simultaneously. </li>
+				<li style="margin-left:2em">• Bestow a disease in where the person slowly becomes petrified over the course of 1 week </li>
+				<li style="margin-left:2em">• Bestow Lycanthropy or Vampirism (is contagious only by the standard way for these diseases)</li>
+				<li style="margin-left:2em">• Cure all ability damage </li>
+			</ul>
+			<p></p>
+			<p></p>
+			<p class="indent"><strong><em>Destroying the Artifact.</em></strong> The mortar and pestle can be permanently destroyed if subjected to the breath weapon of a platinum dragon or of Takisis. This leaves only the vines behind which can also be destroyed by tossing them into the mouth of an active volcano.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMPAIRMENT_IMMUNITY_DISEASE" />
+			<grant type="Grants" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY" />
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_PHARIKA_PIETY_VALUE_10" />
+		</rules>
+	</element>
+
+	<element name="Pharika's Mortar and Pestle" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_PHARIKAS_MORTAR_AND_PESTLE">
+		<description>
+			<p>The goddess Pharika was one of two gods that specialized in the sciences in the word of Arune. Legend states that she had an entire alchemists lab dedicated to growing any number of diseases, and a garden that grew an infinite number of herbs that could cure those same diseases. Among her favorite items was a mortar and pestle made of dragon fired glass with a gold inlay of twisting vines on each peice of the set.</p>
+			<p class="indent">The mortar and pestle may be found either with or without their inlays, which are most commonly referred to as the Vines of Pharika. Both of the vines and the mortar and pestle share a single attunement slot, allowing 1 creature and up to 2 vine bearers to share the attunement with the mortar and pestle. Attunement breaks to the mortar and pestle each month. Attunement to the vines requires that they be removed from the mortar and pestle and worn on the wrists or arms. Attunement with the vines breaks as soon as the item is removed. </p>
+			<p class="indent"><strong><em>Random Properties.</em></strong> The Mortar and Pestle of Pharika have the following random properties:</p>
+			<ul>
+				<li style="margin-left:1em">2 minor beneficial properties</li>
+				<li style="margin-left:1em">1 major beneficial property</li>
+				<li style="margin-left:1em">1 minor detremental property</li>
+			</ul>
+			<p class="indent"><strong><em>Properties of the Pestle.</em></strong> The pestle is 6 inches long and made of clear glass. Using a bonus action, this tool may be extended into a dragon glass quarter staff for 10 minutes. When you use this ability you choose whether the damage type is necrotic or radient. This ability can be used a number of times equal to your intelligence modifier (minimum of once). Uses and damage type reset at the next dawn. Whenever the pestle is seperated from the Mortar for more than 1 mile, the pestle will vanish and reappear beside the mortar. </p>
+			<p class="indent"><strong><em>Properties of the Mortar.</em></strong> The mortar is a small glass bowl that automatically changes its size to fit into the hand of the one it is attuned to. If a pinch of common herbs are placed into the mortar, it will multiply the herbs to fill the bowl. The contents of the Mortar will always be enough to produce a single drought of medicine or drink for the creature it is attuned to. In the case of having more than one person attuned to it, the mortar will take on the size of the attunement holder that is last used it. It has 10 charges which can be used in a number of different ways. The mortar regains expended uses at a rate of 1d4 charges per day. </p>
+			<p class="indent"><strong><em>Compact Kit.</em></strong>  As a standard action the mortar and pestle can be used in place of a poisoner's kit or a herbalism kit. This trait can be used a number of times equal to your wisdom modifier (minimum of once). Expended uses of this skill recharges after a short or long rest. </p>
+			<p class="indent"><strong><em>Perfect Potions.</em></strong> Each potion takes 1 hour,a pinch of common herbs, and a bottle of wine. Using this ability allows your to craft the following potions: </p>
+			<ul>
+				<li style="margin-left:1em">Potion of Climbing (1 Charge) </li>
+				<li style="margin-left:1em">Potion of Fire Breath (2 Charges)</li>
+				<li style="margin-left:1em">Potion of Growth (2 Charges) </li>
+				<li style="margin-left:1em">Potion of Healing (1 Charge) </li>
+				<li style="margin-left:1em">Potion of Greater Healing (2 Charges) </li>
+				<li style="margin-left:1em">Potion of Poison (2 Charges) </li>
+				<li style="margin-left:1em">Potion of Resistance (Poison) (2 Charges) </li>
+				<li style="margin-left:1em">Potion of Resistance (Necrotic) (2 Charges)</li>
+			</ul>
+			<p class="indent"><strong><em>Spare the Dying (5 Charges).</em></strong> Using the command word "Spare the Dying" and casting rare herbs worth 50 gp and flask of holy water into the mortar will cause the pair of items to come to life and begin crafting on thier own. After 2 hours the items will become still and not be able to craft another potion until the next dawn. The resulting potion will be capable of stabilizing a dying creature in addition to being capable of the ending one of following effects: </p>
+			<ul>
+				<li style="margin-left:1em">One curse, including that of an attuned cursed item</li>
+				<li style="margin-left:1em">Any effects reducing the target's hit point maximum </li>
+				<li style="margin-left:1em">Charmed, petrified, blinded, and defeaned effects.</li>
+			</ul>
+			<p class="indent"><strong><em>Bringer of Suffering (5 Charges).</em></strong> Using the command phrase "bringer of suffering" and casting any poison or venom worth 50 gp and a jar of graveyard soil (25 gp) will cause the items to come to life and begin crafting of thier own accord. After 2 hours the items will become still, leaving a foul smelling contact poison. The mortar and pestle will not be able to used in crafting another magical potion until the next dawn. </p>
+			<p class="indent">The poison will be contagious, all who come in contact with it will have to make a DC 25 Constitution saving throw. If they come within 5 ft of an uneffected individual, then that person will also need to make the save or fall under the effect of the poison. If you make the save, you will be immune to the poison for 1 week. anyone who is immune to both Poisons and Diseases will automatically pass this save. Each poison made will have one of the following effects:</p>
+			<ul>
+				<li>Cause a non-magical disease of your choosing</li>
+				<li>Remove 2d8 maximum hit points for 1 month</li>
+				<li>Permanently cause the blind, deafened, or paralyzed effect</li>
+			</ul>
+			<p class="indent"><strong><em>The Mortar, Pestle, and one vine of Pharika:</em></strong> While attuned to the mortar and pestle and one vine of Pharika you gain the properties of each of the items in addition to the following:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em">Perfect Potions. Your recipe list is expanded to include the following potions.</li>
+				<li style="margin-left:2em">• Potion of Superior Healing (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Heroism (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Invisibility (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Vitality (4 Charges)</li>
+				<p></p>
+				<li style="margin-left:1em">Spare the Dying (5 Charges). You're list of possible effects is expanded as stated below. </li>
+				<li style="margin-left:2em">• Cure petrification</li>
+				<li style="margin-left:2em">• Cure all ability damage </li>
+				<p></p>
+				<li style="margin-left:1em">Bringer of Suffering (5 Charges). You're list of possible effects is expanded as stated below. </li>
+				<li style="margin-left:2em">• Bestow a disease in where the person slowly becomes petrified over the course of 1 week.</li>
+				<li style="margin-left:2em">• Reduce 1d4 attributes randomly by 2 points.</li>
+			</ul>
+
+			<h5></h5>
+			<p class="indent"><strong><em>The Mortar, Pestle, and two vines of Pharika:</em></strong> While attuned to both vines of Pharika and the mortar and pestle, you gain the effects of each items in addition to the following:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em">Will of Pharika. With all of the pieces of this artifact attuned to you, you can the ability to cast one of the following spells: </li>
+				<li style="margin-left:2em">• Power Word Heal</li>
+				<li style="margin-left:2em">• Power Word Kill</li>
+				<li style="margin-left:1em">Once you cast a spell using this ability, you cannot use the ability again for 3 days</li>
+				<p></p>
+				<li style="margin-left:1em">Perfect Potions. Your recipe list is expanded to include the following potions. </li>
+				<li style="margin-left:2em">• Potion of Superior Healing (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Supreme healing (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Heroism (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Invisibility (3 Charges)</li>
+				<li style="margin-left:2em">• Potion of Longevity (4 Charges)</li>
+				<li style="margin-left:2em">• Potion of Vitality (4 Charges)</li>
+				<p></p>
+				<li style="margin-left:1em">Spare the Dying (5 Charges). You're list of possible effects is expanded as listed below. In addition to this, your potion can take on up to 2 listed effect simultaneously.</li>
+				<li style="margin-left:2em">• Remove all diseases of a natural or supernatural type </li>
+				<li style="margin-left:2em">• Cure petrification</li>
+				<li style="margin-left:2em">• Reduce 1d4 attributes randomly by 2 points</li>
+				<p></p>
+				<li style="margin-left:1em">Bringer of Suffering (5 Charges). You're list of possible effects is expanded as listed below. In addition to this, your potion can take on up to 2 listed effect simultaneously. </li>
+				<li style="margin-left:2em">• Bestow a disease in where the person slowly becomes petrified over the course of 1 week </li>
+				<li style="margin-left:2em">• Bestow Lycanthropy or Vampirism (is contagious only by the standard way for these diseases)</li>
+				<li style="margin-left:2em">• Cure all ability damage </li>
+			</ul>
+			<p></p>
+			<p></p>
+			<p class="indent"><strong><em>Destroying the Artifact.</em></strong> The mortar and pestle can be permanently destroyed if subjected to the breath weapon of a platinum dragon or of Takisis. This leaves only the vines behind which can also be destroyed by tossing them into the mouth of an active volcano.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_ARTIFACT_TABLE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
 		</setters>
 	</element>
 </elements>
