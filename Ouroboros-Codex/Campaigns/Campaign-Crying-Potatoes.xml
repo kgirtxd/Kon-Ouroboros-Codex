@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -748,7 +748,7 @@
 			<set name="slot">misc</set>
 		</setters>
 		<rules>
-			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
+			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" requirements="!ID_OBC_CP_MAGIC_ITEM_RING_OF_CHAOS" />
 			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_3" />
 		</rules>
 	</element>
