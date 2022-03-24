@@ -4,7 +4,7 @@
 		<name>ArmorKon</name>
 		<description></description>
 		<author>Konard</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Items-Armor.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Items-Armor.xml" />
 		</update>
 	</info>
@@ -34,5 +34,21 @@
 		<rules>
 			<stat name="ac:shield" value="1" bonus="shield" />
 		</rules>
+	</element>
+
+	<!--magic armor-->
+	<element name="Requip Armor" type="Magic Item" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_MAGIC_ITEM_REQUIP_ARMOR">		
+		<description>
+			<p>As an action you can summon or dismiss this armor to an extradimensional space. When summoned, the armor can be dropped on the ground or equipped to you or a target within 5 ft. This can be done as part of the same action used to summon or dismiss another item in a similar way.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="light, medium, heavy, or shield">Armor</set> 
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY||ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">Requip {{parent}}</set>
+		</setters>
 	</element>
 </elements>

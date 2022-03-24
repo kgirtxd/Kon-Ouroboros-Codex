@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Death Knight Race</name>
+		<update version="0.0.1">
+			<file name="Race-DemonKnight.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/festers-list-of-monsters-and-races/Race-DemonKnight.xml" />
+		</update>
+	</info>
+
+	<element name="Demon Knight" type="Race" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACE_DEMON_KNIGHT">
+		<description>
+			<p>_______</p>
+			<h4>HEADING</h4>
+			<p>_______</p>
+			<p class="indent">_______</p>
+			<h4>HEADING</h4>
+			<p>_______</p>
+			<p class="indent">_______</p>
+			<h4>Demon Knight Traits</h4>
+			<p>As an Demon Knight, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Fiend.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Demon knights reach physical prime at about the same age as humans, but can theoretically live indefinitely if supplied with essence from an infernal plane.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Demon knights are typically lawful, following the orders of their leaders.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Fire Heart.</em></strong> You are acclimated to extreme heat and suffer no adverse effects from resting in armor.</p>
+			<p class="indent"><strong><em>Essence Recovery.</em></strong> You can draw upon the essence of the infernal planes to quickly heal your body. When completing a short or long rest, you can regain a number of hit dice up to your proficiency bonus. When completing a long rest, you can remove 2 levels of exhaustion.</p>
+			<p class="indent"><strong><em>Battle Senses.</em></strong> When you make a weapon attack that would fail, you can use your reaction to double the proficiency bonus to that weapon attack. Potentially turning a fail into a success. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and either Abyssal or Infernal. Your understanding of Abyssal or Infernal is linked to the fiend clan you are a kin to.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Demon Knight)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FIEND" />
+			
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Demon Knight)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Demon Knight)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_POWERFUL_BUILD" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_FIRE_HEART" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_ESSENCE_RECOVERY" />
+			<grant type="Racial Trait" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_BATTLE_SENSES" />
+		</rules>
+	</element>
+
+	<element name="Powerful Build" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Fire Heart" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_FIRE_HEART">
+		<description>
+			<p>You are acclimated to extreme heat and suffer no adverse effects from resting in armor.</p>
+		</description>
+		<sheet>
+			<description>You are acclimated to extreme heat and suffer no adverse effects from resting in armor.</description>
+		</sheet>
+	</element>
+
+	<element name="Essence Recovery" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_ESSENCE_RECOVERY">
+		<description>
+			<p>You can draw upon the essence of the infernal planes to quickly heal your body.</p>
+			<p class="indent">When completing a short or long rest, you can regain a number of hit dice up to your proficiency bonus.</p>
+			<p class="indent">When completing a long rest, you can remove 2 levels of exhaustion.</p>
+		</description>
+		<sheet>
+			<description>You have supernatural recovery.&#13;
+			• When completing a short or long rest, you can regain {{proficiency}} hit dice.&#13;
+			• When completing a long rest, you can remove 2 levels of exhaustion.</description>
+		</sheet>
+	</element>
+
+	<element name="Battle Senses" type="Racial Trait" source="Fester's List of Monsters and Races" id="ID_OBC_FLMR_RACIAL_TRAIT_DEMON_KNIGHT_BATTLE_SENSES">
+		<description>
+			<p>When you make a weapon attack that would fail, you can use your reaction to double the proficiency bonus to that weapon attack. Potentially turning a fail into a success.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest" >
+			<description>When you make a weapon attack that would fail, you can add {{proficiency}} to that weapon attack. Potentially turning a fail into a success.</description>
+		</sheet>
+	</element>
+</elements>
