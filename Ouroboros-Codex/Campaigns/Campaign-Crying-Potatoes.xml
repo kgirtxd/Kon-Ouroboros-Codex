@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -311,6 +311,29 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Conjure Furniture" type="Spell" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_SPELL_CONJURE_FURNITURE">
+		<supports>Sorcerer, Wizard, Artificer, Bard</supports>
+		<description>
+			<p>You can conjure 1 piece of furniture fit for the caster along with related items (cushions, sheets, etc) in unoccupied space within range for the duration.</p>
+			<p class="indent">If you cast this spell multiple times, you can have up to three instances active at a time, and you can dismiss each as an action.</p>
+			<p class="indent">The conjured furniture and related items can be made of typical materials but will not protect against harsh weather or excessive damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">9 Hours</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
