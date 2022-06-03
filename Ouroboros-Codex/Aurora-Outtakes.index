@@ -2,12 +2,11 @@
 <index>
 	<info>
 		<name>Konard's Aurora Integrations</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="Aurora-Outtakes.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes.index" />
 		</update>
 	</info>
 	<files>
-		<file name="background-custom.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/background-custom.xml" />
 		<file name="better-custom-lineage.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/better-custom-lineage.xml" />
 		<file name="better-metamagic-adept.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/better-metamagic-adept.xml" />
 		<file name="expertise-flow-fix.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/expertise-flow-fix.xml" />
@@ -17,5 +16,7 @@
 		<file name="proficiency-expertise.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/proficiency-expertise.xml" />
 		<file name="rules.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/rules.xml" />
 		<file name="sidekicks.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/sidekicks.xml" />
+		
+		<obsolete name="background-custom.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/background-custom.xml" />
 	</files>
 </index>
