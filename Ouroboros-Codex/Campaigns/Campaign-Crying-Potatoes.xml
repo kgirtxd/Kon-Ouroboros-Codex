@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -331,6 +331,22 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
 			<set name="slot">misc</set>
+		</setters>
+	</element>
+
+	<element name="Whistle of Leomund's Secure Shelter" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_WHISTLE_OF_LEOMUNDS_SECURE_SHELTER">
+		<description>
+			<p>The long silver whistle can be worn on a chain or leather strap and appears as a simple dog whistle. However, upon blowing on the whistle, no sound is produced. Instead a small cottage appears before the user facing in whatever direction desired.</p>
+			<p class="indent">This cottage was made out of whatever material were found in the area the spell was cast. It was equipped with a clean, dry, and level floor, a sturdy door, two shuttered windows, eight bunks, a trestle table, eight stools, a writing desk, a small fireplace and an unseen servant, the last one was optional. The interior had no automatic air conditioning, if natural insulation was counted out.</p>
+			<p class="indent">As mentioned above, the cottage was made out of whatever material was found in the area. The kind of material did not affect the cottage's sturdiness. It was always as strong as a stone building and was protected against fire as though it was made of stone.</p>
+			<p class="indent">It was also hard to break into the cottage. The chimney, door, and the windows were enchanted with an alarm effect, if so prepared. When it came to the door and the windows' shutters, they were under the effect of an arcane lock effect. One had a hard time breaking in through the chimney, because it was warded through an iron grate and a narrow flue.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
 
@@ -923,7 +939,7 @@
 		</rules>
 	</element>
 
-	<element name="Kira's Ascension" type="Racial Trait" source="source" id="ID_OBC_CP_RACIAL_TRAIT_KIRAS_ASCENSION">
+	<element name="Kira's Ascension" type="Racial Trait" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_RACIAL_TRAIT_KIRAS_ASCENSION">
 		<description>
 			<p>Kira has regain most of his godly powers and gains the following effects:</p>
 			<ul>
