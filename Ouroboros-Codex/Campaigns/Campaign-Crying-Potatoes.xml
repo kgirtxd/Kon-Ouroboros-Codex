@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crying Potatoes Campaign Assets</name>
-		<update version="0.0.10">
+		<update version="0.1.0">
 			<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		</update>
 	</info>
@@ -900,7 +900,45 @@
 			<grant type="Grants" id="ID_OBC_CP_GRANTS_KIRA_TRAITS" />
 			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRA_PIETY_VALUE_10" />
 			<stat name="ac:misc" value="1" />
+			<stat name="attunement:max" value="1" requirements="ID_OBC_CP_MAGIC_ITEM_KEY_OF_CHAOS, ID_OBC_CP_MAGIC_ITEM_RING_OF_CHAOS"/>
 		</rules>
+	</element>
+
+	<element name="Kira's Ascension" type="Magic Item" source="Ouroboros: Crying Potatoes" id="ID_OBC_CP_MAGIC_ITEM_KIRAS_ASCENSION">
+		<description>
+			<p>Kira has regain most of his godly powers and gains the following effects:</p>
+			<ul>
+				<li>You are functionally immortal and no longer age.</li>
+				<li>You do not need to breath.</li>
+				<li>Poison and Disease cannot reduce you below 1 hp.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Supernatural Gifts</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_OBC_CP_RACIAL_TRAIT_KIRAS_ASCENSION" />
+		</rules>
+	</element>
+
+	<element name="Kira's Ascension" type="Racial Trait" source="source" id="ID_OBC_CP_RACIAL_TRAIT_KIRAS_ASCENSION">
+		<description>
+			<p>Kira has regain most of his godly powers and gains the following effects:</p>
+			<ul>
+				<li>You are functionally immortal and no longer age.</li>
+				<li>You do not need to breath.</li>
+				<li>Poison and Disease cannot reduce you below 1 hp.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have gained following effects:&#13;
+				• You are functionally immortal and no longer age. &#13;
+				• You do not need to breath. &#13;
+				• Poison and Disease cannot reduce you below 1 hp.
+			</description>
+		</sheet>
 	</element>
 
 
