@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats</description>
 		<author>Konard</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="Feats.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/hexs-notes-on-magic-and-combat/Feats.xml" />
 		</update>
 	</info>
@@ -37,6 +37,28 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Eldritch Insight" supports="Eldritch Insight" />
+		</rules>
+	</element>
+
+	<element name="Battle Mage" type="Feat" source="Hex's Notes on Magic and Combat" id="ID_OBC_HNMC_FEAT_BATTLE_MAGE">
+		<requirements>ID_INTERNAL_GRANT_FEATURE_SPELLCASTING||ID_INTERNAL_GRANT_FEATURE_PACT_MAGIC</requirements>
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p>You are a magic user who has grown accustomed to close quarters comabt.</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged spell attack rolls.</li>
+				<li>Casting <i>Mage Armor</i> grants +1 AC to the target</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You are a magic user who has grown accustomed to close quarters comabt.&#13;
+			• Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged spell attack rolls. &#13;
+			• Casting <i>Mage Armor</i> grants +1 AC to the target.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Battle Mage)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<stat name="ac:mage armor" value="1" />
 		</rules>
 	</element>
 
