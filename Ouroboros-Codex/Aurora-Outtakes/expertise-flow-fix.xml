@@ -75,6 +75,16 @@
 		</rules>
 	</element>
 
+	<element name="Skilled^" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_SKILLED">
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Skilled)" supports="(Skill||Tool), !Expertise" number="3" />
+		</rules>
+	</element>
+
 	<element name="Skill Expert^" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_SKILL_EXPERT">
 		<description>
 			<p>You have honed your proficiency bonus with particular skills, granting you the following benefits:</p>
