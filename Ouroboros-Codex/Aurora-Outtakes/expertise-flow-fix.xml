@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="expertise-flow-fix.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/expertise-flow-fix.xml" />
 		</update>
 	</info>
@@ -72,6 +72,16 @@
 			<select type="Class Feature" name="Expertise (Canny)" supports="Expertise" requirements="!ID_INTERNAL_GRANT_EXPERTISE_FLOW_FIX" />
 			<select type="Proficiency" name="Expertise (Canny)" supports="Expertise" requirements="ID_INTERNAL_GRANT_EXPERTISE_FLOW_FIX" />
 			<select type="Language" name="Language (Canny)" number="2" />			
+		</rules>
+	</element>
+
+	<element name="Skilled^" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_SKILLED">
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Skilled)" supports="(Skill||Tool), !Expertise" number="3" />
 		</rules>
 	</element>
 
