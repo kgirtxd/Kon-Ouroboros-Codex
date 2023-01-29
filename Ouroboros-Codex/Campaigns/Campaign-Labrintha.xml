@@ -4,7 +4,7 @@
 		<name>Labrintha Campaign Magic Items</name>
 		<description></description>
 		<author>Konard</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Campaign-Labrintha.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Labrintha.xml" />
 		</update>
 	</info>
@@ -14,8 +14,8 @@
 			<![CDATA[<p>Approved special items for the Labrintha campaign.</p>]]>
 		</description>
 		<setters>
-			<set name="abbreviation">KON</set>
-			<set name="url">https://github.com/kgirtxd/5eHomeBrew/tree/master/Konard/Campaigns</set>
+			<set name="abbreviation">LAB</set>
+			<set name="url">https://github.com/Ouroboros-dnd/Codex/tree/Master/Ouroboros-Codex/Campaigns</set>
 			<set name="image">https://gchs.org/wp-content/uploads/Image-Coming-Soon-Placeholder.png</set>
 			<set name="author" abbreviation="LAB">~Ziphmose~</set>
 			<set name="homebrew">true</set>

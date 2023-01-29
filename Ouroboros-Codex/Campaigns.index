@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Homebrew Campaign Material</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Campaigns.index" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns.index" />
 		</update>
 	</info>
@@ -10,5 +10,6 @@
 		<file name="Campaign-Labrintha.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Labrintha.xml" />
 		<file name="Campaign-Crying-Potatoes.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Crying-Potatoes.xml" />
 		<file name="Campaign-Shattered-Stones.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Shattered-Stones.xml" />
+		<file name="Campaign-Quantum-Resonance.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Quantum-Resonance.xml" />
 	</files>
 </index>
