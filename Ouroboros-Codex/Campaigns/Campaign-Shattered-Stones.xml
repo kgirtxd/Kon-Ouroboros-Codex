@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Shattered Stones Campaign Assets</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Campaign-Shattered-Stones.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Shattered-Stones.xml" />
 		</update>
 	</info>
@@ -13,9 +13,9 @@
 		</description>
 		<setters>
 			<set name="abbreviation">SS</set>
-			<set name="url">https://github.com/kgirtxd/5eHomeBrew/tree/master/Konard/Campaigns</set>
+			<set name="url">https://github.com/Ouroboros-dnd/Codex/tree/Master/Ouroboros-Codex/Campaigns</set>
 			<set name="image">https://gchs.org/wp-content/uploads/Image-Coming-Soon-Placeholder.png</set>
-			<set name="author" abbreviation="CP">~Konard~</set>
+			<set name="author" abbreviation="SS">~Konard~</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
@@ -34,7 +34,4 @@
 			<select type="Feat" name="Shattered Stones Campaign - Bonus Feat" supports="ID_PHB_FEAT_SKILLED|ID_PHB_FEAT_TOUGH|ID_WOTC_TCOE_FEAT_ARTIFICER_INITIATE|ID_PHB_FEAT_DUNGEON_DELVER|ID_PHB_FEAT_HEALER|ID_PHB_FEAT_GREATWEAPONMASTER|ID_WOTC_FTOD_FEAT_GIFT_OF_THE_CHROMATIC_DRAGON|ID_WOTC_FTOD_FEAT_GIFT_OF_THE_METALLIC_DRAGON|ID_PHB_FEAT_MAGESLAYER|ID_PHB_FEAT_MAGICINITIATE|ID_PHB_FEAT_MARTIALADEPT|ID_PHB_FEAT_MOUNTEDCOMBATANT|ID_PHB_FEAT_SAVAGEATTACKER|ID_WOTC_SCOC_FEAT_STRIXHAVEN_INITIATE" requirements="!(ID_WOTC_SCOC_BACKGROUND_WITHERBLOOM_STUDENT|ID_WOTC_SCOC_BACKGROUND_SILVERQUILL_STUDENT|ID_WOTC_SCOC_BACKGROUND_QUANDRIX_STUDENT|ID_WOTC_SCOC_BACKGROUND_PRISMARI_STUDENT|ID_WOTC_SCOC_BACKGROUND_LOREHOLD_STUDENT)"/>
 		</rules>
 	</element>
-	
-	
-	
 </elements>
