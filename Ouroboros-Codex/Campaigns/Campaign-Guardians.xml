@@ -21,6 +21,22 @@
 		</setters>
 	</element>
 
+	<element name="Tentacle Daddy" type="Deity" source="Ouroboros: Guardians" id="ID_OBC_SG_DEITY_TENTACLE_DADDY">
+		<description>
+			<p class="flavor">patron of ancient knowledge</p>
+		</description>
+		<setters>
+			<set name="setting">Space</set>
+			<set name="alignment">N</set>
+			<set name="domains">Knowledge</set>
+			<set name="symbol">Face with tentacles</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>patron of ancient knowledge</description>
+		</sheet>
+	</element>
+
 	<!-- Air Affinity -->
 	<element name="Air Affinity" type="Grants" source="Ouroboros: Guardians" id="ID_OBC_SG_GRANTS_AIR_AFFINITY_UNLOCK" />
 
