@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Guardians Campaign Assets</name>
+		<author>Basic126</author>
+		<update version="0.0.0.1">
+			<file name="Campaign-Guardians.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Campaigns/Campaign-Guardians.xml" />
+		</update>
+	</info>
+
+	<element name="Ouroboros: Guardians" type="Source" source="Core" id="ID_OBC_SOURCE_GUARDIANS">
+		<description>
+			<![CDATA[<p>Approved special items for the Guardians campaign.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SG</set>
+			<set name="url">https://github.com/Ouroboros-dnd/Codex/tree/Master/Ouroboros-Codex/Campaigns</set>
+			<set name="image">https://gchs.org/wp-content/uploads/Image-Coming-Soon-Placeholder.png</set>
+			<set name="author" abbreviation="SG">~Ziphmose~</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+
+	<!-- Air Affinity -->
+	<element name="Air Affinity" type="Grants" source="Ouroboros: Guardians" id="ID_OBC_SG_GRANTS_AIR_AFFINITY_UNLOCK" />
+
+	<element name="Air Affinity" type="Feat" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_AIR_AFFINITY">
+		<requirements>ID_OBC_SG_GRANTS_AIR_AFFINITY_UNLOCK</requirements>
+		<description>
+			<p>sssss</p>
+		</description>
+		<rules>
+			<select type="Feat Feature" name="AirAffinity (Level 1)" supports="AirAffinity 1" default="ID_OBC_SG_FEAT_FEATURE_FLOAT"/>
+			<select type="Feat Feature" name="AirAffinity (Level 2)" supports="AirAffinity 2" />
+			<select type="Feat Feature" name="AirAffinity (Level 3)" supports="AirAffinity 3" />
+			<select type="Feat Feature" name="AirAffinity (Level 4)" supports="AirAffinity 4" />
+			<select type="Feat Feature" name="AirAffinity (Level 5)" supports="AirAffinity 5" />
+		</rules>
+	</element>
+
+	<element name="Float" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FLOAT">
+		<supports>AirAffinity, AirAffinity 1</supports>
+		<requirements>[AirAffinity:level:1]</requirements>
+		<description>
+			<p>[Passive] You can float above any walkable surface by up to 1ft and can move normally as if walking. You are not slowed by any difficult terrain and are not subject to dex saves/checks from mundain terrain that otherwise impose them to walk across.</p>
+		</description>
+		<sheet>
+			<description>&#160; Enter the void.&#13;
+			• You can float above any walkable surface by up to 1ft and can move normally as if walking. &#13;
+			• You are not slowed by any difficult terrain and are not subject to dex saves/checks from mundain terrain that otherwise impose them to walk across.</description>
+		</sheet>
+	</element>
+
+	<element name="Initiative" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_INITIATIVE">
+		<supports>AirAffinity, AirAffinity 2</supports>
+		<requirements>[AirAffinity:level:2]</requirements>
+		<description>
+			<p>[Passive] You gain your proficiency modifier to your initiative. You may spend your reaction to delay acting in initiative order.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can delay acting in initiative order.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Wind Magic" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_WIND_MAGIC">
+		<supports>AirAffinity, AirAffinity 2</supports>
+		<requirements>[AirAffinity:level:2]</requirements>
+		<description>
+			<p>(need to find a couple of wind themed spells to cast prof times per long rest.)</p>
+		</description>
+		<sheet>
+			<description>(need to find a couple of wind themed spells to cast prof times per long rest.)</description>
+		</sheet>
+	</element>
+
+	<element name="Move" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MOVE">
+		<supports>AirAffinity, AirAffinity 3</supports>
+		<requirements>[AirAffinity:level:3]</requirements>
+		<description>
+			<p>Your base movement speed is doubled, this applies to all natural movement forms you have. This includes when transformed by polymorph or wildshape.</p>
+		</description>
+		<sheet requirements="!ID_OBC_SG_FEAT_FEATURE_MOVE_2">
+			<description>All innate speeds are doubled.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="innate speed" />
+			<stat name="speed:burrow:misc" value="innate speed:burrow" requirements="!ID_OBC_SG_FEAT_FEATURE_MOVE_2" />
+			<stat name="speed:climb:misc" value="innate speed:climb" requirements="!ID_OBC_SG_FEAT_FEATURE_MOVE_2" />
+			<stat name="speed:fly:misc" value="innate speed:fly" requirements="!ID_OBC_SG_FEAT_FEATURE_MOVE_2" />
+			<stat name="speed:swim:misc" value="innate speed:swim" requirements="!ID_OBC_SG_FEAT_FEATURE_MOVE_2" />
+		</rules>
+	</element>
+
+	<element name="Atmosphere" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_ATMOSPHERE">
+		<supports>AirAffinity, AirAffinity 3</supports>
+		<requirements>[AirAffinity:level:3]</requirements>
+		<description>
+			<p>You generate a region of breathable atmosphere for yourself and everyone within 30ft of you. This region is free of all atmospheric related effects that would otherwise be present (toxic gas, no oxygen, etc.) This ability lasts for 4 hours. You may use this a number of times equal to your proficiency modifier.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can generate a region of clean breathable atmosphere for yourself and everyone within 30ft while of you for 4hrs. </description>
+		</sheet>
+	</element>
+
+	<element name="Freedom of Movement" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FREEDOM_OF_MOVEMENT">
+		<supports>AirAffinity, AirAffinity 4</supports>
+		<requirements>[AirAffinity:level:4]</requirements>
+		<description>
+			<p>While you are conscious you are perpetually under the "Freedom of Movement" spell.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+			</div>
+		</description>
+		<sheet>
+			<description>Your movement has been enhanced.&#13;
+			• You are unaffected by difficult terrain &#13;
+			• Spells and other magical effects can neither reduce your speed nor cause you to be paralyzed or restrained.&#13;
+			• You can spend 5ft of movement to automatically escape from nonmagical restraints or grapple. &#13;
+			• Being underwater imposes no penalties on the your movement or attacks.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Wind Magic 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_WIND_MAGIC_2">
+		<supports>AirAffinity, AirAffinity 4</supports>
+		<prerequisite>Wind Magic</prerequisite>
+		<requirements>[AirAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_WIND_MAGIC</requirements>
+		<description>
+			<p>(Your wind magic is enhanced in some way if you took wind magic)</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Initiative 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_INITIATIVE_2">
+		<supports>AirAffinity, AirAffinity 4</supports>
+		<prerequisite>Initiative</prerequisite>
+		<requirements>[AirAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_INITIATIVE</requirements>
+		<description>
+			<p>Your initiative ability is further enhanced, you additionally gain advantage on initiative rolls. IF you are surprised you may act last in the surprise round.</p>
+		</description>
+		<sheet>
+			<description>Your initiative is further enhanced.&#13;
+			• You gain advantage on initiative rolls.&#13;
+			• You may act last in the surprise round.</description>
+		</sheet>
+	</element>
+
+	<element name="Move 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MOVE_2">
+		<supports>AirAffinity, AirAffinity 5</supports>
+		<prerequisite>Move</prerequisite>
+		<requirements>[AirAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_MOVE</requirements>
+		<description>
+			<p>Your movement ability is further enhanced, Any affect that otherwise modifies your movement speed or grants you new forms of movement is doubled.</p>
+		</description>
+		<sheet>
+			<description>Any affect that otherwise modifies your movement speed or grants you new forms of movement is doubled.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="speed" />
+			<stat name="speed:burrow:misc" value="speed:burrow" />
+			<stat name="speed:climb:misc" value="speed:climb"/>
+			<stat name="speed:fly:misc" value="speed:fly" />
+			<stat name="speed:swim:misc" value="speed:swim" />
+		</rules>
+	</element>
+
+	<element name="Atmosphere 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_ATMOSPHERE_2">
+		<supports>AirAffinity, AirAffinity 5</supports>
+		<prerequisite>Atmosphere</prerequisite>
+		<requirements>[AirAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_ATMOSPHERE</requirements>
+		<description>
+			<p>Your Atmosphere ability is further enhanced, Your personal atmosphere is now permanent and you can willingly exclude creatures from the effect.</p>
+		</description>
+		<sheet action="Action">
+			<description>A stronger personal atmosphere&#13;
+			• You can generate a region of clean breathable atmosphere for yourself and everyone within 30ft.&#13;
+			• You can willingly exclude creatures from the effect. </description>
+		</sheet>
+	</element>
+
+	<element name="Overly Nimble" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_OVERLY_NIMBLE">
+		<supports>AirAffinity, AirAffinity 5</supports>
+		<requirements>[AirAffinity:level:5]</requirements>
+		<description>
+			<p>Your DEX score increases to 20. Additionally you may use your reaction to reroll any DEX save/checks but you must take the new roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can reroll any DEX save/checks but you must take the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity:score:set" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Air Items -->
+	<element name="Breathing Bag of Holding" type="Magic Item" source="Ouroboros: Guardians" id="ID_OBC_SG_MAGIC_ITEM_BREATHING_BAG_OF_HOLDING">
+		<description>
+			<p>It's a bag of holding in the likeness of the embodiment of the air element. It allowes for communication with the elemental entity once per day.</p>
+			<div class="reference">
+				<div element="ID_WOTC_DMG_MAGIC_ITEM_BAG_OF_HOLDING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OBC_SG_GRANTS_AIR_AFFINITY_UNLOCK" />
+			<grant type="Feat" id="ID_OBC_SG_FEAT_AIR_AFFINITY" />
+			<stat name="AirAffinity:level" value="1" />
+		</rules>
+	</element>
+
+
+
+	<!-- Fire Affinity -->
+	<element name="Fire Affinity" type="Grants" source="Ouroboros: Guardians" id="ID_OBC_SG_GRANTS_FIRE_AFFINITY_UNLOCK" />
+
+	<element name="Fire Affinity" type="Feat" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FIRE_AFFINITY">
+		<requirements>ID_OBC_SG_GRANTS_FIRE_AFFINITY_UNLOCK</requirements>
+		<description>
+			<p>sssss</p>
+		</description>
+		<rules>
+			<select type="Feat Feature" name="FireAffinity (Level 1)" supports="FireAffinity 1" default="ID_OBC_SG_FEAT_FEATURE_FIRE_RESISTANCE"/>
+			<select type="Feat Feature" name="FireAffinity (Level 2)" supports="FireAffinity 2" />
+			<select type="Feat Feature" name="FireAffinity (Level 3)" supports="FireAffinity 3" />
+			<select type="Feat Feature" name="FireAffinity (Level 4)" supports="FireAffinity 4" />
+			<select type="Feat Feature" name="FireAffinity (Level 5)" supports="FireAffinity 5" />
+		</rules>
+	</element>
+
+	<element name="Fire Resistance" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FIRE_RESISTANCE">
+		<supports>FireAffinity, FireAffinity 1</supports>
+		<requirements>[FireAffinity:level:1]</requirements>
+		<description>
+			<p>You gain resistance to fire damage from all sources. Additionally you are immune to exhaustion from hot environments.</p>
+		</description>
+		<sheet>
+			<description>You are immune to exhaustion from hot environments</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Fire Magic" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FIRE_MAGIC">
+		<supports>FireAffinity, FireAffinity 2</supports>
+		<requirements>[FireAffinity:level:2]</requirements>
+		<description>
+			<p>(need to find a couple of fire themed spells to cast prof times per long rest.)</p>
+		</description>
+		<sheet>
+			<description>(need to find a couple of fire themed spells to cast prof times per long rest.)</description>
+		</sheet>
+	</element>
+
+	<element name="Imbued with Fire" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_IMBUED_WITH_FIRE">
+		<supports>FireAffinity, FireAffinity 2</supports>
+		<requirements>[FireAffinity:level:2]</requirements>
+		<description>
+			<p>Your weapons are imbued with your fire. You may willingly half your weapon damage to change it to fire. You must declair this when taking the attack action.</p>
+		</description>
+		<sheet>
+			<description>You may willingly half your weapon damage to change it to fire. You must declair this when taking the attack action.</description>
+		</sheet>
+	</element>
+
+	<element name="Munitions Synthesis" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MUNITIONS_SYNTHESIS">
+		<supports>FireAffinity, FireAffinity 3</supports>
+		<requirements>[FireAffinity:level:3]</requirements>
+		<description>
+			<p>You may exchange currency at crafting cost to generate any kind of man-portable ammunition.</p>
+		</description>
+		<sheet>
+			<description>You may exchange currency at crafting cost to generate any kind of man-portable ammunition.</description>
+		</sheet>
+	</element>
+
+	<element name="Steaming Berzerker" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_STEAMING_BERZERKER">
+		<supports>FireAffinity, FireAffinity 3</supports>
+		<requirements>[FireAffinity:level:3]</requirements>
+		<description>
+			<p>(something similar to barbarian rage. I'm a bit too tired to figure out the exact)</p>
+		</description>
+		<sheet action="Action">
+			<description>(something similar to barbarian rage. I'm a bit too tired to figure out the exact)</description>
+		</sheet>
+	</element>
+
+	<element name="Fire Magic 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FIRE_MAGIC_2">
+		<supports>FireAffinity, FireAffinity 4</supports>
+		<prerequisite>Fire Magic</prerequisite>
+		<requirements>[FireAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_FIRE_MAGIC</requirements>
+		<description>
+			<p>(need to find a couple of fire themed spells to cast prof times per long rest.)</p>
+		</description>
+		<sheet>
+			<description>(need to find a couple of fire themed spells to cast prof times per long rest.)</description>
+		</sheet>
+	</element>
+
+	<element name="Imbued with Fire 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_IMBUED_WITH_FIRE_2">
+		<supports>FireAffinity, FireAffinity 4</supports>
+		<prerequisite>Imbued with Fire</prerequisite>
+		<requirements>[FireAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_IMBUED_WITH_FIRE</requirements>
+		<description>
+			<p>Your Imbued with Fire ability also imbues your armor. Any hostile person who is adjacent to you takes 1d12 fire per round.</p>
+		</description>
+		<sheet>
+			<description>Too hot to handle.&#13;
+			• Your armor is imbued with your fire&#13;
+			• Any hostile person who is adjacent to you takes 1d12 fire per round.</description>
+		</sheet>
+	</element>
+
+	<element name="Fire Synthesis" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_FIRE_SYNTHESIS">
+		<supports>FireAffinity, FireAffinity 4</supports>
+		<requirements>[FireAffinity:level:4]</requirements>
+		<description>
+			<p>For the crafting cost in currency you can generate any fire imbued item. Additionally you can contribute to other Synthesis.</p>
+		</description>
+		<sheet>
+			<description>For the crafting cost in currency you can generate any fire imbued item. Additionally you can contribute to other Synthesis.</description>
+		</sheet>
+	</element>
+
+	<element name="Steaming Berzerker 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_STEAMING_BERZERKER_2">
+		<supports>FireAffinity, FireAffinity 5</supports>
+		<prerequisite>Steaming Berzerker</prerequisite>
+		<requirements>[FireAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_STEAMING_BERZERKER</requirements>
+		<description>
+			<p>(upgrade Berzerk)</p>
+		</description>
+		<sheet action="Action">
+			<description>(upgrade Berzerk)</description>
+		</sheet>
+	</element>
+
+	<element name="Munitions Synthesis 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MUNITIONS_SYNTHESIS_2">
+		<supports>FireAffinity, FireAffinity 5</supports>
+		<prerequisite>Munitions Synthesis</prerequisite>
+		<requirements>[FireAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_MUNITIONS_SYNTHESIS</requirements>
+		<description>
+			<p>Your Munitions Synthesis ability is further enhanced. You can now synthesize munitions and fuel for vehicles. (probably need to size limit this)</p>
+		</description>
+		<sheet>
+			<description>You can now synthesize munitions and fuel for vehicles.</description>
+		</sheet>
+	</element>
+
+	<element name="Sizzling Strength" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_SIZZLING_STRENGTH">
+		<supports>FireAffinity, FireAffinity 5</supports>
+		<requirements>[FireAffinity:level:5]</requirements>
+		<description>
+			<p>Your STR score increases to 20. Additionally you may use your reaction to reroll any STR save/checks but you must take the new roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can reroll any STR save/checks but you must take the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="strength:score:set" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Fire Items -->
+	<element name="Charred Hull" type="Item" source="Ouroboros: Guardians" id="ID_OBC_SG_ITEM_CHARRED_HULL">
+		<description>
+			<p>It's a spent hull of a shotgun shell that retains magic somehow. Your ranged attacks deal an additional 1d4 magic fire damage. You can commune with the elemental entity once per day.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OBC_SG_GRANTS_FIRE_AFFINITY_UNLOCK" />
+			<grant type="Feat" id="ID_OBC_SG_FEAT_FIRE_AFFINITY" />
+			<stat name="FireAffinity:level" value="1" />
+		</rules>
+	</element>
+
+
+
+	<!-- Light Affinity -->
+	<element name="Light Affinity" type="Grants" source="Ouroboros: Guardians" id="ID_OBC_SG_GRANTS_LIGHT_AFFINITY_UNLOCK" />
+
+	<element name="Light Affinity" type="Feat" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_LIGHT_AFFINITY">
+		<requirements>ID_OBC_SG_GRANTS_LIGHT_AFFINITY_UNLOCK</requirements>
+		<description>
+			<p>sssss</p>
+		</description>
+		<rules>
+			<select type="Feat Feature" name="LightAffinity (Level 1)" supports="LightAffinity 1" default="ID_OBC_SG_FEAT_FEATURE_MEDICINE"/>
+			<select type="Feat Feature" name="LightAffinity (Level 2)" supports="LightAffinity 2" />
+			<select type="Feat Feature" name="LightAffinity (Level 3)" supports="LightAffinity 3" />
+			<select type="Feat Feature" name="LightAffinity (Level 4)" supports="LightAffinity 4" />
+			<select type="Feat Feature" name="LightAffinity (Level 5)" supports="LightAffinity 5" />
+		</rules>
+	</element>
+
+	<element name="Medicine" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MEDICINE">
+		<supports>LightAffinity, LightAffinity 1</supports>
+		<requirements>[LightAffinity:level:1]</requirements>
+		<description>
+			<p>The effects of medicine you administer is doubled.</p>
+		</description>
+		<sheet>
+			<description>The effects of medicine you administer is doubled.</description>
+		</sheet>
+	</element>
+
+	<element name="Holy" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_HOLY">
+		<supports>LightAffinity, LightAffinity 2</supports>
+		<requirements>[LightAffinity:level:2]</requirements>
+		<description>
+			<p>(Insert casting radiant themed magic)</p>
+		</description>
+		<sheet>
+			<description>(Insert casting radiant themed magic)</description>
+		</sheet>
+	</element>
+
+	<element name="Medical Refinement" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MEDICAL_REFINEMENT">
+		<supports>LightAffinity, LightAffinity 2</supports>
+		<requirements>[LightAffinity:level:2]</requirements>
+		<description>
+			<p>For the cost of components in money you can enhance any medicine to an improved version (healing potion to greather healing, etc.)</p>
+		</description>
+		<sheet>
+			<description>For the cost of components in money you can enhance any medicine to an improved version.</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Refinement" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MAGIC_REFINEMENT">
+		<supports>LightAffinity, LightAffinity 3</supports>
+		<requirements>[LightAffinity:level:3]</requirements>
+		<description>
+			<p>For the cost of a spell slot you change the level of a spell scroll. (changing a scroll of fireball with a lv 6 spell slot changes the fireball to be cast at lv 6) You may recharge a number of magic items equivilent to your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>Magic Tinkering&#13;
+			• You can expend a spellslot to change the level of a spell scroll to the level of the slot used&#13;
+			• You may recharge {{MagicRefinement:Recharge}} magic items per day</description>
+		</sheet>
+		<rules>
+			<stat name="MagicRefinement:Recharge" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Sanctuary" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_SANCTUARY">
+		<supports>LightAffinity, LightAffinity 3</supports>
+		<requirements>[LightAffinity:level:3]</requirements>
+		<description>
+			<p>You are under the effect of Sanctuary. Once broken it will reapply after 1 minute.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SANCTUARY" />
+			</div>
+		</description>
+		<sheet>
+			<description>You are under the effect of Sanctuary. Once broken it will reapply after 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Medicine 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MEDICINE_2">
+		<supports>LightAffinity, LightAffinity 4</supports>
+		<prerequisite>Medicine</prerequisite>
+		<requirements>[LightAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_MEDICINE</requirements>
+		<description>
+			<p>Your Medicine ability is enhanced, medications you administer are always at maximum potentcy.</p>
+		</description>
+		<sheet>
+			<description>Medications you administer are always at maximum potentcy.</description>
+		</sheet>
+	</element>
+
+	<element name="Holy 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_HOLY_2">
+		<supports>LightAffinity, LightAffinity 4</supports>
+		<prerequisite>Holy</prerequisite>
+		<requirements>[LightAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_HOLY</requirements>
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Magic Refinement 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MAGIC_REFINEMENT_2">
+		<supports>LightAffinity, LightAffinity 4</supports>
+		<prerequisite>Magic Refinement</prerequisite>
+		<requirements>[LightAffinity:level:4], ID_OBC_SG_FEAT_FEATURE_MEDICAL_REFINEMENT</requirements>
+		<description>
+			<p>Your Medical Refinement ability is enhanced. You may now enhance exotic/magical medicine. You may break down superior+ medicines into an equivilent number of lesser medicines.</p>
+		</description>
+		<sheet>
+			<description>Your Medical Refinement ability is enhanced.&#13;
+			•  You may now enhance exotic/magical medicine.&#13;
+			•  You may break down superior+ medicines into an equivilent number of lesser medicines.</description>
+		</sheet>
+	</element>
+
+	<element name="Revival" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_REVIVAL">
+		<supports>LightAffinity, LightAffinity 4</supports>
+		<requirements>[LightAffinity:level:4]</requirements>
+		<description>
+			<p>You may cast <i>Resurrection</i> once per day with no material or magic expenditure. You learn <i>Revivify</i>, <i>Resurrection</i>, and <i>True Resurrection</i>.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_RESURRECTION" />
+			</div>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">You may cast <i>Resurrection</i> with no material or magic expenditure.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" />
+			<grant type="Spell" id="ID_PHB_SPELL_RESURRECTION" />
+			<grant type="Spell" id="ID_PHB_SPELL_TRUE_RESURRECTION" />
+		</rules>
+	</element>
+
+	<element name="Magic Refinement 3" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_MAGIC_REFINEMENT_3">
+		<supports>LightAffinity, LightAffinity 5</supports>
+		<prerequisite>Magic Refinement</prerequisite>
+		<requirements>[LightAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_MAGIC_REFINEMENT</requirements>
+		<description>
+			<p>Your Magic Refinement ability is enhanced allowing you to double the number of recharges you have available.
+			Additionally you can convert one spell of a willing creature into a spell scroll for free once per long rest.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">You can convert one spell of a willing creature into a spell scroll for free.</description>
+		</sheet>
+		<rules>
+			<stat name="MagicRefinement:Recharge" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Sanctuary 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_SANCTUARY_2">
+		<supports>LightAffinity, LightAffinity 5</supports>
+		<prerequisite>Sanctuary</prerequisite>
+		<requirements>[LightAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_SANCTUARY</requirements>
+		<description>
+			<p>Your Sanctuary ability is enhanced, creatures that fail their save against your sanctuary end their turn.</p>
+		</description>
+		<sheet>
+			<description>Creatures that fail their save against your sanctuary end their turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Revival 2" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_REVIVAL_2">
+		<supports>LightAffinity, LightAffinity 5</supports>
+		<prerequisite>Revival</prerequisite>
+		<requirements>[LightAffinity:level:5], ID_OBC_SG_FEAT_FEATURE_REVIVAL</requirements>
+		<description>
+			<p>Your Revival ability is enhanced you may revive free unwilling creatures and your revival cast time is 1 round.</p>
+		</description>
+		<sheet>
+			<description>You may revive free unwilling creatures and your revival cast time is 1 round.</description>
+		</sheet>
+	</element>
+
+	<element name="Extra Understanding" type="Feat Feature" source="Ouroboros: Guardians" id="ID_OBC_SG_FEAT_FEATURE_EXTRA_UNDERSTANDING">
+		<supports>LightAffinity, LightAffinity 5</supports>
+		<requirements>[LightAffinity:level:5]</requirements>
+		<description>
+			<p>Your WIS score is increased to 20. Additionally you may use your reaction to reroll any WIS saves/checks but you must take the new roll.</p>
+		</description>
+		<sheet>
+			<description action="Reaction">You can reroll any WIS saves/checks but you must take the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom:score:set" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Light Items -->
+	<element name="Amulet of the Old Machine" type="Item" source="Ouroboros: Guardians" id="ID_OBC_SG_ITEM_AMULET_OF_THE_OLD_MACHINE">
+		<description>
+			<p>An amulet with a shiled, helmet, and sword emblazened on it. You may cast cure wounds (lv 1) once per day using it. You may cummune with the embodiment of light once per day.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OBC_SG_GRANTS_LIGHT_AFFINITY_UNLOCK" />
+			<grant type="Feat" id="ID_OBC_SG_FEAT_LIGHT_AFFINITY" />
+			<stat name="LightAffinity:level" value="1" />
+		</rules>
+	</element>
+
+
+
+
+
+
+
+</elements>

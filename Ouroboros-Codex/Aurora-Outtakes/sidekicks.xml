@@ -2,15 +2,35 @@
 <elements>
 	<info>
 		<name>Sidekicks</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="sidekicks.xml" url="https://raw.githubusercontent.com/Ouroboros-dnd/Codex/Master/Ouroboros-Codex/Aurora-Outtakes/sidekicks.xml" />
 		</update>
 	</info>
 
+	<!-- Class Unlocker -->
+	<element name="Sidekick Class Unlocker" type="Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, allows you to pick a sidekick class regardless of race after selecting the die size in the race tab.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER" />
+			<select type="Racial Trait" name="Hit Die" supports="Sidekick HD" />
+		</rules>
+	</element>
+
+	<element name="Sidekick Class Unlocker" type="Grants" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER" />
+
+
 	<!--Rules-->
 	<element name="Gaining a Sidekick Class" type="Information" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_INFO_SIDEKICK">
 		<description>
-			
+
 			<p>When you create a sidekick, you choose the class it will have for the rest of its career: Expert, Spellcaster, or Warrior, each of which is detailed below. If a sidekick class contains a choice, you may make the choice or let the players make it.</p>
 			<h5>Starting Level</h5>
 			<p>The starting level of a sidekick is the same as the average level of the group. For example, if a 1st-level group starts out with a sidekick, that sidekick is also 1st level, but if a 10th-level group invites a sidekick to join them, that sidekick starts at 10th level.</p>
@@ -45,7 +65,7 @@
 				<li>Use Equipment > Additional Features to give the appropriate speed(s) and vision(s)</li>
 				<li>Use Equipment > Additional Language to give the appropriate language(s)</li>
 				<li>Use Equipment > Additional Proficiency to give the appropriate proficiency(s)</li>
-				<li>Use Equipment > Additional Spells to give the appropriate spells(s)</li>	
+				<li>Use Equipment > Additional Spells to give the appropriate spells(s)</li>
 			</ul>
 			<p><strong><i>Remember to equip the items</i></strong></p>
 		</description>
@@ -127,7 +147,7 @@
 
 	<!--Expert Class-->
 	<element name="Sidekick D4 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D4">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -191,7 +211,7 @@
 	</element>
 
 	<element name="Sidekick D6 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D6">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -255,7 +275,7 @@
 	</element>
 
 	<element name="Sidekick D8 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D8">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -319,7 +339,7 @@
 	</element>
 
 	<element name="Sidekick D10 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D10">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -383,7 +403,7 @@
 	</element>
 
 	<element name="Sidekick D12 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D12">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -447,7 +467,7 @@
 	</element>
 
 	<element name="Sidekick D20 - Expert" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_EXPERT_D20">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Expert</h4>
@@ -634,7 +654,7 @@
 
 	<!--Spellcaster Class-->
 	<element name="Sidekick D4 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D4">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -690,7 +710,7 @@
 	</element>
 
 	<element name="Sidekick D6 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D6">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -745,7 +765,7 @@
 	</element>
 
 	<element name="Sidekick D8 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D8">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -801,7 +821,7 @@
 	</element>
 
 	<element name="Sidekick D10 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D10">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -857,7 +877,7 @@
 	</element>
 
 	<element name="Sidekick D12 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D12">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -913,7 +933,7 @@
 	</element>
 
 	<element name="Sidekick D20 - Spellcaster" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_SPELLCASTER_D20">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),[type:language],ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Spellcaster</h4>
@@ -1253,7 +1273,7 @@
 
 	<!--Warrior Class-->
 	<element name="Sidekick D4 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D4">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D4</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
@@ -1314,7 +1334,7 @@
 	</element>
 
 	<element name="Sidekick D6 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D6">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D6</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
@@ -1375,7 +1395,7 @@
 	</element>
 
 	<element name="Sidekick D8 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D8">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D8</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
@@ -1436,7 +1456,7 @@
 	</element>
 
 	<element name="Sidekick D10 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D10">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D10</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
@@ -1497,7 +1517,7 @@
 	</element>
 
 	<element name="Sidekick D12 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D12">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D12</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
@@ -1558,7 +1578,7 @@
 	</element>
 
 	<element name="Sidekick D20 - Warrior" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_SIDEKICK_WARRIOR_D20">
-		<requirements>ID_WOTC_TCOE_RACE_SIDEKICK,ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
+		<requirements>(ID_WOTC_TCOE_RACE_SIDEKICK || ID_WOTC_TCOE_GRANTS_SIDEKICK_UNLOCKER),ID_WOTC_TCOE_RACIAL_TRAIT_SIDEKICK_D20</requirements>
 		<description>
 			<div element="ID_WOTC_TCOE_INFO_SIDEKICK" />
 			<h4>Warrior</h4>
